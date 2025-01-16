@@ -67,6 +67,12 @@ Developed automation solutions to streamline operations.
 - Reduced manual intervention
 - Improved system efficiency
 
+## 🔭 I'm currently working on
+- Building a self-hosted cloud infrastructure
+- Automating deployment pipelines
+- Building web applications
+- Fine-tunning SLMs
+
 ## 📊 GitHub Stats
 
 ![GitHub Stats](https://github-readme-stats.vercel.app/api?username=wari-sul&show_icons=true&theme=radical)

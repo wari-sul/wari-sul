@@ -78,6 +78,6 @@ Developed automation solutions to streamline operations.
 ![GitHub Stats](https://github-readme-stats.vercel.app/api?username=wari-sul&show_icons=true&theme=radical)
 
 ## 📫 Get in Touch
-- Portfolio: [warisul.com](https://warisul.com)
+- Portfolio: [warisul.com](https://www.warisul.com/)
 - LinkedIn: [warisul-rafin](https://www.linkedin.com/in/warisul-rafin)
 - Instagram: [@anxiety_kunn](https://www.instagram.com/anxiety_kunn)

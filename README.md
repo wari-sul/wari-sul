@@ -57,7 +57,10 @@
     </a>
   </p>
 </div>
-
+<!-- Profile Views Counter -->
+<div align="center">
+  <img src="https://komarev.com/ghpvc/?username=wari-sul&label=Profile%20Views&color=7C3AED&style=for-the-badge" alt="Profile Views"/>
+</div>
 <!-- Technical Expertise -->
 <h2 align="center">🛠️ Technical Arsenal</h2>
 
@@ -210,10 +213,6 @@
   </p>
 </div>
 
-<!-- Profile Views Counter -->
-<div align="center">
-  <img src="https://komarev.com/ghpvc/?username=wari-sul&label=Profile%20Views&color=7C3AED&style=for-the-badge" alt="Profile Views"/>
-</div>
 
 <!-- Footer -->
 <img src="https://capsule-render.vercel.app/api?type=waving&color=gradient&customColorList=24,48,96&height=100&section=footer" width="100%"/>

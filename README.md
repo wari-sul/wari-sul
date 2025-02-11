@@ -40,7 +40,7 @@
 
   <!-- Last Updated & Status -->
   <p align="center">
-    <img src="https://img.shields.io/badge/🕒_Last_Updated-2025--02--11_04:04:56_UTC-A9FEF7?style=for-the-badge&labelColor=7C3AED" alt="Last Updated"/>
+    <img src="https://img.shields.io/badge/🕒_Last_Updated-2025--02--11_04:19:23_UTC-A9FEF7?style=for-the-badge&labelColor=7C3AED" alt="Last Updated"/>
     <img src="https://img.shields.io/badge/Status-Available_for_Collaboration-A9FEF7?style=for-the-badge&logo=statuspage&logoColor=white&labelColor=7C3AED" alt="Status"/>
   </p>
 
@@ -118,11 +118,41 @@
 </div>
 
 <!-- Certifications -->
-<h2 align="center">🏆 Certifications & Achievements</h2>
+<h2 align="center">🏆 Certifications & Professional Credentials</h2>
 <div align="center">
+  <!-- Google -->
   <p>
-    <img src="https://img.shields.io/badge/AWS-Solutions_Architect_Associate-232F3E?style=for-the-badge&logo=amazon-aws&logoColor=white"/>
-    <!-- Add more certifications -->
+    <img src="https://img.shields.io/badge/Google-Cybersecurity_Certificate-4285F4?style=for-the-badge&logo=google&logoColor=white"/>
+  </p>
+  
+  <!-- IBM Certificates -->
+  <p>
+    <img src="https://img.shields.io/badge/IBM-Back--End_Development-052FAD?style=for-the-badge&logo=ibm&logoColor=white"/>
+    <img src="https://img.shields.io/badge/IBM-AI_Engineering-052FAD?style=for-the-badge&logo=ibm&logoColor=white"/>
+    <img src="https://img.shields.io/badge/IBM-Back--end_JavaScript_Developer-052FAD?style=for-the-badge&logo=ibm&logoColor=white"/>
+  </p>
+  <p>
+    <img src="https://img.shields.io/badge/IBM-Full_Stack_Software_Developer-052FAD?style=for-the-badge&logo=ibm&logoColor=white"/>
+    <img src="https://img.shields.io/badge/IBM-Applied_DevOps_Engineering-052FAD?style=for-the-badge&logo=ibm&logoColor=white"/>
+  </p>
+  <p>
+    <img src="https://img.shields.io/badge/IBM_ISC²-Cybersecurity_Specialist-052FAD?style=for-the-badge&logo=ibm&logoColor=white"/>
+  </p>
+
+  <!-- Microsoft Certificates -->
+  <p>
+    <img src="https://img.shields.io/badge/Microsoft-Cybersecurity_Analyst-5E5E5E?style=for-the-badge&logo=microsoft&logoColor=white"/>
+    <img src="https://img.shields.io/badge/Microsoft-Python_Development-5E5E5E?style=for-the-badge&logo=microsoft&logoColor=white"/>
+  </p>
+
+  <!-- AWS Certificate -->
+  <p>
+    <img src="https://img.shields.io/badge/AWS-Cloud_Solutions_Architect-232F3E?style=for-the-badge&logo=amazon-aws&logoColor=white"/>
+  </p>
+
+  <!-- Meta Certificate -->
+  <p>
+    <img src="https://img.shields.io/badge/Meta-React_Native_Specialization-0668E1?style=for-the-badge&logo=react&logoColor=white"/>
   </p>
 </div>
 

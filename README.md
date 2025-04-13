@@ -1,9 +1,9 @@
 <!-- Dynamic Time-based Header -->
 <div align="center">
   <picture>
-    <source media="(prefers-color-scheme: dark)" srcset="https://capsule-render.vercel.app/api?type=waving&color=gradient&customColorList=24,48,96&height=150&section=header&text=🌟%20Welcome%20to%20my%20Digital%20Space%20🌟&fontSize=40&animation=fadeIn&fontAlignY=38&desc=Systems%20Engineer%20%7C%20Cloud%20Architect%20%7C%20Security%20Enthusiast&descAlignY=51&descAlign=62">
-    <source media="(prefers-color-scheme: light)" srcset="https://capsule-render.vercel.app/api?type=waving&color=gradient&customColorList=24,48,96&height=150&section=header&text=🌟%20Welcome%20to%20my%20Digital%20Space%20🌟&fontSize=40&animation=fadeIn&fontAlignY=38&desc=Systems%20Engineer%20%7C%20Cloud%20Architect%20%7C%20Security%20Enthusiast&descAlignY=51&descAlign=62">
-    <img src="https://capsule-render.vercel.app/api?type=waving&color=gradient&customColorList=24,48,96&height=150&section=header&text=🌟%20Welcome%20to%20my%20Digital%20Space%20🌟&fontSize=40&animation=fadeIn&fontAlignY=38&desc=Systems%20Engineer%20%7C%20Cloud%20Architect%20%7C%20Security%20Enthusiast&descAlignY=51&descAlign=62" alt="Header">
+    <source media="(prefers-color-scheme: dark)" srcset="https://capsule-render.vercel.app/api?type=waving&color=gradient&customColorList=B22222,FF4500,FF8C00&height=150&section=header&text=Welcome%2C%20daring%20explorer%21%20%F0%9F%A7%AD&fontSize=35&animation=fadeIn&fontAlignY=38&desc=Step%20into%20my%20GitHub%20labyrinth%21%20%F0%9F%92%BB%F0%9F%97%9D%EF%B8%8F%F0%9F%94%92%F0%9F%8C%9F&descAlignY=64&descSize=35">
+    <source media="(prefers-color-scheme: light)" srcset="https://capsule-render.vercel.app/api?type=waving&color=gradient&customColorList=B22222,FF4500,FF8C00&height=150&section=header&text=Welcome%2C%20daring%20explorer%21%20%F0%9F%A7%AD&fontSize=35&animation=fadeIn&fontAlignY=38&desc=Step%20into%20my%20GitHub%20labyrinth%21%20%F0%9F%92%BB%F0%9F%97%9D%EF%B8%8F%F0%9F%94%92%F0%9F%8C%9F&descAlignY=64&descSize=35">
+    <img src="https://capsule-render.vercel.app/api?type=waving&color=gradient&customColorList=B22222,FF4500,FF8C00&height=150&section=header&text=Welcome%2C%20daring%20explorer%21%20%F0%9F%A7%AD&fontSize=35&animation=fadeIn&fontAlignY=38&desc=Step%20into%20my%20GitHub%20labyrinth%21%20%F0%9F%92%BB%F0%9F%97%9D%EF%B8%8F%F0%9F%94%92%F0%9F%8C%9F&descAlignY=64&descSize=35" alt="Header">
   </picture>
 
   <!-- Dynamic Greeting based on time -->
@@ -65,91 +65,83 @@
 <h2 align="center">🛠️ Technical Arsenal</h2>
 
 <!-- Cloud & Infrastructure -->
-<details open>
+<details>
 <summary>☁️ Cloud & Infrastructure</summary>
 <br>
 <p align="center">
-  <!-- Cloud Platforms -->
-  <a href="#"><img src="https://skillicons.dev/icons?i=aws,gcp,azure" /></a><br>
-  <!-- Containerization & Orchestration -->
-  <a href="#"><img src="https://skillicons.dev/icons?i=docker,kubernetes" /></a>
-  <img src="https://img.shields.io/badge/Oracle_Cloud-F80000?style=flat-square&logo=oracle&logoColor=white"/>
+  <img src="https://skillicons.dev/icons?i=aws,gcp,azure" /><br>
+  <img src="https://skillicons.dev/icons?i=docker,kubernetes" /><br>
+  <!-- Badges -->
+  <img src="https://img.shields.io/badge/Oracle-F80000?style=flat-square&logo=oracle&logoColor=white"/>
+  <img src="https://img.shields.io/badge/DigitalOcean-0080FF?style=flat-square&logo=digitalocean&logoColor=white"/>
 </p>
 </details>
 
 <!-- DevOps & Automation -->
-<details open>
+<details>
 <summary>🔄 DevOps & Automation</summary>
 <br>
 <p align="center">
-  <!-- CI/CD & IaC -->
-  <a href="#"><img src="https://skillicons.dev/icons?i=jenkins,github,gitlab,terraform,ansible" /></a><br>
-  <!-- Monitoring & Logging -->
-  <img src="https://img.shields.io/badge/Grafana-F46800?style=flat-square&logo=grafana&logoColor=white"/>
-  <img src="https://img.shields.io/badge/Prometheus-E6522C?style=flat-square&logo=prometheus&logoColor=white"/>
-  <img src="https://img.shields.io/badge/ELK_Stack-005571?style=flat-square&logo=elastic&logoColor=white"/>
+  <img src="https://skillicons.dev/icons?i=jenkins,github,gitlab,terraform,ansible" /><br>
+  <img src="https://skillicons.dev/icons?i=grafana,prometheus" /><br>
 </p>
 </details>
 
 <!-- Development & Programming -->
-<details open>
+<details>
 <summary>💻 Development & Programming</summary>
 <br>
 <p align="center">
-  <!-- Programming Languages -->
-  <a href="#"><img src="https://skillicons.dev/icons?i=python,js,typescript,java,go" /></a><br>
-  <!-- Frameworks & Libraries -->
-  <a href="#"><img src="https://skillicons.dev/icons?i=react,nodejs,django,flask,fastapi" /></a><br>
-  <!-- Databases -->
-  <a href="#"><img src="https://skillicons.dev/icons?i=mongodb,mysql,postgresql,redis" /></a>
+  <img src="https://skillicons.dev/icons?i=python,js,typescript,java,go" /><br>
+  <img src="https://skillicons.dev/icons?i=react,nodejs,django,flask,fastapi" /><br>
+  <img src="https://skillicons.dev/icons?i=mongodb,mysql,postgresql,redis" />
 </p>
 </details>
 
 <!-- Security & Networking -->
-<details open>
+<details>
 <summary>🔒 Security & Networking</summary>
 <br>
 <p align="center">
-  <!-- Network & Security Tools -->
-  <img src="https://img.shields.io/badge/Cisco-1BA0D7?style=flat-square&logo=cisco&logoColor=white"/>
   <img src="https://img.shields.io/badge/Wireshark-1679A7?style=flat-square&logo=wireshark&logoColor=white"/>
-  <img src="https://img.shields.io/badge/Nmap-2C2C2C?style=flat-square&logo=nmap&logoColor=white"/><br>
-  <img src="https://img.shields.io/badge/Snort-FF622D?style=flat-square&logo=snort&logoColor=white"/>
+  <img src="https://img.shields.io/badge/Nmap-2C2C2C?style=flat-square&logo=nmap&logoColor=white"/>
+  <img src="https://img.shields.io/badge/Snort-FF622D?style=flat-square&logo=snort&logoColor=white"/><br>
   <img src="https://img.shields.io/badge/OpenVPN-EA7E20?style=flat-square&logo=openvpn&logoColor=white"/>
-  <img src="https://img.shields.io/badge/Ubiquiti-0559C9?style=flat-square&logo=ubiquiti&logoColor=white"/>
+  <img src="https://img.shields.io/badge/OPNsense-D94F00?style=flat-square&logo=opnsense&logoColor=white"/>
 </p>
 </details>
 
 <!-- Tools & Platforms -->
-<details open>
+<details>
 <summary>🔧 Tools & Platforms</summary>
 <br>
 <p align="center">
-  <!-- Development Tools -->
-  <a href="#"><img src="https://skillicons.dev/icons?i=vscode,vim,git,bash,powershell" /></a><br>
-  <!-- Project Management -->
-  <img src="https://img.shields.io/badge/Jira-0052CC?style=flat-square&logo=jira&logoColor=white"/>
-  <img src="https://img.shields.io/badge/Confluence-172B4D?style=flat-square&logo=confluence&logoColor=white"/>
-  <img src="https://img.shields.io/badge/Notion-000000?style=flat-square&logo=notion&logoColor=white"/>
+  <img src="https://skillicons.dev/icons?i=vscode,vim,git,bash,powershell" /><br>
+  <img src="https://skillicons.dev/icons?i=notion" /><br>
 </p>
 </details>
 
 <!-- Operating Systems -->
-<details open>
+<details>
 <summary>💿 Operating Systems</summary>
 <br>
 <p align="center">
-  <img src="https://img.shields.io/badge/Linux-FCC624?style=flat-square&logo=linux&logoColor=black"/>
-  <img src="https://img.shields.io/badge/Ubuntu-E95420?style=flat-square&logo=ubuntu&logoColor=white"/>
-  <img src="https://img.shields.io/badge/CentOS-262577?style=flat-square&logo=centos&logoColor=white"/><br>
-  <img src="https://img.shields.io/badge/Windows_Server-0078D6?style=flat-square&logo=windows&logoColor=white"/>
-  <img src="https://img.shields.io/badge/macOS-000000?style=flat-square&logo=apple&logoColor=white"/>
+  <img src="https://skillicons.dev/icons?i=linux,windows,apple" /><br> 
+  <img src="https://img.shields.io/badge/Android-3DDC84?style=flat-square&logo=android&logoColor=white"/>
 </p>
 </details>
 
-<!-- Featured Projects -->
+<!-- Recent Blog Posts -->
+<h2 align="center">📝 Latest Blog Posts</h2>
+<div align="center">
+  <!-- Add your recent blog posts here -->
+  <p>Coming soon...</p>
+</div>
 <h2 align="center">🚀 Featured Projects</h2>
 
+<details>
+<summary>Projects</summary>
+<br>
 <div align="center">
   <!-- Project Cards in 2x2 Grid -->
   <a href="https://github.com/wari-sul/portfolio-v1">
@@ -157,8 +149,8 @@
   </a>
   <a href="https://github.com/wari-sul/unit-converter-pro">
     <img align="center" src="https://github-readme-stats.vercel.app/api/pin/?username=wari-sul&repo=unit-converter-pro&theme=radical" />
-  </a>
   <br><br>
+  </a>
   <a href="https://github.com/wari-sul/greed-chat">
     <img align="center" src="https://github-readme-stats.vercel.app/api/pin/?username=wari-sul&repo=greed-chat&theme=radical" />
   </a>
@@ -167,12 +159,7 @@
   </a>
 </div>
 
-<!-- Recent Blog Posts -->
-<h2 align="center">📝 Latest Blog Posts</h2>
-<div align="center">
-  <!-- Add your recent blog posts here -->
-  <p>Coming soon...</p>
-</div>
+</details>
 
 <!-- Certifications -->
 <h2 align="center">🏆 Certifications & Professional Credentials</h2>
@@ -215,4 +202,4 @@
 
 
 <!-- Footer -->
-<img src="https://capsule-render.vercel.app/api?type=waving&color=gradient&customColorList=24,48,96&height=100&section=footer" width="100%"/>
+<img src="https://capsule-render.vercel.app/api?type=waving&color=gradient&customColorList=B22222,FF4500,FF8C00&height=100&section=footer" width="100%"/>

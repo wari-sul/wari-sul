@@ -1,9 +1,9 @@
 <!-- Dynamic Time-based Header -->
 <div align="center">
   <picture>
-    <source media="(prefers-color-scheme: dark)" srcset="https://capsule-render.vercel.app/api?type=waving&color=gradient&customColorList=B22222,FF4500,FF8C00&height=150&section=header&text=Welcome%2C%20daring%20explorer%21%20%F0%9F%A7%AD&fontSize=35&animation=fadeIn&fontAlignY=38&desc=Step%20into%20my%20GitHub%20labyrinth%21%20%F0%9F%92%BB%F0%9F%97%9D%EF%B8%8F%F0%9F%94%92%F0%9F%8C%9F&descAlignY=64&descSize=35">
-    <source media="(prefers-color-scheme: light)" srcset="https://capsule-render.vercel.app/api?type=waving&color=gradient&customColorList=B22222,FF4500,FF8C00&height=150&section=header&text=Welcome%2C%20daring%20explorer%21%20%F0%9F%A7%AD&fontSize=35&animation=fadeIn&fontAlignY=38&desc=Step%20into%20my%20GitHub%20labyrinth%21%20%F0%9F%92%BB%F0%9F%97%9D%EF%B8%8F%F0%9F%94%92%F0%9F%8C%9F&descAlignY=64&descSize=35">
-    <img src="https://capsule-render.vercel.app/api?type=waving&color=gradient&customColorList=B22222,FF4500,FF8C00&height=150&section=header&text=Welcome%2C%20daring%20explorer%21%20%F0%9F%A7%AD&fontSize=35&animation=fadeIn&fontAlignY=38&desc=Step%20into%20my%20GitHub%20labyrinth%21%20%F0%9F%92%BB%F0%9F%97%9D%EF%B8%8F%F0%9F%94%92%F0%9F%8C%9F&descAlignY=64&descSize=35" alt="Header">
+    <source media="(prefers-color-scheme: dark)" srcset="https://capsule-render.vercel.app/api?type=waving&color=gradient&customColorList=B22222,FF4500,FF8C00&height=150&section=header&text=Welcome%2C%20daring%20explorer%21&fontSize=35&animation=fadeIn&fontAlignY=38&desc=Step%20into%20my%20GitHub%20labyrinth%21&descAlignY=64&descSize=35">
+    <source media="(prefers-color-scheme: light)" srcset="https://capsule-render.vercel.app/api?type=waving&color=gradient&customColorList=B22222,FF4500,FF8C00&height=150&section=header&text=Welcome%2C%20daring%20explorer%21&fontSize=35&animation=fadeIn&fontAlignY=38&desc=Step%20into%20my%20GitHub%20labyrinth%21&descAlignY=64&descSize=35">
+    <img src="https://capsule-render.vercel.app/api?type=waving&color=gradient&customColorList=B22222,FF4500,FF8C00&height=150&section=header&text=Welcome%2C%20daring%20explorer%21&fontSize=35&animation=fadeIn&fontAlignY=38&desc=Step%20into%20my%20GitHub%20labyrinth%21&descAlignY=64&descSize=35" alt="Header">
   </picture>
 
   <!-- Dynamic Greeting based on time -->

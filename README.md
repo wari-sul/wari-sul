@@ -157,6 +157,10 @@
   <a href="https://github.com/wari-sul/greed-bot">
     <img align="center" src="https://github-readme-stats.vercel.app/api/pin/?username=wari-sul&repo=greed-bot&theme=radical" />
   </a>
+  <br><br>
+  <a href="https://github.com/wari-sul/bellionChat">
+    <img align="center" src="https://github-readme-stats.vercel.app/api/pin/?username=wari-sul&repo=bellionChat&theme=radical" />
+  </a>
 </div>
 
 </details>

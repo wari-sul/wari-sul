@@ -1,115 +1,113 @@
 <div align="center">
-  <!-- Professional Header with Subtle Animation -->
-  <picture>
-    <source media="(prefers-color-scheme: dark)" srcset="https://capsule-render.vercel.app/api?type=rounded&color=gradient&customColorList=0ea5e9,6366f1&height=120&section=header&text=SM%20Warisul%20Alam%20Rafin&fontSize=30&fontAlignY=45&desc=Cloud%20%26%20Security%20Architect&descAlignY=70&descSize=20">
-    <source media="(prefers-color-scheme: light)" srcset="https://capsule-render.vercel.app/api?type=rounded&color=gradient&customColorList=0ea5e9,6366f1&height=120&section=header&text=SM%20Warisul%20Alam%20Rafin&fontSize=30&fontAlignY=45&desc=Cloud%20%26%20Security%20Architect&descAlignY=70&descSize=20">
-    <img src="https://capsule-render.vercel.app/api?type=rounded&color=gradient&customColorList=0ea5e9,6366f1&height=120&section=header&text=SM%20Warisul%20Alam%20Rafin&fontSize=30&fontAlignY=45&desc=Cloud%20%26%20Security%20Architect&descAlignY=70&descSize=20" alt="Header">
-  </picture>
 
-  <!-- Professional Tagline -->
-  <h3>Designing resilient cloud infrastructure & zero-trust security architectures</h3>
+<!-- Clean Header -->
+<img src="https://capsule-render.vercel.app/api?type=waving&color=gradient&customColorList=7C3AED,EC4899&height=120&section=header&text=Hi%2C%20I'm%20Warisul%20Rafin&fontSize=32&animation=fadeIn" alt="Header"/>
 
-  <!-- Key Expertise Badges -->
-  <p>
-    <img src="https://img.shields.io/badge/AWS-Cloud_Infrastructure-FF9900?style=flat-square&logo=amazon-aws&logoColor=white"/>
-    <img src="https://img.shields.io/badge/DevOps-Automation-00A4D7?style=flat-square&logo=devops&logoColor=white"/>
-    <img src="https://img.shields.io/badge/Security-Zero_Trust-F7DF1E?style=flat-square&logo=security&logoColor=black"/>
-    <img src="https://img.shields.io/badge/IaC-Terraform_Ansible-844FBA?style=flat-square&logo=terraform&logoColor=white"/>
-  </p>
+<!-- Professional Summary -->
+<h3>
+  <a href="https://git.io/typing-svg">
+    <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&size=22&duration=3000&pause=1000&color=7C3AED&center=true&vCenter=true&width=600&lines=Cloud+Infrastructure+Architect;DevOps+Engineer;Security+Enthusiast;Open+Source+Contributor" alt="Typing SVG"/>
+  </a>
+</h3>
 
-  <!-- Compact Stats -->
-  <p>
-    <img height="150em" src="https://github-readme-stats.vercel.app/api?username=wari-sul&show_icons=true&theme=github_dark&include_all_commits=true&count_private=true&hide_border=true&hide=stars,prs"/>
-    <img height="150em" src="https://github-readme-stats.vercel.app/api/top-langs/?username=wari-sul&layout=compact&langs_count=6&theme=github_dark&hide_border=true"/>
-  </p>
+<p>
+  <strong>🎯 Building reliable cloud systems and securing digital infrastructure</strong><br>
+  <strong>🌱 Exploring:</strong> Zero Trust Architecture & Cloud Native Security<br>
+  <strong>💬 Open to:</strong> AWS, System Design, Infrastructure as Code, Network Security discussions
+</p>
 
-  <!-- Streak & Activity -->
-  <p>
-    <img src="https://github-readme-streak-stats.herokuapp.com/?user=wari-sul&theme=github-dark&hide_border=true" alt="GitHub Streak"/>
-  </p>
-  <p>
-    <img src="https://github-readme-activity-graph.vercel.app/graph?username=wari-sul&theme=github-compact&hide_border=true" alt="Contribution Graph" />
-  </p>
+<!-- Essential Stats -->
+<table>
+  <tr>
+    <td><img src="https://github-readme-stats.vercel.app/api?username=wari-sul&show_icons=true&theme=radical&hide_border=true&count_private=true&include_all_commits=false" alt="GitHub Stats"/></td>
+    <td><img src="https://github-readme-stats.vercel.app/api/top-langs/?username=wari-sul&layout=compact&theme=radical&hide_border=true&langs_count=8" alt="Top Languages"/></td>
+  </tr>
+</table>
+
 </div>
 
-## About Me
-
-I'm a **Cloud & Security Architect** passionate about building resilient, automated infrastructure that scales securely. With expertise across AWS, containerization, and zero-trust security models, I help organizations modernize their technical foundation while maintaining robust security posture.
-
-**Current Focus**: Exploring edge computing security patterns and GitOps-driven infrastructure automation
-
-## Core Competencies
+## 🛠️ Core Technologies
 
 <div align="center">
-  <!-- Cloud Platforms -->
-  <img src="https://skillicons.dev/icons?i=aws,gcp,azure&perline=3" />
-  
-  <!-- DevOps Tools -->
-  <img src="https://skillicons.dev/icons?i=docker,kubernetes,jenkins,github,gitlab,terraform,ansible&perline=7" />
-  
-  <!-- Monitoring -->
-  <img src="https://skillicons.dev/icons?i=grafana,prometheus&perline=2" />
-  
-  <!-- Languages -->
-  <img src="https://skillicons.dev/icons?i=python,go,js&perline=3" />
-  
-  <!-- Databases -->
-  <img src="https://skillicons.dev/icons?i=mongodb,mysql,postgresql,redis&perline=4" />
+
+### Cloud Infrastructure
+<img src="https://skillicons.dev/icons?i=aws,gcp,azure,docker,kubernetes,terraform"/><br>
+
+### Development & Tools
+<img src="https://skillicons.dev/icons?i=python,js,ts,nodejs,react,django,fastapi"/><br>
+<img src="https://skillicons.dev/icons?i=git,github,githubactions,jenkins,grafana,prometheus"/><br>
+
+### Security & Monitoring
+<img src="https://skillicons.dev/icons?i=linux,bash,postgres,redis"/><br>
+
 </div>
 
-## Featured Projects
-
-<div align="center">
-  <a href="https://github.com/wari-sul/portfolio-v1">
-    <img align="center" src="https://github-readme-stats.vercel.app/api/pin/?username=wari-sul&repo=portfolio-v1&theme=github_dark" />
-  </a>
-  <a href="https://github.com/wari-sul/greed-chat">
-    <img align="center" src="https://github-readme-stats.vercel.app/api/pin/?username=wari-sul&repo=greed-chat&theme=github_dark" />
-  </a>
-  <br><br>
-  <a href="https://github.com/wari-sul/unit-converter-pro">
-    <img align="center" src="https://github-readme-stats.vercel.app/api/pin/?username=wari-sul&repo=unit-converter-pro&theme=github_dark" />
-  </a>
-  <a href="https://github.com/wari-sul/bellionChat">
-    <img align="center" src="https://github-readme-stats.vercel.app/api/pin/?username=wari-sul&repo=bellionChat&theme=github_dark" />
-  </a>
-</div>
-
-## Certifications
+## 🚀 Featured Projects
 
 <div align="center">
   <table>
     <tr>
-      <td><img src="https://img.shields.io/badge/Google-Cybersecurity-4285F4?style=for-the-badge&logo=google&logoColor=white"/></td>
-      <td><img src="https://img.shields.io/badge/AWS-Solutions_Architect-FF9900?style=for-the-badge&logo=amazon-aws&logoColor=white"/></td>
+      <td width="50%">
+        <a href="https://github.com/wari-sul/portfolio-v1">
+          <img src="https://github-readme-stats.vercel.app/api/pin/?username=wari-sul&repo=portfolio-v1&theme=radical&hide_border=true" alt="Portfolio"/>
+        </a>
+      </td>
+      <td width="50%">
+        <a href="https://github.com/wari-sul/unit-converter-pro">
+          <img src="https://github-readme-stats.vercel.app/api/pin/?username=wari-sul&repo=unit-converter-pro&theme=radical&hide_border=true" alt="Unit Converter"/>
+        </a>
+      </td>
     </tr>
     <tr>
-      <td><img src="https://img.shields.io/badge/IBM-Full_Stack_Developer-052FAD?style=for-the-badge&logo=ibm&logoColor=white"/></td>
-      <td><img src="https://img.shields.io/badge/Microsoft-Cybersecurity-5E5E5E?style=for-the-badge&logo=microsoft&logoColor=white"/></td>
+      <td width="50%">
+        <a href="https://github.com/wari-sul/greed-chat">
+          <img src="https://github-readme-stats.vercel.app/api/pin/?username=wari-sul&repo=greed-chat&theme=radical&hide_border=true" alt="Greed Chat"/>
+        </a>
+      </td>
+      <td width="50%">
+        <a href="https://github.com/wari-sul/bellionChat">
+          <img src="https://github-readme-stats.vercel.app/api/pin/?username=wari-sul&repo=bellionChat&theme=radical&hide_border=true" alt="Bellion Chat"/>
+        </a>
+      </td>
     </tr>
   </table>
 </div>
 
-## Let's Connect
+## 🏆 Key Certifications
 
 <div align="center">
-  <a href="https://www.warisul.com" target="_blank">
-    <img src="https://img.shields.io/badge/Portfolio-warisul.com-7C3AED?style=for-the-badge&logo=firefox&logoColor=white"/>
-  </a>
-  <a href="https://www.linkedin.com/in/warisul-rafin" target="_blank">
-    <img src="https://img.shields.io/badge/LinkedIn-warisul--rafin-0077B5?style=for-the-badge&logo=linkedin&logoColor=white"/>
-  </a>
-  <a href="https://www.instagram.com/anxiety_kunn" target="_blank">
-    <img src="https://img.shields.io/badge/Instagram-anxiety__kunn-E4405F?style=for-the-badge&logo=instagram&logoColor=white"/>
-  </a>
+  <p>
+    <img src="https://img.shields.io/badge/AWS-Cloud_Solutions_Architect-232F3E?style=flat-square&logo=amazon-aws&logoColor=white"/>
+    <img src="https://img.shields.io/badge/Google-Cybersecurity_Certificate-4285F4?style=flat-square&logo=google&logoColor=white"/>
+    <img src="https://img.shields.io/badge/IBM-Full_Stack_Software_Developer-052FAD?style=flat-square&logo=ibm&logoColor=white"/>
+  </p>
+  <p>
+    <img src="https://img.shields.io/badge/Microsoft-Cybersecurity_Analyst-5E5E5E?style=flat-square&logo=microsoft&logoColor=white"/>
+    <img src="https://img.shields.io/badge/Meta-React_Native_Specialization-0668E1?style=flat-square&logo=react&logoColor=white"/>
+  </p>
 </div>
 
----
+## 📬 Connect With Me
 
 <div align="center">
-  <img src="https://capsule-render.vercel.app/api?type=rounded&color=gradient&customColorList=0ea5e9,6366f1&height=80&section=footer" width="100%"/>
   <p>
-    <img src="https://img.shields.io/badge/🕒_Last_Updated-2025--02--11-7C3AED?style=flat-square" alt="Last Updated"/>
-    <img src="https://img.shields.io/badge/Status-Available_for_collaboration-10B981?style=flat-square&logo=statuspage&logoColor=white" alt="Status"/>
+    <a href="https://www.warisul.com" target="_blank">
+      <img src="https://img.shields.io/badge/Portfolio-warisul.com-000000?style=for-the-badge&logo=firefox&logoColor=white"/>
+    </a>&nbsp;
+    <a href="https://www.linkedin.com/in/warisul-rafin" target="_blank">
+      <img src="https://img.shields.io/badge/LinkedIn-warisul--rafin-0077B5?style=for-the-badge&logo=linkedin&logoColor=white"/>
+    </a>&nbsp;
+    <a href="https://github.com/wari-sul" target="_blank">
+      <img src="https://img.shields.io/badge/GitHub-wari--sul-181717?style=for-the-badge&logo=github&logoColor=white"/>
+    </a>
   </p>
+</div>
+
+<div align="center">
+  <img src="https://komarev.com/ghpvc/?username=wari-sul&label=Profile%20Views&color=7C3AED&style=flat" alt="Profile Views"/>
+</div>
+
+<!-- Clean Footer -->
+<div align="center">
+  <img src="https://capsule-render.vercel.app/api?type=waving&color=gradient&customColorList=7C3AED,EC4899&height=80&section=footer" width="100%"/>
 </div>

@@ -45,32 +45,24 @@
 ## 🚀 Featured Projects
 
 <div align="center">
-  <table>
-    <tr>
-      <td width="50%">
-        <a href="https://github.com/wari-sul/portfolio-v1">
-          <img src="https://github-readme-stats.vercel.app/api/pin/?username=wari-sul&repo=portfolio-v1&theme=radical&hide_border=true" alt="Portfolio"/>
-        </a>
-      </td>
-      <td width="50%">
-        <a href="https://github.com/wari-sul/unit-converter-pro">
-          <img src="https://github-readme-stats.vercel.app/api/pin/?username=wari-sul&repo=unit-converter-pro&theme=radical&hide_border=true" alt="Unit Converter"/>
-        </a>
-      </td>
-    </tr>
-    <tr>
-      <td width="50%">
-        <a href="https://github.com/wari-sul/greed-chat">
-          <img src="https://github-readme-stats.vercel.app/api/pin/?username=wari-sul&repo=greed-chat&theme=radical&hide_border=true" alt="Greed Chat"/>
-        </a>
-      </td>
-      <td width="50%">
-        <a href="https://github.com/wari-sul/bellionChat">
-          <img src="https://github-readme-stats.vercel.app/api/pin/?username=wari-sul&repo=bellionChat&theme=radical&hide_border=true" alt="Bellion Chat"/>
-        </a>
-      </td>
-    </tr>
-  </table>
+  <!-- Project Cards in 2x2 Grid -->
+  <a href="https://github.com/wari-sul/portfolio-v1">
+    <img align="center" src="https://github-readme-stats.vercel.app/api/pin/?username=wari-sul&repo=portfolio-v1&theme=radical" />
+  </a>
+  <a href="https://github.com/wari-sul/unit-converter-pro">
+    <img align="center" src="https://github-readme-stats.vercel.app/api/pin/?username=wari-sul&repo=unit-converter-pro&theme=radical" />
+  <br><br>
+  </a>
+  <a href="https://github.com/wari-sul/greed-chat">
+    <img align="center" src="https://github-readme-stats.vercel.app/api/pin/?username=wari-sul&repo=greed-chat&theme=radical" />
+  </a>
+  <a href="https://github.com/wari-sul/greed-bot">
+    <img align="center" src="https://github-readme-stats.vercel.app/api/pin/?username=wari-sul&repo=greed-bot&theme=radical" />
+  </a>
+  <br><br>
+  <a href="https://github.com/wari-sul/bellionChat">
+    <img align="center" src="https://github-readme-stats.vercel.app/api/pin/?username=wari-sul&repo=bellionChat&theme=radical" />
+  </a>
 </div>
 
 ## 🏆 Key Certifications

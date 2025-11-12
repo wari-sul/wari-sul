@@ -1,7 +1,7 @@
 <div align="center">
 
 <!-- Clean Header -->
-<img src="https://capsule-render.vercel.app/api?type=waving&color=gradient&customColorList=7C3AED,EC4899&height=120&section=header&text=Hi%2C%20I'm%20Warisul%20Rafin&fontSize=32&animation=fadeIn" alt="Header"/>
+<img src="https://capsule-render.vercel.app/api?type=waving&color=gradient&customColorList=7C3AED,EC4899&height=120&section=header&text=Hi%2C%20I'm%20Warisul%20&fontSize=32&animation=fadeIn" alt="Header"/>
 
 <!-- Professional Summary -->
 <h3>

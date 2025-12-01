@@ -16,54 +16,30 @@
   <strong>💬 Open to:</strong> AWS, System Design, Infrastructure as Code, Network Security discussions
 </p>
 
-<!-- Essential Stats -->
-<table>
-  <tr>
-    <td><img src="https://github-readme-stats.vercel.app/api?username=wari-sul&show_icons=true&theme=radical&hide_border=true&count_private=true&include_all_commits=false" alt="GitHub Stats"/></td>
-    <td><img src="https://github-readme-stats.vercel.app/api/top-langs/?username=wari-sul&layout=compact&theme=radical&hide_border=true&langs_count=8" alt="Top Languages"/></td>
-  </tr>
-</table>
 
 </div>
+
+---
 
 ## 🛠️ Core Technologies
 
 <div align="center">
 
 ### Cloud Infrastructure
-<img src="https://skillicons.dev/icons?i=aws,gcp,azure,docker,kubernetes,terraform"/><br>
+<img src="https://skillicons.dev/icons?i=aws,gcp,azure,docker,kubernetes,terraform,ansible"/><br>
 
-### Development & Tools
-<img src="https://skillicons.dev/icons?i=python,js,ts,nodejs,react,django,fastapi"/><br>
-<img src="https://skillicons.dev/icons?i=git,github,githubactions,jenkins,grafana,prometheus"/><br>
+### Development & Backend
+<img src="https://skillicons.dev/icons?i=python,js,ts,nodejs,react,django,fastapi,nextjs"/><br>
+
+### DevOps & CI/CD
+<img src="https://skillicons.dev/icons?i=git,github,githubactions,jenkins,gitlab,bit"/><br>
 
 ### Security & Monitoring
-<img src="https://skillicons.dev/icons?i=linux,bash,postgres,redis"/><br>
+<img src="https://skillicons.dev/icons?i=linux,bash,postgres,redis,grafana,prometheus"/><br>
 
 </div>
 
-## 🚀 Featured Projects
-
-<div align="center">
-  <!-- Project Cards in 2x2 Grid -->
-  <a href="https://github.com/wari-sul/portfolio-v1">
-    <img align="center" src="https://github-readme-stats.vercel.app/api/pin/?username=wari-sul&repo=portfolio-v1&theme=radical" />
-  </a>
-  <a href="https://github.com/wari-sul/unit-converter-pro">
-    <img align="center" src="https://github-readme-stats.vercel.app/api/pin/?username=wari-sul&repo=unit-converter-pro&theme=radical" />
-  <br><br>
-  </a>
-  <a href="https://github.com/wari-sul/greed-chat">
-    <img align="center" src="https://github-readme-stats.vercel.app/api/pin/?username=wari-sul&repo=greed-chat&theme=radical" />
-  </a>
-  <a href="https://github.com/wari-sul/greed-bot">
-    <img align="center" src="https://github-readme-stats.vercel.app/api/pin/?username=wari-sul&repo=greed-bot&theme=radical" />
-  </a>
-  <br><br>
-  <a href="https://github.com/wari-sul/bellionChat">
-    <img align="center" src="https://github-readme-stats.vercel.app/api/pin/?username=wari-sul&repo=bellionChat&theme=radical" />
-  </a>
-</div>
+---
 
 ## 🏆 Key Certifications
 
@@ -79,20 +55,49 @@
   </p>
 </div>
 
+---
+
+## 📊 GitHub Activity
+
+<div align="center">
+  
+<!-- Working Streak Stats -->
+<img src="https://streak-stats.demolab.com?user=wari-sul&theme=radical&hide_border=true" alt="GitHub Streak"/>
+
+<!-- Working Activity Graph -->
+<br><br>
+<img src="https://ghchart.rshah.org/7C3AED/wari-sul" alt="GitHub Contribution Graph"/>
+
+<!-- Working Profile Trophies -->
+<br><br>
+<img src="https://github-profile-trophy.vercel.app/?username=wari-sul&theme=radical&no-frame=true&no-bg=false&margin-w=4" alt="GitHub Trophies"/>
+
+</div>
+
+---
+
 ## 📬 Connect With Me
 
 <div align="center">
   <p>
     <a href="https://www.warisul.com" target="_blank">
       <img src="https://img.shields.io/badge/Portfolio-warisul.com-000000?style=for-the-badge&logo=firefox&logoColor=white"/>
-    </a>&nbsp;
+    </a>&nbsp; 
     <a href="https://www.linkedin.com/in/warisul-rafin" target="_blank">
       <img src="https://img.shields.io/badge/LinkedIn-warisul--rafin-0077B5?style=for-the-badge&logo=linkedin&logoColor=white"/>
-    </a>&nbsp;
+    </a>&nbsp; 
     <a href="https://github.com/wari-sul" target="_blank">
       <img src="https://img.shields.io/badge/GitHub-wari--sul-181717?style=for-the-badge&logo=github&logoColor=white"/>
     </a>
   </p>
+<p>
+  <a href="https://twitter.com/warisul" target="_blank">
+    <img src="https://img.shields.io/badge/Twitter-@warisul-1DA1F2?style=for-the-badge&logo=twitter&logoColor=white"/>
+  </a>&nbsp;
+  <a href="mailto:contact@warisul.com" target="_blank">
+    <img src="https://img.shields.io/badge/Email-contact@warisul.com-EA4335?style=for-the-badge&logo=gmail&logoColor=white"/>
+  </a>
+</p>
 </div>
 
 <div align="center">

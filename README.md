@@ -1,12 +1,12 @@
 <div align="center">
 
 <!-- Clean Header -->
-<img src="https://capsule-render.vercel.app/api?type=waving&color=gradient&customColorList=7C3AED,EC4899&height=120&section=header&text=Hi%2C%20I'm%20Warisul%20&fontSize=32&animation=fadeIn" alt="Header"/>
+<img src="https://capsule-render.vercel.app/api?type=waving&color=gradient&customColorList=7C3AED,EC4899&height=120&section=header&text=Hi%2C%20I'm%20Warisul%20&fontSize=32&animation=fadeIn" alt="H[...]
 
 <!-- Professional Summary -->
 <h3>
   <a href="https://git.io/typing-svg">
-    <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&size=22&duration=3000&pause=1000&color=7C3AED&center=true&vCenter=true&width=600&lines=Cloud+Infrastructure+Architect;DevOps+Engineer;Security+Enthusiast;Open+Source+Contributor" alt="Typing SVG"/>
+    <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&size=22&duration=3000&pause=1000&color=7C3AED&center=true&vCenter=true&width=600&lines=Cloud+Infrastructure+Architect;DevOps+Engineer[...]"
   </a>
 </h3>
 
@@ -67,10 +67,6 @@
 <!-- Working Activity Graph -->
 <br><br>
 <img src="https://ghchart.rshah.org/7C3AED/wari-sul" alt="GitHub Contribution Graph"/>
-
-<!-- Working Profile Trophies -->
-<br><br>
-<img src="https://github-profile-trophy.vercel.app/?username=wari-sul&theme=radical&no-frame=true&no-bg=false&margin-w=4" alt="GitHub Trophies"/>
 
 </div>
 

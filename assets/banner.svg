@@ -1,0 +1,142 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="520" viewBox="0 0 1200 520" role="img" aria-label="SM WARISUL A. RAFIN — Cloud Infrastructure Architect and DevOps Engineer">
+  <title>SM WARISUL A. RAFIN — Cloud Infrastructure Architect</title>
+  <style>
+    @media (prefers-reduced-motion: reduce) {
+      * { animation-duration: 0.001s !important; animation-iteration-count: 1 !important; }
+    }
+  </style>
+
+  <defs>
+    <!-- dark multi-tone background -->
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#070b12"/>
+      <stop offset="0.5" stop-color="#0a1120"/>
+      <stop offset="1" stop-color="#0b0f1a"/>
+    </linearGradient>
+
+    <!-- ambient glows -->
+    <radialGradient id="glowWarm" cx="0.5" cy="0.5" r="0.5">
+      <stop offset="0" stop-color="#f59e0b" stop-opacity="0.16"/>
+      <stop offset="1" stop-color="#f59e0b" stop-opacity="0"/>
+    </radialGradient>
+    <radialGradient id="glowCool" cx="0.5" cy="0.5" r="0.5">
+      <stop offset="0" stop-color="#38bdf8" stop-opacity="0.14"/>
+      <stop offset="1" stop-color="#38bdf8" stop-opacity="0"/>
+    </radialGradient>
+
+    <!-- seamless shimmering name gradient (period 600px, repeat spread) -->
+    <linearGradient id="shimmer" x1="0" y1="0" x2="600" y2="0" gradientUnits="userSpaceOnUse" spreadMethod="repeat">
+      <stop offset="0" stop-color="#64748b"/>
+      <stop offset="0.18" stop-color="#94a3b8"/>
+      <stop offset="0.36" stop-color="#f8fafc"/>
+      <stop offset="0.50" stop-color="#34d399"/>
+      <stop offset="0.64" stop-color="#f8fafc"/>
+      <stop offset="0.82" stop-color="#94a3b8"/>
+      <stop offset="1" stop-color="#64748b"/>
+      <animateTransform attributeName="gradientTransform" type="translate" from="0 0" to="600 0" dur="7s" repeatCount="indefinite"/>
+    </linearGradient>
+
+    <!-- subtle grid -->
+    <pattern id="grid" width="40" height="40" patternUnits="userSpaceOnUse">
+      <path d="M40 0 H0 V40" fill="none" stroke="#94a3b8" stroke-opacity="0.05" stroke-width="1"/>
+    </pattern>
+
+    <!-- soft glow for the name -->
+    <filter id="nameGlow" x="-20%" y="-40%" width="140%" height="180%">
+      <feGaussianBlur stdDeviation="7" result="blur"/>
+      <feMerge>
+        <feMergeNode in="blur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+  </defs>
+
+  <!-- frame -->
+  <rect x="12" y="12" width="1176" height="496" rx="24" fill="url(#bg)" stroke="#94a3b8" stroke-opacity="0.18" stroke-width="1.5"/>
+  <rect x="12" y="12" width="1176" height="496" rx="24" fill="url(#grid)"/>
+
+  <!-- static ambient circles + glows -->
+  <circle cx="180" cy="70" r="300" fill="url(#glowWarm)"/>
+  <circle cx="1080" cy="460" r="340" fill="url(#glowCool)"/>
+  <circle cx="150" cy="95" r="90" fill="#f59e0b" opacity="0.04"/>
+  <circle cx="1045" cy="430" r="120" fill="#38bdf8" opacity="0.04"/>
+
+  <!-- twinkling stars -->
+  <g fill="#e2e8f0">
+    <circle cx="60" cy="44" r="1.4"><animate attributeName="opacity" values="0.15;0.95;0.15" dur="2.4s" begin="0s" repeatCount="indefinite"/></circle>
+    <circle cx="140" cy="110" r="1"><animate attributeName="opacity" values="0.2;0.9;0.2" dur="3.1s" begin="-0.6s" repeatCount="indefinite"/></circle>
+    <circle cx="240" cy="34" r="1.8"><animate attributeName="opacity" values="0.15;0.95;0.15" dur="2.0s" begin="-1.2s" repeatCount="indefinite"/></circle>
+    <circle cx="330" cy="86" r="1"><animate attributeName="opacity" values="0.25;0.85;0.25" dur="2.7s" begin="-0.3s" repeatCount="indefinite"/></circle>
+    <circle cx="430" cy="30" r="1.2" fill="#7dd3fc"><animate attributeName="opacity" values="0.15;0.9;0.15" dur="3.6s" begin="-2s" repeatCount="indefinite"/></circle>
+    <circle cx="540" cy="100" r="1"><animate attributeName="opacity" values="0.2;0.95;0.2" dur="2.2s" begin="-0.9s" repeatCount="indefinite"/></circle>
+    <circle cx="640" cy="44" r="1.6"><animate attributeName="opacity" values="0.15;0.9;0.15" dur="3.0s" begin="-1.5s" repeatCount="indefinite"/></circle>
+    <circle cx="760" cy="112" r="1" fill="#fbbf24"><animate attributeName="opacity" values="0.2;0.85;0.2" dur="2.5s" begin="-0.4s" repeatCount="indefinite"/></circle>
+    <circle cx="880" cy="38" r="1.3"><animate attributeName="opacity" values="0.15;0.95;0.15" dur="3.3s" begin="-2.2s" repeatCount="indefinite"/></circle>
+    <circle cx="1140" cy="44" r="1.5"><animate attributeName="opacity" values="0.2;0.9;0.2" dur="2.1s" begin="-0.8s" repeatCount="indefinite"/></circle>
+    <circle cx="1168" cy="140" r="1" fill="#7dd3fc"><animate attributeName="opacity" values="0.15;0.85;0.15" dur="3.8s" begin="-1.0s" repeatCount="indefinite"/></circle>
+    <circle cx="1040" cy="420" r="1.2"><animate attributeName="opacity" values="0.2;0.9;0.2" dur="2.9s" begin="-1.7s" repeatCount="indefinite"/></circle>
+    <circle cx="180" cy="470" r="1"><animate attributeName="opacity" values="0.15;0.85;0.15" dur="3.4s" begin="-2.5s" repeatCount="indefinite"/></circle>
+    <circle cx="700" cy="462" r="1.4" fill="#fbbf24"><animate attributeName="opacity" values="0.2;0.9;0.2" dur="2.6s" begin="-0.2s" repeatCount="indefinite"/></circle>
+    <circle cx="520" cy="480" r="1"><animate attributeName="opacity" values="0.15;0.95;0.15" dur="3.2s" begin="-1.9s" repeatCount="indefinite"/></circle>
+  </g>
+
+  <!-- faint decorative code glyphs -->
+  <g font-family="ui-monospace, 'JetBrains Mono', 'Cascadia Code', Menlo, monospace" fill="#cbd5e1">
+    <text x="690" y="128" font-size="30" opacity="0.10">{ }</text>
+    <text x="96" y="452" font-size="26" opacity="0.09">λ</text>
+    <text x="640" y="430" font-size="24" opacity="0.08">[ 0x7F ]</text>
+  </g>
+
+  <!-- terminal eyebrow with blinking cursor -->
+  <g font-family="ui-monospace, 'JetBrains Mono', 'Cascadia Code', Menlo, monospace">
+    <text x="80" y="72" font-size="16" fill="#34d399">$ whoami</text>
+    <rect x="162" y="58" width="9" height="18" fill="#34d399">
+      <animate attributeName="opacity" values="1;1;0;0" keyTimes="0;0.5;0.5;1" calcMode="discrete" dur="1.1s" repeatCount="indefinite"/>
+    </rect>
+  </g>
+
+  <!-- status chip with pulsing dot -->
+  <g font-family="ui-monospace, 'JetBrains Mono', 'Cascadia Code', Menlo, monospace">
+    <rect x="906" y="48" width="222" height="40" rx="20" fill="#10b981" fill-opacity="0.08" stroke="#10b981" stroke-opacity="0.35"/>
+    <circle cx="934" cy="68" r="4" fill="#10b981">
+      <animate attributeName="opacity" values="1;0.45;1" dur="1.6s" repeatCount="indefinite"/>
+    </circle>
+    <circle cx="934" cy="68" r="4" fill="none" stroke="#10b981" stroke-width="1.5">
+      <animate attributeName="r" values="4;11" dur="1.6s" repeatCount="indefinite"/>
+      <animate attributeName="opacity" values="0.7;0" dur="1.6s" repeatCount="indefinite"/>
+    </circle>
+    <text x="950" y="73" font-size="13" fill="#a7f3d0">portfolio: warisul.com</text>
+  </g>
+
+  <!-- greeting -->
+  <text x="82" y="180" font-size="17" font-weight="600" letter-spacing="6" fill="#94a3b8" font-family="-apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif">HELLO, I'M</text>
+
+  <!-- shimmering name -->
+  <text x="80" y="248" font-size="64" font-weight="800" letter-spacing="1" fill="url(#shimmer)" filter="url(#nameGlow)" font-family="-apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif">SM WARISUL A. RAFIN</text>
+
+  <!-- accent hairline -->
+  <rect x="82" y="270" width="120" height="2" rx="1" fill="#10b981" opacity="0.75"/>
+  <rect x="208" y="270" width="340" height="2" rx="1" fill="#334155" opacity="0.6"/>
+
+  <!-- title -->
+  <text x="82" y="306" font-size="21" font-weight="500" fill="#cbd5e1" font-family="-apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif">Cloud Infrastructure Architect · DevOps Engineer</text>
+
+  <!-- motto -->
+  <text x="82" y="344" font-size="17" font-style="italic" fill="#8ea0bd" font-family="-apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif">I speak the machine's language. One craft, a thousand applications.</text>
+
+  <!-- orbital flourish on the right -->
+  <g font-family="ui-monospace, 'JetBrains Mono', 'Cascadia Code', Menlo, monospace">
+    <circle cx="1015" cy="250" r="60" fill="none" stroke="#7dd3fc" stroke-opacity="0.18" stroke-width="1" stroke-dasharray="3 7"/>
+    <circle cx="1015" cy="250" r="92" fill="none" stroke="#7dd3fc" stroke-opacity="0.12" stroke-width="1"/>
+    <circle cx="1015" cy="250" r="118" fill="none" stroke="#7dd3fc" stroke-opacity="0.07" stroke-width="1"/>
+    <text x="1015" y="260" font-size="28" text-anchor="middle" fill="#475569" opacity="0.9">&lt;/&gt;</text>
+    <g>
+      <circle cx="1107" cy="250" r="3" fill="#38bdf8"/>
+      <animateTransform attributeName="transform" type="rotate" from="0 1015 250" to="360 1015 250" dur="12s" repeatCount="indefinite"/>
+    </g>
+    <g>
+      <circle cx="1133" cy="250" r="2.5" fill="#fbbf24"/>
+      <animateTransform attributeName="transform" type="rotate" from="360 1015 250" to="0 1015 250" dur="18s" repeatCount="indefinite"/>
+    </g>
+  </g>
+</svg>

@@ -1,0 +1,68 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1500" height="100" viewBox="0 0 1500 100" role="img" aria-label="Connect: Portfolio at warisul.com, LinkedIn, GitHub, Twitter, Email">
+  <title>Connect</title>
+  <defs>
+    <style>
+      .tile { fill: #0d1420; stroke: #1e293b; }
+      .glyph { fill: none; stroke: #9aa8bf; stroke-width: 1.8; stroke-linecap: round; stroke-linejoin: round; }
+      .glyph-fill { fill: #9aa8bf; stroke: none; }
+      .name { font: 600 14px -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif; fill: #e6ebf4; }
+      .handle { font: 400 11px ui-monospace, 'JetBrains Mono', 'Cascadia Code', Menlo, monospace; fill: #8b9bb4; }
+      .accent { fill: #10B981; }
+    </style>
+  </defs>
+
+  <!-- 1 · Portfolio -->
+  <g transform="translate(0,8)">
+    <rect class="tile" x="0" y="0" width="288" height="84" rx="14"/>
+    <rect class="accent" x="2" y="16" width="4" height="52" rx="2"/>
+    <circle class="glyph" cx="34" cy="42" r="11"/>
+    <ellipse class="glyph" cx="34" cy="42" rx="5" ry="11"/>
+    <line class="glyph" x1="23" y1="42" x2="45" y2="42"/>
+    <line class="glyph" x1="25.4" y1="36" x2="42.6" y2="36" stroke-opacity="0.6"/>
+    <line class="glyph" x1="25.4" y1="48" x2="42.6" y2="48" stroke-opacity="0.6"/>
+    <text class="name" x="60" y="37">Portfolio</text>
+    <text class="handle" x="60" y="58">warisul.com</text>
+  </g>
+
+  <!-- 2 · LinkedIn -->
+  <g transform="translate(303,8)">
+    <rect class="tile" x="0" y="0" width="288" height="84" rx="14"/>
+    <rect class="accent" x="2" y="16" width="4" height="52" rx="2"/>
+    <rect class="glyph" x="22.5" y="30.5" width="23" height="23" rx="4.5"/>
+    <text x="34" y="48" text-anchor="middle" font-family="-apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif" font-size="12" font-weight="700" fill="#9aa8bf">in</text>
+    <text class="name" x="60" y="37">LinkedIn</text>
+    <text class="handle" x="60" y="58">in/warisul-rafin</text>
+  </g>
+
+  <!-- 3 · GitHub -->
+  <g transform="translate(606,8)">
+    <rect class="tile" x="0" y="0" width="288" height="84" rx="14"/>
+    <rect class="accent" x="2" y="16" width="4" height="52" rx="2"/>
+    <circle class="glyph" cx="34" cy="44" r="8"/>
+    <path class="glyph-fill" d="M28 39.5 l-2-5.5 5 2.5 z"/>
+    <path class="glyph-fill" d="M40 39.5 l2-5.5 -5 2.5 z"/>
+    <path class="glyph" d="M30.5 46 v3 M37.5 46 v3" stroke-opacity="0.7"/>
+    <text class="name" x="60" y="37">GitHub</text>
+    <text class="handle" x="60" y="58">@wari-sul</text>
+  </g>
+
+  <!-- 4 · Twitter -->
+  <g transform="translate(909,8)">
+    <rect class="tile" x="0" y="0" width="288" height="84" rx="14"/>
+    <rect class="accent" x="2" y="16" width="4" height="52" rx="2"/>
+    <path class="glyph" d="M22 44 q5.5 -6.5 11 -1 q5.5 -5.5 11 -1" stroke-width="2"/>
+    <path class="glyph" d="M25 50 q4.5 -5 9 -0.5 q4.5 -4.5 9 -0.5" stroke-opacity="0.5" stroke-width="1.6"/>
+    <text class="name" x="60" y="37">Twitter</text>
+    <text class="handle" x="60" y="58">@warisul</text>
+  </g>
+
+  <!-- 5 · Email -->
+  <g transform="translate(1212,8)">
+    <rect class="tile" x="0" y="0" width="288" height="84" rx="14"/>
+    <rect class="accent" x="2" y="16" width="4" height="52" rx="2"/>
+    <rect class="glyph" x="22.5" y="34" width="23" height="17" rx="2.5"/>
+    <path class="glyph" d="M23.5 35.5 L34 44 L44.5 35.5"/>
+    <text class="name" x="60" y="37">Email</text>
+    <text class="handle" x="60" y="58">contact@warisul.com</text>
+  </g>
+</svg>

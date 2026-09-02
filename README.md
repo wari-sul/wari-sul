@@ -1,4 +1,4 @@
-# Warisul Rafin
+# SM Warisul A. Rafin
 
 Director, Dept. of SaaS at [Orpheus](https://orpheusit.com/). I build backends in Go, fine-tune LLMs, and ship custom software and AI work for businesses.
 

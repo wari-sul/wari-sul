@@ -8,6 +8,8 @@ Before that: sysadmin, DevOps, full-stack. I still run a bunch of servers at hom
 
 Off the clock I'm usually tweaking some LLM thing anyway.
 
-<img src="assets/ai-solutions.svg" alt="what can AI do for my business - automation, self-learning systems, forecasts, AI assistants, custom models" width="100%">
+At Orpheus this is the day job: building systems with AI integrated into them, so repetitive client work stops being someone's task.
+
+<img src="assets/ai-solutions.svg" alt="AI-integrated systems pipeline: client work flows in, AI stages process it, resolved work comes out" width="100%">
 
 Elsewhere: [warisul.com](https://www.warisul.com) · [blog](https://blog.warisul.com) · [LinkedIn](https://www.linkedin.com/in/warisul-rafin) · [contact@warisul.com](mailto:contact@warisul.com)

@@ -12,18 +12,19 @@
       <stop offset="0%" stop-color="#7C3AED" stop-opacity="0.10"/>
       <stop offset="100%" stop-color="#7C3AED" stop-opacity="0"/>
     </radialGradient>
-    <path id="pFlow" d="M 214,140 L 586,140"/>
+    <path id="pFlow" d="M 220,140 L 580,140"/>
     <style>
       .m3   { font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, monospace; }
       .t3   { fill: #6E7681; font-size: 12px; }
-      .hdr  { fill: #8B949E; font-size: 9.5px; letter-spacing: 2px; font-weight: 700; }
-      .hdrv { fill: #A78BFA; font-size: 9.5px; letter-spacing: 2px; font-weight: 700; }
-      .stg  { fill: #A1A1AA; font-size: 7.5px; }
-      .itL  { fill: #8B949E; font-size: 11.5px; }
-      .itR  { fill: #8B949E; font-size: 11.5px; }
+      .hdr  { fill: #8B949E; font-size: 10px; letter-spacing: 2px; font-weight: 700; }
+      .hdrv { fill: #A78BFA; font-size: 10px; letter-spacing: 2px; font-weight: 700; }
+      .stg  { fill: #C9D1D9; font-size: 9px; }
+      .stn  { fill: #6E7681; font-size: 8px; letter-spacing: 1px; }
+      .itL  { fill: #8B949E; font-size: 12px; }
+      .itR  { fill: #8B949E; font-size: 12px; }
       .chk  { fill: #22C55E; }
       .chip { fill: #7EE787; font-size: 10px; }
-      .tagl { fill: #8B949E; font-size: 12px; }
+      .tagl { fill: url(#accent3); font-size: 13px; }
     </style>
   </defs>
 
@@ -39,43 +40,48 @@
   <!-- left: incoming client work -->
   <rect x="40" y="70" width="170" height="110" rx="12" fill="#161B22" stroke="#FFFFFF" stroke-opacity="0.08"/>
   <text class="m3 hdr" x="58" y="96">WORK COMING IN</text>
-  <circle cx="56" cy="122" r="3" fill="#A78BFA"/>
-  <text class="m3 itL" x="68" y="126">support ticket<animate attributeName="opacity" values="0.35;0.35;1;0.35;0.35" keyTimes="0;0.055;0.09;0.36;1" dur="8s" repeatCount="indefinite"/></text>
-  <circle cx="56" cy="152" r="3" fill="#A78BFA"/>
-  <text class="m3 itL" x="68" y="156">customer question<animate attributeName="opacity" values="0.35;0.35;1;0.35;0.35" keyTimes="0;0.395;0.435;0.71;1" dur="8s" repeatCount="indefinite"/></text>
+  <circle cx="58" cy="122" r="3" fill="#A78BFA"><animate attributeName="opacity" values="0.35;0.35;1;0.35;0.35" keyTimes="0;0.055;0.09;0.36;1" dur="8s" repeatCount="indefinite"/></circle>
+  <text class="m3 itL" x="70" y="126">support ticket<animate attributeName="opacity" values="0.35;0.35;1;0.35;0.35" keyTimes="0;0.055;0.09;0.36;1" dur="8s" repeatCount="indefinite"/></text>
+  <circle cx="58" cy="152" r="3" fill="#A78BFA"><animate attributeName="opacity" values="0.35;0.35;1;0.35;0.35" keyTimes="0;0.395;0.435;0.71;1" dur="8s" repeatCount="indefinite"/></circle>
+  <text class="m3 itL" x="70" y="156">customer question<animate attributeName="opacity" values="0.35;0.35;1;0.35;0.35" keyTimes="0;0.395;0.435;0.71;1" dur="8s" repeatCount="indefinite"/></text>
 
   <!-- right: outcomes -->
   <rect x="590" y="70" width="170" height="110" rx="12" fill="#161B22" stroke="#FFFFFF" stroke-opacity="0.08"/>
   <text class="m3 hdr" x="608" y="96">OUTCOME</text>
-  <circle cx="596" cy="122" r="3" fill="#22C55E"><animate attributeName="opacity" values="0.25;0.25;1;1;0.25;0.25" keyTimes="0;0.375;0.40;0.90;0.95;1" dur="8s" repeatCount="indefinite"/></circle>
-  <text class="m3 itR" x="608" y="126">resolved <tspan class="chk">&#10003;</tspan><animate attributeName="opacity" values="0.25;0.25;1;1;0.25;0.25" keyTimes="0;0.375;0.40;0.90;0.95;1" dur="8s" repeatCount="indefinite"/></text>
-  <circle cx="596" cy="152" r="3" fill="#22C55E"><animate attributeName="opacity" values="0.25;0.25;1;1;0.25;0.25" keyTimes="0;0.7125;0.7375;0.90;0.95;1" dur="8s" repeatCount="indefinite"/></circle>
-  <text class="m3 itR" x="608" y="156">answered <tspan class="chk">&#10003;</tspan><animate attributeName="opacity" values="0.25;0.25;1;1;0.25;0.25" keyTimes="0;0.7125;0.7375;0.90;0.95;1" dur="8s" repeatCount="indefinite"/></text>
+  <circle cx="608" cy="122" r="3" fill="#22C55E"><animate attributeName="opacity" values="0.25;0.25;1;1;0.25;0.25" keyTimes="0;0.375;0.40;0.90;0.95;1" dur="8s" repeatCount="indefinite"/></circle>
+  <text class="m3 itR" x="620" y="126">resolved <tspan class="chk">&#10003;</tspan><animate attributeName="opacity" values="0.25;0.25;1;1;0.25;0.25" keyTimes="0;0.375;0.40;0.90;0.95;1" dur="8s" repeatCount="indefinite"/></text>
+  <circle cx="608" cy="152" r="3" fill="#22C55E"><animate attributeName="opacity" values="0.25;0.25;1;1;0.25;0.25" keyTimes="0;0.7125;0.7375;0.90;0.95;1" dur="8s" repeatCount="indefinite"/></circle>
+  <text class="m3 itR" x="620" y="156">answered <tspan class="chk">&#10003;</tspan><animate attributeName="opacity" values="0.25;0.25;1;1;0.25;0.25" keyTimes="0;0.7125;0.7375;0.90;0.95;1" dur="8s" repeatCount="indefinite"/></text>
 
   <!-- center: the AI-integrated system -->
   <ellipse cx="400" cy="140" rx="270" ry="95" fill="url(#glowP)"/>
   <rect x="225" y="85" width="350" height="110" rx="12" fill="none" stroke="#7C3AED" stroke-opacity="0.35" stroke-width="1"/>
   <text class="m3 hdrv" x="400" y="77" text-anchor="middle">AI-INTEGRATED SYSTEM</text>
 
-  <rect x="233" y="105" width="58" height="70" rx="8" fill="#1C2230" stroke="#FFFFFF" stroke-opacity="0.08"/>
-  <rect x="233" y="105" width="58" height="70" rx="8" fill="none" stroke="#8B5CF6" stroke-width="1.4" stroke-opacity="0"><animate attributeName="stroke-opacity" values="0;0;1;0;0;1;0;0" keyTimes="0;0.0908;0.1028;0.1148;0.428;0.440;0.452;1" dur="8s" repeatCount="indefinite"/></rect>
-  <text class="m3 stg" x="262" y="142" text-anchor="middle">automation</text>
+  <rect x="229" y="105" width="58" height="70" rx="8" fill="#1C2230" stroke="#FFFFFF" stroke-opacity="0.08"/>
+  <rect x="229" y="105" width="58" height="70" rx="8" fill="none" stroke="#8B5CF6" stroke-width="1.4" stroke-opacity="0"><animate attributeName="stroke-opacity" values="0;0;1;0;0;1;0;0" keyTimes="0;0.0908;0.1028;0.1148;0.428;0.440;0.452;1" dur="8s" repeatCount="indefinite"/></rect>
+  <text class="m3 stn" x="258" y="120" text-anchor="middle">01</text>
+  <text class="m3 stg" x="258" y="162" text-anchor="middle">automation</text>
 
-  <rect x="304" y="105" width="58" height="70" rx="8" fill="#1C2230" stroke="#FFFFFF" stroke-opacity="0.08"/>
-  <rect x="304" y="105" width="58" height="70" rx="8" fill="none" stroke="#8B5CF6" stroke-width="1.4" stroke-opacity="0"><animate attributeName="stroke-opacity" values="0;0;1;0;0;1;0;0" keyTimes="0;0.1505;0.1625;0.1745;0.488;0.500;0.512;1" dur="8s" repeatCount="indefinite"/></rect>
-  <text class="m3 stg" x="333" y="142" text-anchor="middle">self-learn</text>
+  <rect x="300" y="105" width="58" height="70" rx="8" fill="#1C2230" stroke="#FFFFFF" stroke-opacity="0.08"/>
+  <rect x="300" y="105" width="58" height="70" rx="8" fill="none" stroke="#8B5CF6" stroke-width="1.4" stroke-opacity="0"><animate attributeName="stroke-opacity" values="0;0;1;0;0;1;0;0" keyTimes="0;0.1505;0.1625;0.1745;0.488;0.500;0.512;1" dur="8s" repeatCount="indefinite"/></rect>
+  <text class="m3 stn" x="329" y="120" text-anchor="middle">02</text>
+  <text class="m3 stg" x="329" y="162" text-anchor="middle">self-learn</text>
 
-  <rect x="375" y="105" width="58" height="70" rx="8" fill="#1C2230" stroke="#FFFFFF" stroke-opacity="0.08"/>
-  <rect x="375" y="105" width="58" height="70" rx="8" fill="none" stroke="#8B5CF6" stroke-width="1.4" stroke-opacity="0"><animate attributeName="stroke-opacity" values="0;0;1;0;0;1;0;0" keyTimes="0;0.210;0.222;0.234;0.548;0.560;0.572;1" dur="8s" repeatCount="indefinite"/></rect>
-  <text class="m3 stg" x="404" y="142" text-anchor="middle">forecasts</text>
+  <rect x="371" y="105" width="58" height="70" rx="8" fill="#1C2230" stroke="#FFFFFF" stroke-opacity="0.08"/>
+  <rect x="371" y="105" width="58" height="70" rx="8" fill="none" stroke="#8B5CF6" stroke-width="1.4" stroke-opacity="0"><animate attributeName="stroke-opacity" values="0;0;1;0;0;1;0;0" keyTimes="0;0.210;0.222;0.234;0.548;0.560;0.572;1" dur="8s" repeatCount="indefinite"/></rect>
+  <text class="m3 stn" x="400" y="120" text-anchor="middle">03</text>
+  <text class="m3 stg" x="400" y="162" text-anchor="middle">forecasts</text>
 
-  <rect x="446" y="105" width="58" height="70" rx="8" fill="#1C2230" stroke="#FFFFFF" stroke-opacity="0.08"/>
-  <rect x="446" y="105" width="58" height="70" rx="8" fill="none" stroke="#8B5CF6" stroke-width="1.4" stroke-opacity="0"><animate attributeName="stroke-opacity" values="0;0;1;0;0;1;0;0" keyTimes="0;0.2696;0.2816;0.2936;0.608;0.620;0.632;1" dur="8s" repeatCount="indefinite"/></rect>
-  <text class="m3 stg" x="475" y="142" text-anchor="middle">assistants</text>
+  <rect x="442" y="105" width="58" height="70" rx="8" fill="#1C2230" stroke="#FFFFFF" stroke-opacity="0.08"/>
+  <rect x="442" y="105" width="58" height="70" rx="8" fill="none" stroke="#8B5CF6" stroke-width="1.4" stroke-opacity="0"><animate attributeName="stroke-opacity" values="0;0;1;0;0;1;0;0" keyTimes="0;0.2696;0.2816;0.2936;0.608;0.620;0.632;1" dur="8s" repeatCount="indefinite"/></rect>
+  <text class="m3 stn" x="471" y="120" text-anchor="middle">04</text>
+  <text class="m3 stg" x="471" y="162" text-anchor="middle">assistants</text>
 
-  <rect x="517" y="105" width="58" height="70" rx="8" fill="#1C2230" stroke="#FFFFFF" stroke-opacity="0.08"/>
-  <rect x="517" y="105" width="58" height="70" rx="8" fill="none" stroke="#8B5CF6" stroke-width="1.4" stroke-opacity="0"><animate attributeName="stroke-opacity" values="0;0;1;0;0;1;0;0" keyTimes="0;0.329;0.341;0.353;0.667;0.679;0.691;1" dur="8s" repeatCount="indefinite"/></rect>
-  <text class="m3 stg" x="546" y="142" text-anchor="middle">custom</text>
+  <rect x="513" y="105" width="58" height="70" rx="8" fill="#1C2230" stroke="#FFFFFF" stroke-opacity="0.08"/>
+  <rect x="513" y="105" width="58" height="70" rx="8" fill="none" stroke="#8B5CF6" stroke-width="1.4" stroke-opacity="0"><animate attributeName="stroke-opacity" values="0;0;1;0;0;1;0;0" keyTimes="0;0.329;0.341;0.353;0.667;0.679;0.691;1" dur="8s" repeatCount="indefinite"/></rect>
+  <text class="m3 stn" x="542" y="120" text-anchor="middle">05</text>
+  <text class="m3 stg" x="542" y="162" text-anchor="middle">custom</text>
 
   <!-- continuous conveyor -->
   <circle r="2.5" fill="#7C3AED">
@@ -94,34 +100,34 @@
   <!-- work item A: support ticket -> resolved -->
   <circle r="5" fill="#8B949E">
     <animateMotion dur="8s" repeatCount="indefinite" keyPoints="0;0;1;1" keyTimes="0;0.0625;0.375;1" calcMode="linear"><mpath href="#pFlow"/></animateMotion>
-    <animate attributeName="opacity" values="0;0;1;1;0;0" keyTimes="0;0.0625;0.0703;0.375;0.40;1" dur="8s" repeatCount="indefinite"/>
-    <animate attributeName="fill" values="#8B949E;#8B949E;#22C55E;#22C55E" keyTimes="0;0.375;0.40;1" dur="8s" repeatCount="indefinite"/>
+    <animate attributeName="opacity" values="0;0;1;1;0;0" keyTimes="0;0.0625;0.0703;0.42;0.44;1" dur="8s" repeatCount="indefinite"/>
+    <animate attributeName="fill" values="#8B949E;#22C55E;#22C55E" keyTimes="0;0.375;1" calcMode="discrete" dur="8s" repeatCount="indefinite"/>
   </circle>
 
   <!-- work item B: customer question -> answered -->
   <circle r="5" fill="#8B949E">
     <animateMotion dur="8s" repeatCount="indefinite" keyPoints="0;0;1;1" keyTimes="0;0.4;0.7125;1" calcMode="linear"><mpath href="#pFlow"/></animateMotion>
-    <animate attributeName="opacity" values="0;0;1;1;0;0" keyTimes="0;0.4;0.4078;0.7125;0.7375;1" dur="8s" repeatCount="indefinite"/>
-    <animate attributeName="fill" values="#8B949E;#8B949E;#22C55E;#22C55E" keyTimes="0;0.7125;0.7375;1" dur="8s" repeatCount="indefinite"/>
+    <animate attributeName="opacity" values="0;0;1;1;0;0" keyTimes="0;0.4;0.4078;0.76;0.78;1" dur="8s" repeatCount="indefinite"/>
+    <animate attributeName="fill" values="#8B949E;#22C55E;#22C55E" keyTimes="0;0.7125;1" calcMode="discrete" dur="8s" repeatCount="indefinite"/>
   </circle>
 
   <!-- efficiency chips -->
   <g opacity="0">
     <animate attributeName="opacity" values="0;0;1;1;0;0" keyTimes="0;0.65;0.68;0.93;0.97;1" dur="8s" repeatCount="indefinite"/>
-    <rect x="199" y="238" width="70" height="22" rx="11" fill="#13311F" stroke="#238636" stroke-opacity="0.8"/>
-    <text class="m3 chip" x="234" y="253" text-anchor="middle">24/7</text>
+    <rect x="199" y="218" width="70" height="22" rx="11" fill="#13311F" stroke="#238636" stroke-opacity="0.8"/>
+    <text class="m3 chip" x="234" y="233" text-anchor="middle">24/7</text>
   </g>
   <g opacity="0">
     <animate attributeName="opacity" values="0;0;1;1;0;0" keyTimes="0;0.69;0.72;0.93;0.97;1" dur="8s" repeatCount="indefinite"/>
-    <rect x="285" y="238" width="160" height="22" rx="11" fill="#13311F" stroke="#238636" stroke-opacity="0.8"/>
-    <text class="m3 chip" x="365" y="253" text-anchor="middle">minutes, not days</text>
+    <rect x="285" y="218" width="160" height="22" rx="11" fill="#13311F" stroke="#238636" stroke-opacity="0.8"/>
+    <text class="m3 chip" x="365" y="233" text-anchor="middle">minutes, not days</text>
   </g>
   <g opacity="0">
     <animate attributeName="opacity" values="0;0;1;1;0;0" keyTimes="0;0.73;0.76;0.93;0.97;1" dur="8s" repeatCount="indefinite"/>
-    <rect x="461" y="238" width="140" height="22" rx="11" fill="#13311F" stroke="#238636" stroke-opacity="0.8"/>
-    <text class="m3 chip" x="531" y="253" text-anchor="middle">zero backlog</text>
+    <rect x="461" y="218" width="140" height="22" rx="11" fill="#13311F" stroke="#238636" stroke-opacity="0.8"/>
+    <text class="m3 chip" x="531" y="233" text-anchor="middle">zero backlog</text>
   </g>
 
   <!-- tagline -->
-  <text class="m3 tagl" x="400" y="285" text-anchor="middle" opacity="0">repetitive work runs itself.<animate attributeName="opacity" values="0;0;1;1;0;0" keyTimes="0;0.78;0.82;0.93;0.97;1" dur="8s" repeatCount="indefinite"/></text>
+  <text class="m3 tagl" x="400" y="270" text-anchor="middle" opacity="0">repetitive work runs itself.<animate attributeName="opacity" values="0;0;1;1;0;0" keyTimes="0;0.78;0.82;0.93;0.97;1" dur="8s" repeatCount="indefinite"/></text>
 </svg>

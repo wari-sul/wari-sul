@@ -2,13 +2,15 @@
 
 # SM Warisul A. Rafin
 
-I’m Director of SaaS at [Orpheus](https://orpheusit.com/), where I lead the development of our SaaS products—most of them powered by AI.
+I'm Director of SaaS at [Orpheus](https://orpheusit.com/), where our team builds SaaS products for clients. Most of my job is keeping two things honest: the product has to fit the way a client actually works, and the AI has to earn its keep. A chatbot that answers a question isn't agentic. I make sure what we ship actually does the thing, not just talks about doing it.
 
-I’m also the founder of [athrLabs](https://athr.app), where I build AI products, fine-tune models, design websites, manage systems and infrastructure, and automate the work between them.
+[athrLabs](https://athr.app) is a different animal: my own lab and agency. Custom development, AI products, APIs, on-prem LLMs, cloud provider APIs, fine-tuned models, automation, robotics, open-source development and contribution. A lot of ideas go in, and occasionally something useful comes out. Caffeine goes in too, in quantities I prefer not to measure.
 
-My background is in systems administration, DevOps, and full-stack development. I still run a small collection of servers at home and self-host much of the software I use.
+The origin story: sysadmin first, then DevOps, then full-stack. I still do all three, because one is never enough. The homelab is the proof: a small rack of machines humming in the corner, running self-hosted services, media servers, experiments, and whatever I decided at 2 a.m. was essential. Most of my tools live there, and if the internet goes out, the house still runs.
 
-Through athrLabs, I help clients build systems with AI integrated into their workflows—turning repetitive, manual work into reliable automation.
+And yes, I'm an audiophile. That means the homelab has a sibling: a listening corner with amps, DACs, and headphones that cost more than they reasonably should. The servers handle the data, the tubes and planar drivers handle the mood. Two hobbies, one questionable electricity bill.
+
+athrLabs is where that work reaches clients: work flows in one end, the AI pipeline handles it, and resolved outcomes come out the other. The repetitive stuff runs itself, and people get to do the interesting part.
 
 <img src="assets/ai-solutions.svg" alt="AI-integrated systems pipeline: client work flows in, AI stages process it, resolved work comes out" width="100%">
 

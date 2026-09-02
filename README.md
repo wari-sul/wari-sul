@@ -1,4 +1,4 @@
-<img src="assets/header-terminal.svg" alt="terminal session - docker compose up, Qwen3.8-27B fine-tune pipeline, pnpm run deploy:prod" width="100%">
+<img src="assets/header-terminal.svg?v=2.1" alt="terminal session - docker compose up, Qwen3.8-27B fine-tune pipeline, pnpm run deploy:prod" width="100%">
 
 # SM Warisul A. Rafin
 
@@ -12,6 +12,6 @@ And yes, I'm an audiophile. That means the homelab has a sibling: a listening co
 
 athrLabs is where that work reaches clients: work flows in one end, the AI pipeline handles it, and resolved outcomes come out the other. The repetitive stuff runs itself, and people get to do the interesting part.
 
-<img src="assets/ai-solutions.svg" alt="AI-integrated systems: transformer forward pass from business prompt to 5 autonomous output solutions" width="100%">
+<img src="assets/ai-solutions.svg?v=2.1" alt="AI-integrated systems: transformer forward pass from business prompt to 5 autonomous output solutions" width="100%">
 
 Elsewhere: [warisul.com](https://www.warisul.com) · [blog](https://blog.warisul.com) · [LinkedIn](https://www.linkedin.com/in/warisul-rafin) · [contact@warisul.com](mailto:contact@warisul.com)

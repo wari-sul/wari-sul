@@ -1,0 +1,45 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="800" height="300" viewBox="0 0 800 300"
+     role="img" aria-label="What can AI do for my business - AI solutions from warisul.com">
+  <defs>
+    <linearGradient id="accent2" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#7C3AED"/>
+      <stop offset="1" stop-color="#EC4899"/>
+    </linearGradient>
+    <style>
+      .mono2  { font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, monospace; }
+      .who    { fill: #A78BFA; font-weight: bold; }
+      .bot    { fill: #EC4899; font-weight: bold; }
+      .q      { fill: #E6EDF3; }
+      .name   { fill: #C4B5FD; }
+      .desc   { fill: #8B949E; }
+      .title2 { fill: #6E7681; font-size: 12px; }
+      .ln     { font-size: 15px; }
+      .stream { opacity: 0; }
+    </style>
+  </defs>
+
+  <rect width="800" height="300" rx="12" fill="#0D1117" stroke="#30363D" stroke-width="1"/>
+  <rect x="0" y="44" width="800" height="2" fill="url(#accent2)" opacity="0.85"/>
+
+  <!-- window controls -->
+  <circle cx="26" cy="22" r="6" fill="#FF5F57"/>
+  <circle cx="46" cy="22" r="6" fill="#FEBC2E"/>
+  <circle cx="66" cy="22" r="6" fill="#28C840"/>
+  <text class="mono2 title2" x="400" y="26" text-anchor="middle">orpheus · llm · stream</text>
+
+  <!-- user question -->
+  <text class="mono2 ln stream" x="32" y="86"><tspan class="who">user</tspan><tspan class="q" dx="14">what can AI do for my business?</tspan><animate attributeName="opacity" from="0" to="1" dur="0.01s" begin="0.5s" fill="freeze"/></text>
+
+  <!-- assistant label -->
+  <text class="mono2 ln stream" x="32" y="118"><tspan class="bot">assistant</tspan><animate attributeName="opacity" from="0" to="1" dur="0.01s" begin="1.2s" fill="freeze"/></text>
+
+  <!-- streamed answers: fade + slide in, one by one -->
+  <text class="mono2 ln stream" x="48" y="150"><tspan class="name">Automation</tspan><tspan class="desc" dx="14">Repetitive work runs itself.</tspan><animate attributeName="opacity" from="0" to="1" dur="0.3s" begin="1.7s" fill="freeze"/><animateTransform attributeName="transform" type="translate" from="-8 0" to="0 0" dur="0.3s" begin="1.7s" fill="freeze"/></text>
+  <text class="mono2 ln stream" x="48" y="180"><tspan class="name">Self-learning systems</tspan><tspan class="desc" dx="14">Sharper with every dataset.</tspan><animate attributeName="opacity" from="0" to="1" dur="0.3s" begin="2.3s" fill="freeze"/><animateTransform attributeName="transform" type="translate" from="-8 0" to="0 0" dur="0.3s" begin="2.3s" fill="freeze"/></text>
+  <text class="mono2 ln stream" x="48" y="210"><tspan class="name">Forecasts</tspan><tspan class="desc" dx="14">See tomorrow's demand today.</tspan><animate attributeName="opacity" from="0" to="1" dur="0.3s" begin="2.9s" fill="freeze"/><animateTransform attributeName="transform" type="translate" from="-8 0" to="0 0" dur="0.3s" begin="2.9s" fill="freeze"/></text>
+  <text class="mono2 ln stream" x="48" y="240"><tspan class="name">AI assistants</tspan><tspan class="desc" dx="14">Answers for customers and team, around the clock.</tspan><animate attributeName="opacity" from="0" to="1" dur="0.3s" begin="3.5s" fill="freeze"/><animateTransform attributeName="transform" type="translate" from="-8 0" to="0 0" dur="0.3s" begin="3.5s" fill="freeze"/></text>
+  <text class="mono2 ln stream" x="48" y="270"><tspan class="name">Custom models</tspan><tspan class="desc" dx="14">Trained on your data, shaped to your work.</tspan><animate attributeName="opacity" from="0" to="1" dur="0.3s" begin="4.1s" fill="freeze"/><animateTransform attributeName="transform" type="translate" from="-8 0" to="0 0" dur="0.3s" begin="4.1s" fill="freeze"/></text>
+
+  <!-- stream ends, idle cursor -->
+  <text class="mono2 ln stream" x="32" y="292"><tspan class="bot">&#9608;</tspan><animate attributeName="opacity" values="1;0" dur="1.1s" begin="4.6s" calcMode="discrete" repeatCount="indefinite"/></text>
+</svg>

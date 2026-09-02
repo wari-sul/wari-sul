@@ -1,0 +1,66 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="800" height="200" viewBox="0 0 800 200"
+     role="img" aria-label="SM Warisul A. Rafin - terminal style intro">
+  <defs>
+    <linearGradient id="accent" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#7C3AED"/>
+      <stop offset="1" stop-color="#EC4899"/>
+    </linearGradient>
+    <style>
+      .mono   { font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, monospace; }
+      .prompt { fill: #A78BFA; }
+      .cmd    { fill: #E6EDF3; }
+      .out    { fill: #8B949E; }
+      .title  { fill: #6E7681; font-size: 12px; }
+      .line   { font-size: 15px; }
+      .ltr    { opacity: 0; }
+      .seq    { opacity: 0; }
+      .cur    { opacity: 0; }
+      .boot   { opacity: 0; animation: boot 0.25s ease-out forwards; }
+      @keyframes boot { to { opacity: 1; } }
+    </style>
+  </defs>
+
+  <g class="boot">
+    <rect width="800" height="200" rx="12" fill="#0D1117" stroke="#30363D" stroke-width="1"/>
+    <rect x="0" y="44" width="800" height="2" fill="url(#accent)" opacity="0.85"/>
+
+    <!-- window controls -->
+    <circle cx="26" cy="22" r="6" fill="#FF5F57"/>
+    <circle cx="46" cy="22" r="6" fill="#FEBC2E"/>
+    <circle cx="66" cy="22" r="6" fill="#28C840"/>
+    <text class="mono title" x="400" y="26" text-anchor="middle">warisul@github:~</text>
+
+    <!-- line 1: whoami -->
+    <text class="mono line prompt seq" x="32" y="84">~ $<animate attributeName="opacity" from="0" to="1" dur="0.01s" begin="0.3s" fill="freeze"/></text>
+    <text class="mono line cmd" x="65" y="84"><tspan class="ltr">w<animate attributeName="opacity" from="0" to="1" dur="0.01s" begin="0.42s" fill="freeze"/></tspan><tspan class="ltr">h<animate attributeName="opacity" from="0" to="1" dur="0.01s" begin="0.55s" fill="freeze"/></tspan><tspan class="ltr">o<animate attributeName="opacity" from="0" to="1" dur="0.01s" begin="0.66s" fill="freeze"/></tspan><tspan class="ltr">a<animate attributeName="opacity" from="0" to="1" dur="0.01s" begin="0.79s" fill="freeze"/></tspan><tspan class="ltr">m<animate attributeName="opacity" from="0" to="1" dur="0.01s" begin="0.93s" fill="freeze"/></tspan><tspan class="ltr">i<animate attributeName="opacity" from="0" to="1" dur="0.01s" begin="1.06s" fill="freeze"/></tspan></text>
+    <rect class="cur" x="74" y="71" width="9" height="17" fill="#A78BFA">
+      <animate attributeName="opacity" from="0" to="1" dur="0.01s" begin="0.42s" fill="freeze"/>
+      <animate attributeName="x" values="74;83;92;101;110;119" keyTimes="0;0.203;0.375;0.578;0.797;1" dur="0.64s" begin="0.42s" calcMode="discrete" fill="freeze"/>
+      <animate attributeName="opacity" from="1" to="0" dur="0.01s" begin="1.35s" fill="freeze"/>
+    </rect>
+    <text class="mono line out seq" x="133" y="84">SM Warisul A. Rafin · Director, Dept. of SaaS @ Orpheus<animate attributeName="opacity" from="0" to="1" dur="0.01s" begin="1.35s" fill="freeze"/></text>
+
+    <!-- line 2: stack -->
+    <text class="mono line prompt seq" x="32" y="116">~ $<animate attributeName="opacity" from="0" to="1" dur="0.01s" begin="1.55s" fill="freeze"/></text>
+    <text class="mono line cmd" x="65" y="116"><tspan class="ltr">s<animate attributeName="opacity" from="0" to="1" dur="0.01s" begin="1.67s" fill="freeze"/></tspan><tspan class="ltr">t<animate attributeName="opacity" from="0" to="1" dur="0.01s" begin="1.8s" fill="freeze"/></tspan><tspan class="ltr">a<animate attributeName="opacity" from="0" to="1" dur="0.01s" begin="1.94s" fill="freeze"/></tspan><tspan class="ltr">c<animate attributeName="opacity" from="0" to="1" dur="0.01s" begin="2.05s" fill="freeze"/></tspan><tspan class="ltr">k<animate attributeName="opacity" from="0" to="1" dur="0.01s" begin="2.19s" fill="freeze"/></tspan></text>
+    <rect class="cur" x="74" y="103" width="9" height="17" fill="#A78BFA">
+      <animate attributeName="opacity" from="0" to="1" dur="0.01s" begin="1.67s" fill="freeze"/>
+      <animate attributeName="x" values="74;83;92;101;110" keyTimes="0;0.25;0.519;0.731;1" dur="0.52s" begin="1.67s" calcMode="discrete" fill="freeze"/>
+      <animate attributeName="opacity" from="1" to="0" dur="0.01s" begin="2.45s" fill="freeze"/>
+    </rect>
+    <text class="mono line out seq" x="124" y="116">go · typescript · python · docker (lots of compose)<animate attributeName="opacity" from="0" to="1" dur="0.01s" begin="2.45s" fill="freeze"/></text>
+
+    <!-- line 3: state -->
+    <text class="mono line prompt seq" x="32" y="148">~ $<animate attributeName="opacity" from="0" to="1" dur="0.01s" begin="2.65s" fill="freeze"/></text>
+    <text class="mono line cmd" x="65" y="148"><tspan class="ltr">s<animate attributeName="opacity" from="0" to="1" dur="0.01s" begin="2.77s" fill="freeze"/></tspan><tspan class="ltr">t<animate attributeName="opacity" from="0" to="1" dur="0.01s" begin="2.89s" fill="freeze"/></tspan><tspan class="ltr">a<animate attributeName="opacity" from="0" to="1" dur="0.01s" begin="3.02s" fill="freeze"/></tspan><tspan class="ltr">t<animate attributeName="opacity" from="0" to="1" dur="0.01s" begin="3.13s" fill="freeze"/></tspan><tspan class="ltr">e<animate attributeName="opacity" from="0" to="1" dur="0.01s" begin="3.27s" fill="freeze"/></tspan></text>
+    <rect class="cur" x="74" y="135" width="9" height="17" fill="#A78BFA">
+      <animate attributeName="opacity" from="0" to="1" dur="0.01s" begin="2.77s" fill="freeze"/>
+      <animate attributeName="x" values="74;83;92;101;110" keyTimes="0;0.24;0.5;0.72;1" dur="0.5s" begin="2.77s" calcMode="discrete" fill="freeze"/>
+      <animate attributeName="opacity" from="1" to="0" dur="0.01s" begin="3.55s" fill="freeze"/>
+    </rect>
+    <text class="mono line out seq" x="124" y="148">self-hosting everything in reach · forever tweaking llms<animate attributeName="opacity" from="0" to="1" dur="0.01s" begin="3.55s" fill="freeze"/></text>
+
+    <!-- line 4: idle prompt + blinking cursor -->
+    <text class="mono line prompt seq" x="32" y="180">~ $<animate attributeName="opacity" from="0" to="1" dur="0.01s" begin="3.8s" fill="freeze"/><tspan dx="8">&#9608;<animate attributeName="opacity" values="1;0" dur="1.1s" begin="3.8s" calcMode="discrete" repeatCount="indefinite"/></tspan></text>
+  </g>
+</svg>

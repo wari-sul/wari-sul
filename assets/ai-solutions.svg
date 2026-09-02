@@ -42,8 +42,8 @@
     <!-- Caret > -->
     <text class="m4" x="176" y="82" font-size="16" font-weight="bold" fill="#EA580C">›</text>
     
-    <!-- Decoupled Ghost Autocompletion: visible immediately at low opacity ahead of typing -->
-    <text class="m4" x="194" y="82" font-size="13" font-weight="500" fill="#6E7681" opacity="0.38">What can AI do for my business?</text>
+    <!-- Decoupled Ghost Autocompletion: visible immediately ahead of typing at high contrast (fixes invisible ghost bug!) -->
+    <text class="m4" x="194" y="82" font-size="13" font-weight="500" fill="#9CA3AF" opacity="0.65">What can AI do for my business?</text>
 
     <!-- Foreground Typewriter Text: reveals dynamically via clipPath -->
     <g clip-path="url(#twPrompt)">
@@ -79,7 +79,7 @@
   </g>
 
   <!-- ================= 3. STAGE 2: 8 TOKEN CHIPS ================= -->
-  <!-- Centered beneath prompt box at X: 210 to 630 (fixes left-shift bug!), active 2.6s to 4.6s -->
+  <!-- Centered beneath prompt box at X: 210 to 630, active 2.6s to 4.6s -->
   <g id="token-chips-wrapper" opacity="0">
     <animate attributeName="opacity" values="0;0;1;1;0;0" keyTimes="0;0.1083;0.1167;0.1833;0.1917;1" calcMode="linear" dur="24.0s" repeatCount="indefinite"/>
 
@@ -237,35 +237,36 @@
       <animate attributeName="stroke-dashoffset" values="416;416;0;0;416" keyTimes="0;0.1917;0.2800;0.9500;1" calcMode="linear" dur="24.0s" repeatCount="indefinite"/>
     </line>
 
-    <!-- Dynamic Sequence Label (Hidden at start -> 8 Tokens -> 9 -> 10 -> 11 -> 12 -> 13 <EOS>) -->
+    <!-- Dynamic Sequence Label: x=30 (Hidden at start -> 8 Tokens -> 9 -> 10 -> 11 -> 12 -> 13 Columns <EOS>) -->
     <text class="m4" x="30" y="422" font-size="9.5" fill="#6E7681" opacity="0">
-      <animate attributeName="opacity" values="0;0;1;1;0;0" keyTimes="0;0.1917;0.2000;0.5416;0.5417;1" calcMode="discrete" dur="24.0s" repeatCount="indefinite"/>
+      <animate attributeName="opacity" values="0;0;1;0;0" keyTimes="0;0.1917;0.2000;0.5437;1" calcMode="discrete" dur="24.0s" repeatCount="indefinite"/>
       Context Sequence &#183; 8 Tokens
     </text>
     <text class="m4" x="30" y="422" font-size="9.5" fill="#6E7681" opacity="0">
-      <animate attributeName="opacity" values="0;0;1;1;0;0" keyTimes="0;0.5417;0.5418;0.5916;0.5917;1" calcMode="discrete" dur="24.0s" repeatCount="indefinite"/>
+      <animate attributeName="opacity" values="0;0;1;0;0" keyTimes="0;0.5437;0.5440;0.5938;1" calcMode="discrete" dur="24.0s" repeatCount="indefinite"/>
       Context Sequence &#183; 9 Tokens
     </text>
     <text class="m4" x="30" y="422" font-size="9.5" fill="#6E7681" opacity="0">
-      <animate attributeName="opacity" values="0;0;1;1;0;0" keyTimes="0;0.5917;0.5918;0.6416;0.6417;1" calcMode="discrete" dur="24.0s" repeatCount="indefinite"/>
+      <animate attributeName="opacity" values="0;0;1;0;0" keyTimes="0;0.5938;0.5940;0.6437;1" calcMode="discrete" dur="24.0s" repeatCount="indefinite"/>
       Context Sequence &#183; 10 Tokens
     </text>
     <text class="m4" x="30" y="422" font-size="9.5" fill="#6E7681" opacity="0">
-      <animate attributeName="opacity" values="0;0;1;1;0;0" keyTimes="0;0.6417;0.6418;0.6916;0.6917;1" calcMode="discrete" dur="24.0s" repeatCount="indefinite"/>
+      <animate attributeName="opacity" values="0;0;1;0;0" keyTimes="0;0.6437;0.6440;0.6938;1" calcMode="discrete" dur="24.0s" repeatCount="indefinite"/>
       Context Sequence &#183; 11 Tokens
     </text>
     <text class="m4" x="30" y="422" font-size="9.5" fill="#6E7681" opacity="0">
-      <animate attributeName="opacity" values="0;0;1;1;0;0" keyTimes="0;0.6917;0.6918;0.7416;0.7417;1" calcMode="discrete" dur="24.0s" repeatCount="indefinite"/>
+      <animate attributeName="opacity" values="0;0;1;0;0" keyTimes="0;0.6938;0.6940;0.7438;1" calcMode="discrete" dur="24.0s" repeatCount="indefinite"/>
       Context Sequence &#183; 12 Tokens
     </text>
+    <!-- Shortened 13-token label to prevent overflow (fixes critical collision bug!) -->
     <text class="m4" x="30" y="422" font-size="9.5" font-weight="bold" fill="#EA580C" opacity="0">
-      <animate attributeName="opacity" values="0;0;1;1;0;0" keyTimes="0;0.7417;0.7418;0.9500;0.9800;1" calcMode="discrete" dur="24.0s" repeatCount="indefinite"/>
-      Context Sequence &#183; 13 Vector Columns &#183; &lt;EOS&gt;
+      <animate attributeName="opacity" values="0;0;1;1;0;0" keyTimes="0;0.7438;0.7440;0.9500;0.9800;1" calcMode="discrete" dur="24.0s" repeatCount="indefinite"/>
+      Context Sequence &#183; 13 Columns &#183; &lt;EOS&gt;
     </text>
 
-    <!-- Blinking Autoregressive Loop Sub-label -->
-    <text class="m4" x="270" y="422" font-size="9" font-weight="bold" fill="#EA580C" opacity="0">
-      <animate attributeName="opacity" values="0;0;1;0;1;0;1;0;1;0;1;0;0" keyTimes="0;0.5350;0.5450;0.5850;0.5950;0.6350;0.6450;0.6850;0.6950;0.7350;0.7450;0.7600;1" calcMode="discrete" dur="24.0s" repeatCount="indefinite"/>
+    <!-- Autoregressive Loop Sub-label: shifted safely to x=360px (zero collision!) and shuts off before 17.85s -->
+    <text class="m4" x="360" y="422" font-size="9" font-weight="bold" fill="#EA580C" opacity="0">
+      <animate attributeName="opacity" values="0;0;1;0;1;0;1;0;1;0;1;0;0" keyTimes="0;0.5312;0.5437;0.5813;0.5938;0.6312;0.6437;0.6813;0.6938;0.7313;0.7438;0.7440;1" calcMode="discrete" dur="24.0s" repeatCount="indefinite"/>
       [Autoregressive loop]
     </text>
   </g>
@@ -346,13 +347,13 @@
       <circle cx="261" cy="378" r="3.0" fill="#EA580C" opacity="0.95"/>
       <circle cx="261" cy="389" r="3.0" fill="#EA580C" opacity="0.95"/>
     </g>
-    <!-- Dynamic Generated Column 9 (Drops strictly after return beam strikes!) -->
+    <!-- Dynamic Generated Column 9 -->
     <g opacity="0">
-      <animate attributeName="opacity" values="0;0;1;1;0;0" keyTimes="0;0.5417;0.5458;0.9500;0.9800;1" calcMode="linear" dur="24.0s" repeatCount="indefinite"/>
-      <!-- Ripple ring on drop -->
-      <circle cx="292" cy="404" r="5" fill="none" stroke="#EA580C" stroke-width="1.2">
-        <animate attributeName="r" values="2;9;2" dur="1.2s" repeatCount="indefinite"/>
-        <animate attributeName="opacity" values="0.8;0;0" dur="1.2s" repeatCount="indefinite"/>
+      <animate attributeName="opacity" values="0;0;1;1;0;0" keyTimes="0;0.5438;0.5471;0.9500;0.9800;1" calcMode="linear" dur="24.0s" repeatCount="indefinite"/>
+      <!-- Finite Single-Pulse Ripple (stops completely after 450ms - fixes Zombie Ripple bug!) -->
+      <circle cx="292" cy="404" r="2" fill="none" stroke="#EA580C" stroke-width="1.2" opacity="0">
+        <animate attributeName="opacity" values="0;0;0.85;0;0" keyTimes="0;0.5438;0.5468;0.5625;1" calcMode="linear" dur="24.0s" repeatCount="indefinite"/>
+        <animate attributeName="r" values="2;2;10;10;2" keyTimes="0;0.5438;0.5625;0.9500;1" calcMode="linear" dur="24.0s" repeatCount="indefinite"/>
       </circle>
 
       <circle cx="292" cy="356" r="3.0" fill="#EA580C" opacity="0.95"/>
@@ -360,13 +361,13 @@
       <circle cx="292" cy="378" r="3.0" fill="#EA580C" opacity="0.95"/>
       <circle cx="292" cy="389" r="3.0" fill="#21262D" opacity="0.5"/>
     </g>
-    <!-- Dynamic Generated Column 10 (Drops strictly after return beam strikes!) -->
+    <!-- Dynamic Generated Column 10 -->
     <g opacity="0">
-      <animate attributeName="opacity" values="0;0;1;1;0;0" keyTimes="0;0.5917;0.5958;0.9500;0.9800;1" calcMode="linear" dur="24.0s" repeatCount="indefinite"/>
-      <!-- Ripple ring on drop -->
-      <circle cx="323" cy="404" r="5" fill="none" stroke="#EA580C" stroke-width="1.2">
-        <animate attributeName="r" values="2;9;2" dur="1.2s" repeatCount="indefinite"/>
-        <animate attributeName="opacity" values="0.8;0;0" dur="1.2s" repeatCount="indefinite"/>
+      <animate attributeName="opacity" values="0;0;1;1;0;0" keyTimes="0;0.5938;0.5971;0.9500;0.9800;1" calcMode="linear" dur="24.0s" repeatCount="indefinite"/>
+      <!-- Finite Single-Pulse Ripple (stops completely after 450ms - fixes Zombie Ripple bug!) -->
+      <circle cx="323" cy="404" r="2" fill="none" stroke="#EA580C" stroke-width="1.2" opacity="0">
+        <animate attributeName="opacity" values="0;0;0.85;0;0" keyTimes="0;0.5938;0.5968;0.6125;1" calcMode="linear" dur="24.0s" repeatCount="indefinite"/>
+        <animate attributeName="r" values="2;2;10;10;2" keyTimes="0;0.5938;0.6125;0.9500;1" calcMode="linear" dur="24.0s" repeatCount="indefinite"/>
       </circle>
 
       <circle cx="323" cy="356" r="3.0" fill="#21262D" opacity="0.5"/>
@@ -374,13 +375,13 @@
       <circle cx="323" cy="378" r="3.0" fill="#21262D" opacity="0.5"/>
       <circle cx="323" cy="389" r="3.0" fill="#EA580C" opacity="0.95"/>
     </g>
-    <!-- Dynamic Generated Column 11 (Drops strictly after return beam strikes!) -->
+    <!-- Dynamic Generated Column 11 -->
     <g opacity="0">
-      <animate attributeName="opacity" values="0;0;1;1;0;0" keyTimes="0;0.6417;0.6458;0.9500;0.9800;1" calcMode="linear" dur="24.0s" repeatCount="indefinite"/>
-      <!-- Ripple ring on drop -->
-      <circle cx="354" cy="404" r="5" fill="none" stroke="#EA580C" stroke-width="1.2">
-        <animate attributeName="r" values="2;9;2" dur="1.2s" repeatCount="indefinite"/>
-        <animate attributeName="opacity" values="0.8;0;0" dur="1.2s" repeatCount="indefinite"/>
+      <animate attributeName="opacity" values="0;0;1;1;0;0" keyTimes="0;0.6437;0.6471;0.9500;0.9800;1" calcMode="linear" dur="24.0s" repeatCount="indefinite"/>
+      <!-- Finite Single-Pulse Ripple (stops completely after 450ms - fixes Zombie Ripple bug!) -->
+      <circle cx="354" cy="404" r="2" fill="none" stroke="#EA580C" stroke-width="1.2" opacity="0">
+        <animate attributeName="opacity" values="0;0;0.85;0;0" keyTimes="0;0.6437;0.6467;0.6625;1" calcMode="linear" dur="24.0s" repeatCount="indefinite"/>
+        <animate attributeName="r" values="2;2;10;10;2" keyTimes="0;0.6437;0.6625;0.9500;1" calcMode="linear" dur="24.0s" repeatCount="indefinite"/>
       </circle>
 
       <circle cx="354" cy="356" r="3.0" fill="#EA580C" opacity="0.95"/>
@@ -388,13 +389,13 @@
       <circle cx="354" cy="378" r="3.0" fill="#EA580C" opacity="0.95"/>
       <circle cx="354" cy="389" r="3.0" fill="#21262D" opacity="0.5"/>
     </g>
-    <!-- Dynamic Generated Column 12 (Drops strictly after return beam strikes!) -->
+    <!-- Dynamic Generated Column 12 -->
     <g opacity="0">
-      <animate attributeName="opacity" values="0;0;1;1;0;0" keyTimes="0;0.6917;0.6958;0.9500;0.9800;1" calcMode="linear" dur="24.0s" repeatCount="indefinite"/>
-      <!-- Ripple ring on drop -->
-      <circle cx="385" cy="404" r="5" fill="none" stroke="#EA580C" stroke-width="1.2">
-        <animate attributeName="r" values="2;9;2" dur="1.2s" repeatCount="indefinite"/>
-        <animate attributeName="opacity" values="0.8;0;0" dur="1.2s" repeatCount="indefinite"/>
+      <animate attributeName="opacity" values="0;0;1;1;0;0" keyTimes="0;0.6937;0.6971;0.9500;0.9800;1" calcMode="linear" dur="24.0s" repeatCount="indefinite"/>
+      <!-- Finite Single-Pulse Ripple (stops completely after 450ms - fixes Zombie Ripple bug!) -->
+      <circle cx="385" cy="404" r="2" fill="none" stroke="#EA580C" stroke-width="1.2" opacity="0">
+        <animate attributeName="opacity" values="0;0;0.85;0;0" keyTimes="0;0.6937;0.6967;0.7125;1" calcMode="linear" dur="24.0s" repeatCount="indefinite"/>
+        <animate attributeName="r" values="2;2;10;10;2" keyTimes="0;0.6937;0.7125;0.9500;1" calcMode="linear" dur="24.0s" repeatCount="indefinite"/>
       </circle>
 
       <circle cx="385" cy="356" r="3.0" fill="#21262D" opacity="0.5"/>
@@ -402,13 +403,13 @@
       <circle cx="385" cy="378" r="3.0" fill="#21262D" opacity="0.5"/>
       <circle cx="385" cy="389" r="3.0" fill="#EA580C" opacity="0.95"/>
     </g>
-    <!-- Dynamic Generated Column 13 (Drops strictly after return beam strikes!) -->
+    <!-- Dynamic Generated Column 13 -->
     <g opacity="0">
-      <animate attributeName="opacity" values="0;0;1;1;0;0" keyTimes="0;0.7417;0.7458;0.9500;0.9800;1" calcMode="linear" dur="24.0s" repeatCount="indefinite"/>
-      <!-- Ripple ring on drop -->
-      <circle cx="416" cy="404" r="5" fill="none" stroke="#EA580C" stroke-width="1.2">
-        <animate attributeName="r" values="2;9;2" dur="1.2s" repeatCount="indefinite"/>
-        <animate attributeName="opacity" values="0.8;0;0" dur="1.2s" repeatCount="indefinite"/>
+      <animate attributeName="opacity" values="0;0;1;1;0;0" keyTimes="0;0.7438;0.7471;0.9500;0.9800;1" calcMode="linear" dur="24.0s" repeatCount="indefinite"/>
+      <!-- Finite Single-Pulse Ripple (stops completely after 450ms - fixes Zombie Ripple bug!) -->
+      <circle cx="416" cy="404" r="2" fill="none" stroke="#EA580C" stroke-width="1.2" opacity="0">
+        <animate attributeName="opacity" values="0;0;0.85;0;0" keyTimes="0;0.7438;0.7468;0.7625;1" calcMode="linear" dur="24.0s" repeatCount="indefinite"/>
+        <animate attributeName="r" values="2;2;10;10;2" keyTimes="0;0.7438;0.7625;0.9500;1" calcMode="linear" dur="24.0s" repeatCount="indefinite"/>
       </circle>
 
       <circle cx="416" cy="356" r="3.0" fill="#EA580C" opacity="0.95"/>
@@ -461,29 +462,6 @@
       <animate attributeName="stroke-dashoffset" values="116;0" dur="1.2s" repeatCount="indefinite"/>
     </path>
   </g>
-  <!-- Localized Causal Attention Arcs linking new token back to context -->
-  <g id="causal-attention-loops">
-    <path d="M 292 352 Q 245.5 310 199 352" pathLength="100" fill="none" stroke="#F97316" stroke-width="1.6" stroke-linecap="round" stroke-dasharray="14 100" stroke-dashoffset="114" opacity="0">
-      <animate attributeName="opacity" values="0;0;0.75;0;0" keyTimes="0;0.5417;0.5467;0.5667;1" dur="24.0s" repeatCount="indefinite"/>
-      <animate attributeName="stroke-dashoffset" values="114;0" dur="0.6s" repeatCount="indefinite"/>
-    </path>
-    <path d="M 323 352 Q 276.5 310 230 352" pathLength="100" fill="none" stroke="#F97316" stroke-width="1.6" stroke-linecap="round" stroke-dasharray="14 100" stroke-dashoffset="114" opacity="0">
-      <animate attributeName="opacity" values="0;0;0.75;0;0" keyTimes="0;0.5917;0.5967;0.6167;1" dur="24.0s" repeatCount="indefinite"/>
-      <animate attributeName="stroke-dashoffset" values="114;0" dur="0.6s" repeatCount="indefinite"/>
-    </path>
-    <path d="M 354 352 Q 307.5 310 261 352" pathLength="100" fill="none" stroke="#F97316" stroke-width="1.6" stroke-linecap="round" stroke-dasharray="14 100" stroke-dashoffset="114" opacity="0">
-      <animate attributeName="opacity" values="0;0;0.75;0;0" keyTimes="0;0.6417;0.6467;0.6667;1" dur="24.0s" repeatCount="indefinite"/>
-      <animate attributeName="stroke-dashoffset" values="114;0" dur="0.6s" repeatCount="indefinite"/>
-    </path>
-    <path d="M 385 352 Q 338.5 310 292 352" pathLength="100" fill="none" stroke="#F97316" stroke-width="1.6" stroke-linecap="round" stroke-dasharray="14 100" stroke-dashoffset="114" opacity="0">
-      <animate attributeName="opacity" values="0;0;0.75;0;0" keyTimes="0;0.6917;0.6967;0.7167;1" dur="24.0s" repeatCount="indefinite"/>
-      <animate attributeName="stroke-dashoffset" values="114;0" dur="0.6s" repeatCount="indefinite"/>
-    </path>
-    <path d="M 416 352 Q 369.5 310 323 352" pathLength="100" fill="none" stroke="#F97316" stroke-width="1.6" stroke-linecap="round" stroke-dasharray="14 100" stroke-dashoffset="114" opacity="0">
-      <animate attributeName="opacity" values="0;0;0.75;0;0" keyTimes="0;0.7417;0.7467;0.7667;1" dur="24.0s" repeatCount="indefinite"/>
-      <animate attributeName="stroke-dashoffset" values="114;0" dur="0.6s" repeatCount="indefinite"/>
-    </path>
-  </g>
 
   <!-- ================= 8. STAGE 5: TRANSFORMER FFN BLOCK ================= -->
   <g id="ffn-card-container" opacity="0">
@@ -493,24 +471,24 @@
     <rect class="card-bg" x="46" y="130" width="390" height="156" rx="10" fill="#111620" stroke="#1E2638" stroke-width="1"/>
     <text class="m4" x="62" y="148" font-size="9" font-weight="bold" fill="#6E7681" letter-spacing="1">TRANSFORMER FFN BLOCK</text>
     
-    <!-- Dynamic Layer Counter -->
+    <!-- Dynamic Layer Counter: 600ms per tick (0/12 -> 4/12 -> 8/12 -> 12/12) without dropouts! -->
     <rect x="344" y="136" width="74" height="18" rx="4" fill="#1F242C" stroke="#1E2638" stroke-width="1">
       <animate attributeName="stroke" values="#1E2638;#1E2638;#EA580C;#1E2638;#1E2638" keyTimes="0;0.4083;0.4200;0.5083;1" dur="24.0s" calcMode="discrete" repeatCount="indefinite"/>
     </rect>
     <text class="m4" x="381" y="149" font-size="9.5" font-weight="bold" fill="#6E7681" text-anchor="middle" opacity="0">
-      <animate attributeName="opacity" values="0;0;1;1;0;0" keyTimes="0;0.4083;0.4084;0.4333;0.4334;1" calcMode="discrete" dur="24.0s" repeatCount="indefinite"/>
+      <animate attributeName="opacity" values="0;1;0;0" keyTimes="0;0.4083;0.4333;1" calcMode="discrete" dur="24.0s" repeatCount="indefinite"/>
       Layer 0/12
     </text>
     <text class="m4" x="381" y="149" font-size="9.5" font-weight="bold" fill="#EA580C" text-anchor="middle" opacity="0">
-      <animate attributeName="opacity" values="0;0;1;1;0;0" keyTimes="0;0.4333;0.4334;0.4583;0.4584;1" calcMode="discrete" dur="24.0s" repeatCount="indefinite"/>
+      <animate attributeName="opacity" values="0;0;1;0;0" keyTimes="0;0.4083;0.4333;0.4583;1" calcMode="discrete" dur="24.0s" repeatCount="indefinite"/>
       Layer 4/12
     </text>
     <text class="m4" x="381" y="149" font-size="9.5" font-weight="bold" fill="#EA580C" text-anchor="middle" opacity="0">
-      <animate attributeName="opacity" values="0;0;1;1;0;0" keyTimes="0;0.4583;0.4584;0.4833;0.4834;1" calcMode="discrete" dur="24.0s" repeatCount="indefinite"/>
+      <animate attributeName="opacity" values="0;0;1;0;0" keyTimes="0;0.4333;0.4583;0.4833;1" calcMode="discrete" dur="24.0s" repeatCount="indefinite"/>
       Layer 8/12
     </text>
     <text class="m4" x="381" y="149" font-size="9.5" font-weight="bold" fill="#EA580C" text-anchor="middle" opacity="0">
-      <animate attributeName="opacity" values="0;0;1;1;0;0" keyTimes="0;0.4833;0.4834;0.9500;0.9800;1" calcMode="discrete" dur="24.0s" repeatCount="indefinite"/>
+      <animate attributeName="opacity" values="0;0;1;0;0" keyTimes="0;0.4583;0.4833;0.9500;1" calcMode="discrete" dur="24.0s" repeatCount="indefinite"/>
       Layer 12/12
     </text>
 
@@ -545,225 +523,261 @@
     <circle cx="335" cy="197.6" r="3.5" fill="#D97706"/>
     <circle cx="335" cy="211.2" r="3.5" fill="#D97706"/>
   </g>
-  <!-- ================= 9. STAGE 6: AUTOREGRESSIVE OUTPUT CARDS ================= -->
-  <!-- Step 1: Forward Spline Beam -->
-  <g id="ffn-output-beam-1">
-    <path d="M 436 208 C 465 208, 475 85.0, 494 85.0" pathLength="100" fill="none" stroke="#D97706" stroke-width="1.3" stroke-opacity="0">
-      <animate attributeName="stroke-opacity" values="0;0;0.8;0.15;0;0" keyTimes="0;0.5083;0.5133;0.5229;0.5279;1" dur="24.0s" repeatCount="indefinite"/>
+
+  <!-- ================= 9. STAGE 6: AUTOREGRESSIVE GENERATION ================= -->
+  <!-- Master container strictly dormant (opacity: 0) until t=12.2s (fixes stray spline leak!) -->
+  <g id="stage-6-autoregression" opacity="0">
+    <animate attributeName="opacity" values="0;0;1;1;0;0" keyTimes="0;0.5050;0.5083;0.9500;0.9800;1" calcMode="linear" dur="24.0s" repeatCount="indefinite"/>
+
+    <!-- Step 1: Forward Spline Beam -->
+    <g id="ffn-output-beam-1">
+      <path d="M 436 208 C 465 208, 475 85.0, 494 85.0" pathLength="100" fill="none" stroke="#D97706" stroke-width="1.3" stroke-opacity="0">
+        <animate attributeName="stroke-opacity" values="0;0;0.8;0.15;0;0" keyTimes="0;0.5083;0.5133;0.5208;0.5258;1" dur="24.0s" repeatCount="indefinite"/>
+      </path>
+      <path d="M 436 208 C 465 208, 475 85.0, 494 85.0" pathLength="100" fill="none" stroke="#D97706" stroke-width="2.4" stroke-linecap="round" stroke-dasharray="24 100" stroke-dashoffset="124" opacity="0">
+        <animate attributeName="opacity" values="0;0;1;1;0;0" keyTimes="0;0.5083;0.5133;0.5208;0.5258;1" dur="24.0s" repeatCount="indefinite"/>
+        <animate attributeName="stroke-dashoffset" values="124;0" dur="0.30s" repeatCount="indefinite"/>
+      </path>
+    </g>
+    <!-- Step 1: Candidate Probability Popover (350ms hold on step 1) -->
+    <g id="candidate-popover-1" opacity="0">
+      <animate attributeName="opacity" values="0;0;1;1;0;0" keyTimes="0;0.5146;0.5196;0.5292;0.5342;1" dur="24.0s" repeatCount="indefinite"/>
+      <rect x="494" y="60" width="164" height="50" rx="6" fill="#1F242C" stroke="#EA580C" stroke-width="1"/>
+      <text class="m4" x="504" y="75" font-size="9" font-weight="bold" fill="#EA580C">&#9656; Automation 72%</text>
+      <text class="m4" x="504" y="89" font-size="8.5" fill="#6E7681">Predictive 18%</text>
+      <text class="m4" x="504" y="102" font-size="8.5" fill="#6E7681">Workflows 10%</text>
+    </g>
+    <!-- Step 1: Full Capability Card 1 (Automation) -->
+    <g id="output-card-1" opacity="0">
+      <animate attributeName="opacity" values="0;0;1;1;0;0" keyTimes="0;0.5300;0.5342;0.9500;0.9800;1" calcMode="linear" dur="24.0s" repeatCount="indefinite"/>
+      <rect x="494" y="56" width="320" height="58" rx="8" fill="#111620" stroke="#1E2638" stroke-width="1">
+        <animate attributeName="stroke" values="#1E2638;#1E2638;#EA580C;#1E2638;#1E2638" keyTimes="0;0.5300;0.5342;0.5600;1" dur="24.0s" calcMode="discrete" repeatCount="indefinite"/>
+      </rect>
+      <!-- Card Number -->
+      <text class="m4" x="508" y="74" font-size="10" font-weight="bold" fill="#EA580C">01</text>
+      <!-- Card Title -->
+      <text class="sans" x="528" y="74" font-size="12.5" font-weight="600" fill="#F0F6FC">Automation</text>
+      <!-- Top-Right Winner Score Pill -->
+      <rect x="736" y="62" width="68" height="16" rx="4" fill="rgba(234,88,12,0.14)" stroke="rgba(234,88,12,0.4)" stroke-width="1"/>
+      <text class="m4" x="770" y="74" font-size="8" font-weight="bold" fill="#EA580C" text-anchor="middle">Automation</text>
+      <!-- Meta Description -->
+      <text class="m4" x="508" y="90" font-size="9.5" fill="#8B949E">Repetitive work runs itself.</text>
+      <!-- Token Decomposition -->
+      <text class="m4" x="508" y="105" font-size="8.5" fill="#6E7681">tokens: Auto · mation</text>
+    </g>
+    <!-- Step 1: Return Spline (active pulse -> settles to persistent opacity: 0.18) -->
+    <g id="return-loop-1" opacity="0">
+      <!-- Active pulse: 0 -> 1 -> settles to 0.18 during quiescent hold -> 0 at reset -->
+      <animate attributeName="opacity" values="0;0;1;0.18;0.18;0;0" keyTimes="0;0.5312;0.5363;0.5437;0.9500;0.9800;1" dur="24.0s" repeatCount="indefinite"/>
+      <path d="M 494 110 C 450 420, 322 420, 292 404" pathLength="100" fill="none" stroke="#EA580C" stroke-opacity="0.75" stroke-width="1.3" stroke-dasharray="3 4"/>
+      <path d="M 494 110 C 450 420, 322 420, 292 404" pathLength="100" fill="none" stroke="#EA580C" stroke-width="2.2" stroke-linecap="round" stroke-dasharray="20 100" stroke-dashoffset="120">
+        <animate attributeName="stroke-dashoffset" values="120;0" dur="0.30s" repeatCount="indefinite"/>
+      </path>
+    </g>
+    <!-- Step 1: Localized Causal Attention Arc (pulses upon column drop) -->
+    <path d="M 292 352 Q 245.5 310 199 352" pathLength="100" fill="none" stroke="#F97316" stroke-width="1.6" stroke-linecap="round" stroke-dasharray="14 100" stroke-dashoffset="114" opacity="0">
+      <animate attributeName="opacity" values="0;0;0.75;0;0" keyTimes="0;0.5438;0.5488;0.5687;1" dur="24.0s" repeatCount="indefinite"/>
+      <animate attributeName="stroke-dashoffset" values="114;0" dur="0.60s" repeatCount="indefinite"/>
     </path>
-    <path d="M 436 208 C 465 208, 475 85.0, 494 85.0" pathLength="100" fill="none" stroke="#D97706" stroke-width="2.4" stroke-linecap="round" stroke-dasharray="24 100" stroke-dashoffset="124" opacity="0">
-      <animate attributeName="opacity" values="0;0;1;1;0;0" keyTimes="0;0.5083;0.5133;0.5229;0.5279;1" dur="24.0s" repeatCount="indefinite"/>
-      <animate attributeName="stroke-dashoffset" values="124;0" dur="0.35s" repeatCount="indefinite"/>
+    <!-- Step 2: Forward Spline Beam -->
+    <g id="ffn-output-beam-2">
+      <path d="M 436 208 C 465 208, 475 151.0, 494 151.0" pathLength="100" fill="none" stroke="#D97706" stroke-width="1.3" stroke-opacity="0">
+        <animate attributeName="stroke-opacity" values="0;0;0.8;0.15;0;0" keyTimes="0;0.5583;0.5633;0.5708;0.5758;1" dur="24.0s" repeatCount="indefinite"/>
+      </path>
+      <path d="M 436 208 C 465 208, 475 151.0, 494 151.0" pathLength="100" fill="none" stroke="#D97706" stroke-width="2.4" stroke-linecap="round" stroke-dasharray="24 100" stroke-dashoffset="124" opacity="0">
+        <animate attributeName="opacity" values="0;0;1;1;0;0" keyTimes="0;0.5583;0.5633;0.5708;0.5758;1" dur="24.0s" repeatCount="indefinite"/>
+        <animate attributeName="stroke-dashoffset" values="124;0" dur="0.30s" repeatCount="indefinite"/>
+      </path>
+    </g>
+    <!-- Step 2: Candidate Probability Popover (350ms hold on step 2) -->
+    <g id="candidate-popover-2" opacity="0">
+      <animate attributeName="opacity" values="0;0;1;1;0;0" keyTimes="0;0.5646;0.5696;0.5792;0.5842;1" dur="24.0s" repeatCount="indefinite"/>
+      <rect x="494" y="126" width="164" height="50" rx="6" fill="#1F242C" stroke="#EA580C" stroke-width="1"/>
+      <text class="m4" x="504" y="141" font-size="9" font-weight="bold" fill="#EA580C">&#9656; Self-learning 64%</text>
+      <text class="m4" x="504" y="155" font-size="8.5" fill="#6E7681">Deep systems 24%</text>
+      <text class="m4" x="504" y="168" font-size="8.5" fill="#6E7681">Adaptive 12%</text>
+    </g>
+    <!-- Step 2: Full Capability Card 2 (Self-learning systems) -->
+    <g id="output-card-2" opacity="0">
+      <animate attributeName="opacity" values="0;0;1;1;0;0" keyTimes="0;0.5800;0.5842;0.9500;0.9800;1" calcMode="linear" dur="24.0s" repeatCount="indefinite"/>
+      <rect x="494" y="122" width="320" height="58" rx="8" fill="#111620" stroke="#1E2638" stroke-width="1">
+        <animate attributeName="stroke" values="#1E2638;#1E2638;#EA580C;#1E2638;#1E2638" keyTimes="0;0.5800;0.5842;0.6100;1" dur="24.0s" calcMode="discrete" repeatCount="indefinite"/>
+      </rect>
+      <!-- Card Number -->
+      <text class="m4" x="508" y="140" font-size="10" font-weight="bold" fill="#EA580C">02</text>
+      <!-- Card Title -->
+      <text class="sans" x="528" y="140" font-size="12.5" font-weight="600" fill="#F0F6FC">Self-learning systems</text>
+      <!-- Top-Right Winner Score Pill -->
+      <rect x="736" y="128" width="68" height="16" rx="4" fill="rgba(234,88,12,0.14)" stroke="rgba(234,88,12,0.4)" stroke-width="1"/>
+      <text class="m4" x="770" y="140" font-size="8" font-weight="bold" fill="#EA580C" text-anchor="middle">Self-learning</text>
+      <!-- Meta Description -->
+      <text class="m4" x="508" y="156" font-size="9.5" fill="#8B949E">Sharper with every dataset.</text>
+      <!-- Token Decomposition -->
+      <text class="m4" x="508" y="171" font-size="8.5" fill="#6E7681">tokens: Self · learn · ing · tems</text>
+    </g>
+    <!-- Step 2: Return Spline (active pulse -> settles to persistent opacity: 0.18) -->
+    <g id="return-loop-2" opacity="0">
+      <!-- Active pulse: 0 -> 1 -> settles to 0.18 during quiescent hold -> 0 at reset -->
+      <animate attributeName="opacity" values="0;0;1;0.18;0.18;0;0" keyTimes="0;0.5813;0.5863;0.5938;0.9500;0.9800;1" dur="24.0s" repeatCount="indefinite"/>
+      <path d="M 494 176 C 450 420, 353 420, 323 404" pathLength="100" fill="none" stroke="#EA580C" stroke-opacity="0.75" stroke-width="1.3" stroke-dasharray="3 4"/>
+      <path d="M 494 176 C 450 420, 353 420, 323 404" pathLength="100" fill="none" stroke="#EA580C" stroke-width="2.2" stroke-linecap="round" stroke-dasharray="20 100" stroke-dashoffset="120">
+        <animate attributeName="stroke-dashoffset" values="120;0" dur="0.30s" repeatCount="indefinite"/>
+      </path>
+    </g>
+    <!-- Step 2: Localized Causal Attention Arc (pulses upon column drop) -->
+    <path d="M 323 352 Q 276.5 310 230 352" pathLength="100" fill="none" stroke="#F97316" stroke-width="1.6" stroke-linecap="round" stroke-dasharray="14 100" stroke-dashoffset="114" opacity="0">
+      <animate attributeName="opacity" values="0;0;0.75;0;0" keyTimes="0;0.5938;0.5988;0.6188;1" dur="24.0s" repeatCount="indefinite"/>
+      <animate attributeName="stroke-dashoffset" values="114;0" dur="0.60s" repeatCount="indefinite"/>
     </path>
-  </g>
-  <!-- Step 1: Candidate Probability Popover (unmounts at 0.5271!) -->
-  <g id="candidate-popover-1" opacity="0">
-    <animate attributeName="opacity" values="0;0;1;1;0;0" keyTimes="0;0.5146;0.5196;0.5271;0.5321;1" dur="24.0s" repeatCount="indefinite"/>
-    <rect x="494" y="60" width="164" height="50" rx="6" fill="#1F242C" stroke="#EA580C" stroke-width="1"/>
-    <text class="m4" x="504" y="75" font-size="9" font-weight="bold" fill="#EA580C">&#9656; Automation 72%</text>
-    <text class="m4" x="504" y="89" font-size="8.5" fill="#6E7681">Predictive 18%</text>
-    <text class="m4" x="504" y="102" font-size="8.5" fill="#6E7681">Workflows 10%</text>
-  </g>
-  <!-- Step 1: Full Capability Card 1 (Automation) -->
-  <g id="output-card-1" opacity="0">
-    <animate attributeName="opacity" values="0;0;1;1;0;0" keyTimes="0;0.5283;0.5333;0.9500;0.9800;1" calcMode="linear" dur="24.0s" repeatCount="indefinite"/>
-    <rect x="494" y="56" width="320" height="58" rx="8" fill="#111620" stroke="#1E2638" stroke-width="1">
-      <animate attributeName="stroke" values="#1E2638;#1E2638;#EA580C;#1E2638;#1E2638" keyTimes="0;0.5283;0.5333;0.5583;1" dur="24.0s" calcMode="discrete" repeatCount="indefinite"/>
-    </rect>
-    <!-- Card Number -->
-    <text class="m4" x="508" y="74" font-size="10" font-weight="bold" fill="#EA580C">01</text>
-    <!-- Card Title -->
-    <text class="sans" x="528" y="74" font-size="12.5" font-weight="600" fill="#F0F6FC">Automation</text>
-    <!-- Top-Right Winner Score Pill -->
-    <rect x="736" y="62" width="68" height="16" rx="4" fill="rgba(234,88,12,0.14)" stroke="rgba(234,88,12,0.4)" stroke-width="1"/>
-    <text class="m4" x="770" y="74" font-size="8" font-weight="bold" fill="#EA580C" text-anchor="middle">Automation</text>
-    <!-- Meta Description -->
-    <text class="m4" x="508" y="90" font-size="9.5" fill="#8B949E">Repetitive work runs itself.</text>
-    <!-- Token Decomposition -->
-    <text class="m4" x="508" y="105" font-size="8.5" fill="#6E7681">tokens: Auto · mation</text>
-  </g>
-  <!-- Step 1: Return Spline (travels 0.5292 to 0.5417) -->
-  <g id="return-loop-1" opacity="0">
-    <animate attributeName="opacity" values="0;0;1;0.4;0;0" keyTimes="0;0.5292;0.5342;0.5417;0.5467;1" dur="24.0s" repeatCount="indefinite"/>
-    <path d="M 494 110 C 450 420, 322 420, 292 404" pathLength="100" fill="none" stroke="#EA580C" stroke-opacity="0.6" stroke-width="1.3" stroke-dasharray="3 4"/>
-    <path d="M 494 110 C 450 420, 322 420, 292 404" pathLength="100" fill="none" stroke="#EA580C" stroke-width="2.2" stroke-linecap="round" stroke-dasharray="20 100" stroke-dashoffset="120">
-      <animate attributeName="stroke-dashoffset" values="120;0" dur="0.30s" repeatCount="indefinite"/>
+    <!-- Step 3: Forward Spline Beam -->
+    <g id="ffn-output-beam-3">
+      <path d="M 436 208 C 465 208, 475 217.0, 494 217.0" pathLength="100" fill="none" stroke="#D97706" stroke-width="1.3" stroke-opacity="0">
+        <animate attributeName="stroke-opacity" values="0;0;0.8;0.15;0;0" keyTimes="0;0.6083;0.6133;0.6208;0.6258;1" dur="24.0s" repeatCount="indefinite"/>
+      </path>
+      <path d="M 436 208 C 465 208, 475 217.0, 494 217.0" pathLength="100" fill="none" stroke="#D97706" stroke-width="2.4" stroke-linecap="round" stroke-dasharray="24 100" stroke-dashoffset="124" opacity="0">
+        <animate attributeName="opacity" values="0;0;1;1;0;0" keyTimes="0;0.6083;0.6133;0.6208;0.6258;1" dur="24.0s" repeatCount="indefinite"/>
+        <animate attributeName="stroke-dashoffset" values="124;0" dur="0.30s" repeatCount="indefinite"/>
+      </path>
+    </g>
+    <!-- Step 3: Candidate Probability Popover (350ms hold on step 3) -->
+    <g id="candidate-popover-3" opacity="0">
+      <animate attributeName="opacity" values="0;0;1;1;0;0" keyTimes="0;0.6146;0.6196;0.6292;0.6342;1" dur="24.0s" repeatCount="indefinite"/>
+      <rect x="494" y="192" width="164" height="50" rx="6" fill="#1F242C" stroke="#EA580C" stroke-width="1"/>
+      <text class="m4" x="504" y="207" font-size="9" font-weight="bold" fill="#EA580C">&#9656; Forecasts 81%</text>
+      <text class="m4" x="504" y="221" font-size="8.5" fill="#6E7681">Trends 11%</text>
+      <text class="m4" x="504" y="234" font-size="8.5" fill="#6E7681">Projections 8%</text>
+    </g>
+    <!-- Step 3: Full Capability Card 3 (Forecasts) -->
+    <g id="output-card-3" opacity="0">
+      <animate attributeName="opacity" values="0;0;1;1;0;0" keyTimes="0;0.6300;0.6342;0.9500;0.9800;1" calcMode="linear" dur="24.0s" repeatCount="indefinite"/>
+      <rect x="494" y="188" width="320" height="58" rx="8" fill="#111620" stroke="#1E2638" stroke-width="1">
+        <animate attributeName="stroke" values="#1E2638;#1E2638;#EA580C;#1E2638;#1E2638" keyTimes="0;0.6300;0.6342;0.6600;1" dur="24.0s" calcMode="discrete" repeatCount="indefinite"/>
+      </rect>
+      <!-- Card Number -->
+      <text class="m4" x="508" y="206" font-size="10" font-weight="bold" fill="#EA580C">03</text>
+      <!-- Card Title -->
+      <text class="sans" x="528" y="206" font-size="12.5" font-weight="600" fill="#F0F6FC">Forecasts</text>
+      <!-- Top-Right Winner Score Pill -->
+      <rect x="736" y="194" width="68" height="16" rx="4" fill="rgba(234,88,12,0.14)" stroke="rgba(234,88,12,0.4)" stroke-width="1"/>
+      <text class="m4" x="770" y="206" font-size="8" font-weight="bold" fill="#EA580C" text-anchor="middle">Forecasts</text>
+      <!-- Meta Description -->
+      <text class="m4" x="508" y="222" font-size="9.5" fill="#8B949E">See tomorrow's demand today.</text>
+      <!-- Token Decomposition -->
+      <text class="m4" x="508" y="237" font-size="8.5" fill="#6E7681">tokens: Fore · casts</text>
+    </g>
+    <!-- Step 3: Return Spline (active pulse -> settles to persistent opacity: 0.18) -->
+    <g id="return-loop-3" opacity="0">
+      <!-- Active pulse: 0 -> 1 -> settles to 0.18 during quiescent hold -> 0 at reset -->
+      <animate attributeName="opacity" values="0;0;1;0.18;0.18;0;0" keyTimes="0;0.6312;0.6362;0.6437;0.9500;0.9800;1" dur="24.0s" repeatCount="indefinite"/>
+      <path d="M 494 242 C 450 420, 384 420, 354 404" pathLength="100" fill="none" stroke="#EA580C" stroke-opacity="0.75" stroke-width="1.3" stroke-dasharray="3 4"/>
+      <path d="M 494 242 C 450 420, 384 420, 354 404" pathLength="100" fill="none" stroke="#EA580C" stroke-width="2.2" stroke-linecap="round" stroke-dasharray="20 100" stroke-dashoffset="120">
+        <animate attributeName="stroke-dashoffset" values="120;0" dur="0.30s" repeatCount="indefinite"/>
+      </path>
+    </g>
+    <!-- Step 3: Localized Causal Attention Arc (pulses upon column drop) -->
+    <path d="M 354 352 Q 307.5 310 261 352" pathLength="100" fill="none" stroke="#F97316" stroke-width="1.6" stroke-linecap="round" stroke-dasharray="14 100" stroke-dashoffset="114" opacity="0">
+      <animate attributeName="opacity" values="0;0;0.75;0;0" keyTimes="0;0.6437;0.6487;0.6688;1" dur="24.0s" repeatCount="indefinite"/>
+      <animate attributeName="stroke-dashoffset" values="114;0" dur="0.60s" repeatCount="indefinite"/>
     </path>
-  </g>
-  <!-- Step 2: Forward Spline Beam -->
-  <g id="ffn-output-beam-2">
-    <path d="M 436 208 C 465 208, 475 151.0, 494 151.0" pathLength="100" fill="none" stroke="#D97706" stroke-width="1.3" stroke-opacity="0">
-      <animate attributeName="stroke-opacity" values="0;0;0.8;0.15;0;0" keyTimes="0;0.5583;0.5633;0.5729;0.5779;1" dur="24.0s" repeatCount="indefinite"/>
+    <!-- Step 4: Forward Spline Beam -->
+    <g id="ffn-output-beam-4">
+      <path d="M 436 208 C 465 208, 475 283.0, 494 283.0" pathLength="100" fill="none" stroke="#D97706" stroke-width="1.3" stroke-opacity="0">
+        <animate attributeName="stroke-opacity" values="0;0;0.8;0.15;0;0" keyTimes="0;0.6583;0.6633;0.6708;0.6758;1" dur="24.0s" repeatCount="indefinite"/>
+      </path>
+      <path d="M 436 208 C 465 208, 475 283.0, 494 283.0" pathLength="100" fill="none" stroke="#D97706" stroke-width="2.4" stroke-linecap="round" stroke-dasharray="24 100" stroke-dashoffset="124" opacity="0">
+        <animate attributeName="opacity" values="0;0;1;1;0;0" keyTimes="0;0.6583;0.6633;0.6708;0.6758;1" dur="24.0s" repeatCount="indefinite"/>
+        <animate attributeName="stroke-dashoffset" values="124;0" dur="0.30s" repeatCount="indefinite"/>
+      </path>
+    </g>
+    <!-- Step 4: Candidate Probability Popover (350ms hold on step 4) -->
+    <g id="candidate-popover-4" opacity="0">
+      <animate attributeName="opacity" values="0;0;1;1;0;0" keyTimes="0;0.6646;0.6696;0.6792;0.6842;1" dur="24.0s" repeatCount="indefinite"/>
+      <rect x="494" y="258" width="164" height="50" rx="6" fill="#1F242C" stroke="#EA580C" stroke-width="1"/>
+      <text class="m4" x="504" y="273" font-size="9" font-weight="bold" fill="#EA580C">&#9656; AI assistants 78%</text>
+      <text class="m4" x="504" y="287" font-size="8.5" fill="#6E7681">Agents 14%</text>
+      <text class="m4" x="504" y="300" font-size="8.5" fill="#6E7681">Chat systems 8%</text>
+    </g>
+    <!-- Step 4: Full Capability Card 4 (AI assistants) -->
+    <g id="output-card-4" opacity="0">
+      <animate attributeName="opacity" values="0;0;1;1;0;0" keyTimes="0;0.6800;0.6842;0.9500;0.9800;1" calcMode="linear" dur="24.0s" repeatCount="indefinite"/>
+      <rect x="494" y="254" width="320" height="58" rx="8" fill="#111620" stroke="#1E2638" stroke-width="1">
+        <animate attributeName="stroke" values="#1E2638;#1E2638;#EA580C;#1E2638;#1E2638" keyTimes="0;0.6800;0.6842;0.7100;1" dur="24.0s" calcMode="discrete" repeatCount="indefinite"/>
+      </rect>
+      <!-- Card Number -->
+      <text class="m4" x="508" y="272" font-size="10" font-weight="bold" fill="#EA580C">04</text>
+      <!-- Card Title -->
+      <text class="sans" x="528" y="272" font-size="12.5" font-weight="600" fill="#F0F6FC">AI assistants</text>
+      <!-- Top-Right Winner Score Pill -->
+      <rect x="736" y="260" width="68" height="16" rx="4" fill="rgba(234,88,12,0.14)" stroke="rgba(234,88,12,0.4)" stroke-width="1"/>
+      <text class="m4" x="770" y="272" font-size="8" font-weight="bold" fill="#EA580C" text-anchor="middle">AI</text>
+      <!-- Meta Description -->
+      <text class="m4" x="508" y="288" font-size="9.5" fill="#8B949E">Answers for customers and team.</text>
+      <!-- Token Decomposition -->
+      <text class="m4" x="508" y="303" font-size="8.5" fill="#6E7681">tokens: AI · assis · tants</text>
+    </g>
+    <!-- Step 4: Return Spline (active pulse -> settles to persistent opacity: 0.18) -->
+    <g id="return-loop-4" opacity="0">
+      <!-- Active pulse: 0 -> 1 -> settles to 0.18 during quiescent hold -> 0 at reset -->
+      <animate attributeName="opacity" values="0;0;1;0.18;0.18;0;0" keyTimes="0;0.6813;0.6863;0.6938;0.9500;0.9800;1" dur="24.0s" repeatCount="indefinite"/>
+      <path d="M 494 308 C 450 420, 415 420, 385 404" pathLength="100" fill="none" stroke="#EA580C" stroke-opacity="0.75" stroke-width="1.3" stroke-dasharray="3 4"/>
+      <path d="M 494 308 C 450 420, 415 420, 385 404" pathLength="100" fill="none" stroke="#EA580C" stroke-width="2.2" stroke-linecap="round" stroke-dasharray="20 100" stroke-dashoffset="120">
+        <animate attributeName="stroke-dashoffset" values="120;0" dur="0.30s" repeatCount="indefinite"/>
+      </path>
+    </g>
+    <!-- Step 4: Localized Causal Attention Arc (pulses upon column drop) -->
+    <path d="M 385 352 Q 338.5 310 292 352" pathLength="100" fill="none" stroke="#F97316" stroke-width="1.6" stroke-linecap="round" stroke-dasharray="14 100" stroke-dashoffset="114" opacity="0">
+      <animate attributeName="opacity" values="0;0;0.75;0;0" keyTimes="0;0.6937;0.6987;0.7188;1" dur="24.0s" repeatCount="indefinite"/>
+      <animate attributeName="stroke-dashoffset" values="114;0" dur="0.60s" repeatCount="indefinite"/>
     </path>
-    <path d="M 436 208 C 465 208, 475 151.0, 494 151.0" pathLength="100" fill="none" stroke="#D97706" stroke-width="2.4" stroke-linecap="round" stroke-dasharray="24 100" stroke-dashoffset="124" opacity="0">
-      <animate attributeName="opacity" values="0;0;1;1;0;0" keyTimes="0;0.5583;0.5633;0.5729;0.5779;1" dur="24.0s" repeatCount="indefinite"/>
-      <animate attributeName="stroke-dashoffset" values="124;0" dur="0.35s" repeatCount="indefinite"/>
-    </path>
-  </g>
-  <!-- Step 2: Candidate Probability Popover (unmounts at 0.5771!) -->
-  <g id="candidate-popover-2" opacity="0">
-    <animate attributeName="opacity" values="0;0;1;1;0;0" keyTimes="0;0.5646;0.5696;0.5771;0.5821;1" dur="24.0s" repeatCount="indefinite"/>
-    <rect x="494" y="126" width="164" height="50" rx="6" fill="#1F242C" stroke="#EA580C" stroke-width="1"/>
-    <text class="m4" x="504" y="141" font-size="9" font-weight="bold" fill="#EA580C">&#9656; Self-learning 64%</text>
-    <text class="m4" x="504" y="155" font-size="8.5" fill="#6E7681">Deep systems 24%</text>
-    <text class="m4" x="504" y="168" font-size="8.5" fill="#6E7681">Adaptive 12%</text>
-  </g>
-  <!-- Step 2: Full Capability Card 2 (Self-learning systems) -->
-  <g id="output-card-2" opacity="0">
-    <animate attributeName="opacity" values="0;0;1;1;0;0" keyTimes="0;0.5783;0.5833;0.9500;0.9800;1" calcMode="linear" dur="24.0s" repeatCount="indefinite"/>
-    <rect x="494" y="122" width="320" height="58" rx="8" fill="#111620" stroke="#1E2638" stroke-width="1">
-      <animate attributeName="stroke" values="#1E2638;#1E2638;#EA580C;#1E2638;#1E2638" keyTimes="0;0.5783;0.5833;0.6083;1" dur="24.0s" calcMode="discrete" repeatCount="indefinite"/>
-    </rect>
-    <!-- Card Number -->
-    <text class="m4" x="508" y="140" font-size="10" font-weight="bold" fill="#EA580C">02</text>
-    <!-- Card Title -->
-    <text class="sans" x="528" y="140" font-size="12.5" font-weight="600" fill="#F0F6FC">Self-learning systems</text>
-    <!-- Top-Right Winner Score Pill -->
-    <rect x="736" y="128" width="68" height="16" rx="4" fill="rgba(234,88,12,0.14)" stroke="rgba(234,88,12,0.4)" stroke-width="1"/>
-    <text class="m4" x="770" y="140" font-size="8" font-weight="bold" fill="#EA580C" text-anchor="middle">Self-learning</text>
-    <!-- Meta Description -->
-    <text class="m4" x="508" y="156" font-size="9.5" fill="#8B949E">Sharper with every dataset.</text>
-    <!-- Token Decomposition -->
-    <text class="m4" x="508" y="171" font-size="8.5" fill="#6E7681">tokens: Self · learn · ing · tems</text>
-  </g>
-  <!-- Step 2: Return Spline (travels 0.5792 to 0.5917) -->
-  <g id="return-loop-2" opacity="0">
-    <animate attributeName="opacity" values="0;0;1;0.4;0;0" keyTimes="0;0.5792;0.5842;0.5917;0.5967;1" dur="24.0s" repeatCount="indefinite"/>
-    <path d="M 494 176 C 450 420, 353 420, 323 404" pathLength="100" fill="none" stroke="#EA580C" stroke-opacity="0.6" stroke-width="1.3" stroke-dasharray="3 4"/>
-    <path d="M 494 176 C 450 420, 353 420, 323 404" pathLength="100" fill="none" stroke="#EA580C" stroke-width="2.2" stroke-linecap="round" stroke-dasharray="20 100" stroke-dashoffset="120">
-      <animate attributeName="stroke-dashoffset" values="120;0" dur="0.30s" repeatCount="indefinite"/>
-    </path>
-  </g>
-  <!-- Step 3: Forward Spline Beam -->
-  <g id="ffn-output-beam-3">
-    <path d="M 436 208 C 465 208, 475 217.0, 494 217.0" pathLength="100" fill="none" stroke="#D97706" stroke-width="1.3" stroke-opacity="0">
-      <animate attributeName="stroke-opacity" values="0;0;0.8;0.15;0;0" keyTimes="0;0.6083;0.6133;0.6229;0.6279;1" dur="24.0s" repeatCount="indefinite"/>
-    </path>
-    <path d="M 436 208 C 465 208, 475 217.0, 494 217.0" pathLength="100" fill="none" stroke="#D97706" stroke-width="2.4" stroke-linecap="round" stroke-dasharray="24 100" stroke-dashoffset="124" opacity="0">
-      <animate attributeName="opacity" values="0;0;1;1;0;0" keyTimes="0;0.6083;0.6133;0.6229;0.6279;1" dur="24.0s" repeatCount="indefinite"/>
-      <animate attributeName="stroke-dashoffset" values="124;0" dur="0.35s" repeatCount="indefinite"/>
-    </path>
-  </g>
-  <!-- Step 3: Candidate Probability Popover (unmounts at 0.6271!) -->
-  <g id="candidate-popover-3" opacity="0">
-    <animate attributeName="opacity" values="0;0;1;1;0;0" keyTimes="0;0.6146;0.6196;0.6271;0.6321;1" dur="24.0s" repeatCount="indefinite"/>
-    <rect x="494" y="192" width="164" height="50" rx="6" fill="#1F242C" stroke="#EA580C" stroke-width="1"/>
-    <text class="m4" x="504" y="207" font-size="9" font-weight="bold" fill="#EA580C">&#9656; Forecasts 81%</text>
-    <text class="m4" x="504" y="221" font-size="8.5" fill="#6E7681">Trends 11%</text>
-    <text class="m4" x="504" y="234" font-size="8.5" fill="#6E7681">Projections 8%</text>
-  </g>
-  <!-- Step 3: Full Capability Card 3 (Forecasts) -->
-  <g id="output-card-3" opacity="0">
-    <animate attributeName="opacity" values="0;0;1;1;0;0" keyTimes="0;0.6283;0.6333;0.9500;0.9800;1" calcMode="linear" dur="24.0s" repeatCount="indefinite"/>
-    <rect x="494" y="188" width="320" height="58" rx="8" fill="#111620" stroke="#1E2638" stroke-width="1">
-      <animate attributeName="stroke" values="#1E2638;#1E2638;#EA580C;#1E2638;#1E2638" keyTimes="0;0.6283;0.6333;0.6583;1" dur="24.0s" calcMode="discrete" repeatCount="indefinite"/>
-    </rect>
-    <!-- Card Number -->
-    <text class="m4" x="508" y="206" font-size="10" font-weight="bold" fill="#EA580C">03</text>
-    <!-- Card Title -->
-    <text class="sans" x="528" y="206" font-size="12.5" font-weight="600" fill="#F0F6FC">Forecasts</text>
-    <!-- Top-Right Winner Score Pill -->
-    <rect x="736" y="194" width="68" height="16" rx="4" fill="rgba(234,88,12,0.14)" stroke="rgba(234,88,12,0.4)" stroke-width="1"/>
-    <text class="m4" x="770" y="206" font-size="8" font-weight="bold" fill="#EA580C" text-anchor="middle">Forecasts</text>
-    <!-- Meta Description -->
-    <text class="m4" x="508" y="222" font-size="9.5" fill="#8B949E">See tomorrow's demand today.</text>
-    <!-- Token Decomposition -->
-    <text class="m4" x="508" y="237" font-size="8.5" fill="#6E7681">tokens: Fore · casts</text>
-  </g>
-  <!-- Step 3: Return Spline (travels 0.6292 to 0.6417) -->
-  <g id="return-loop-3" opacity="0">
-    <animate attributeName="opacity" values="0;0;1;0.4;0;0" keyTimes="0;0.6292;0.6342;0.6417;0.6467;1" dur="24.0s" repeatCount="indefinite"/>
-    <path d="M 494 242 C 450 420, 384 420, 354 404" pathLength="100" fill="none" stroke="#EA580C" stroke-opacity="0.6" stroke-width="1.3" stroke-dasharray="3 4"/>
-    <path d="M 494 242 C 450 420, 384 420, 354 404" pathLength="100" fill="none" stroke="#EA580C" stroke-width="2.2" stroke-linecap="round" stroke-dasharray="20 100" stroke-dashoffset="120">
-      <animate attributeName="stroke-dashoffset" values="120;0" dur="0.30s" repeatCount="indefinite"/>
-    </path>
-  </g>
-  <!-- Step 4: Forward Spline Beam -->
-  <g id="ffn-output-beam-4">
-    <path d="M 436 208 C 465 208, 475 283.0, 494 283.0" pathLength="100" fill="none" stroke="#D97706" stroke-width="1.3" stroke-opacity="0">
-      <animate attributeName="stroke-opacity" values="0;0;0.8;0.15;0;0" keyTimes="0;0.6583;0.6633;0.6729;0.6779;1" dur="24.0s" repeatCount="indefinite"/>
-    </path>
-    <path d="M 436 208 C 465 208, 475 283.0, 494 283.0" pathLength="100" fill="none" stroke="#D97706" stroke-width="2.4" stroke-linecap="round" stroke-dasharray="24 100" stroke-dashoffset="124" opacity="0">
-      <animate attributeName="opacity" values="0;0;1;1;0;0" keyTimes="0;0.6583;0.6633;0.6729;0.6779;1" dur="24.0s" repeatCount="indefinite"/>
-      <animate attributeName="stroke-dashoffset" values="124;0" dur="0.35s" repeatCount="indefinite"/>
-    </path>
-  </g>
-  <!-- Step 4: Candidate Probability Popover (unmounts at 0.6771!) -->
-  <g id="candidate-popover-4" opacity="0">
-    <animate attributeName="opacity" values="0;0;1;1;0;0" keyTimes="0;0.6646;0.6696;0.6771;0.6821;1" dur="24.0s" repeatCount="indefinite"/>
-    <rect x="494" y="258" width="164" height="50" rx="6" fill="#1F242C" stroke="#EA580C" stroke-width="1"/>
-    <text class="m4" x="504" y="273" font-size="9" font-weight="bold" fill="#EA580C">&#9656; AI assistants 78%</text>
-    <text class="m4" x="504" y="287" font-size="8.5" fill="#6E7681">Agents 14%</text>
-    <text class="m4" x="504" y="300" font-size="8.5" fill="#6E7681">Chat systems 8%</text>
-  </g>
-  <!-- Step 4: Full Capability Card 4 (AI assistants) -->
-  <g id="output-card-4" opacity="0">
-    <animate attributeName="opacity" values="0;0;1;1;0;0" keyTimes="0;0.6783;0.6833;0.9500;0.9800;1" calcMode="linear" dur="24.0s" repeatCount="indefinite"/>
-    <rect x="494" y="254" width="320" height="58" rx="8" fill="#111620" stroke="#1E2638" stroke-width="1">
-      <animate attributeName="stroke" values="#1E2638;#1E2638;#EA580C;#1E2638;#1E2638" keyTimes="0;0.6783;0.6833;0.7083;1" dur="24.0s" calcMode="discrete" repeatCount="indefinite"/>
-    </rect>
-    <!-- Card Number -->
-    <text class="m4" x="508" y="272" font-size="10" font-weight="bold" fill="#EA580C">04</text>
-    <!-- Card Title -->
-    <text class="sans" x="528" y="272" font-size="12.5" font-weight="600" fill="#F0F6FC">AI assistants</text>
-    <!-- Top-Right Winner Score Pill -->
-    <rect x="736" y="260" width="68" height="16" rx="4" fill="rgba(234,88,12,0.14)" stroke="rgba(234,88,12,0.4)" stroke-width="1"/>
-    <text class="m4" x="770" y="272" font-size="8" font-weight="bold" fill="#EA580C" text-anchor="middle">AI</text>
-    <!-- Meta Description -->
-    <text class="m4" x="508" y="288" font-size="9.5" fill="#8B949E">Answers for customers and team.</text>
-    <!-- Token Decomposition -->
-    <text class="m4" x="508" y="303" font-size="8.5" fill="#6E7681">tokens: AI · assis · tants</text>
-  </g>
-  <!-- Step 4: Return Spline (travels 0.6792 to 0.6917) -->
-  <g id="return-loop-4" opacity="0">
-    <animate attributeName="opacity" values="0;0;1;0.4;0;0" keyTimes="0;0.6792;0.6842;0.6917;0.6967;1" dur="24.0s" repeatCount="indefinite"/>
-    <path d="M 494 308 C 450 420, 415 420, 385 404" pathLength="100" fill="none" stroke="#EA580C" stroke-opacity="0.6" stroke-width="1.3" stroke-dasharray="3 4"/>
-    <path d="M 494 308 C 450 420, 415 420, 385 404" pathLength="100" fill="none" stroke="#EA580C" stroke-width="2.2" stroke-linecap="round" stroke-dasharray="20 100" stroke-dashoffset="120">
-      <animate attributeName="stroke-dashoffset" values="120;0" dur="0.30s" repeatCount="indefinite"/>
-    </path>
-  </g>
-  <!-- Step 5: Forward Spline Beam -->
-  <g id="ffn-output-beam-5">
-    <path d="M 436 208 C 465 208, 475 349.0, 494 349.0" pathLength="100" fill="none" stroke="#D97706" stroke-width="1.3" stroke-opacity="0">
-      <animate attributeName="stroke-opacity" values="0;0;0.8;0.15;0;0" keyTimes="0;0.7083;0.7133;0.7229;0.7279;1" dur="24.0s" repeatCount="indefinite"/>
-    </path>
-    <path d="M 436 208 C 465 208, 475 349.0, 494 349.0" pathLength="100" fill="none" stroke="#D97706" stroke-width="2.4" stroke-linecap="round" stroke-dasharray="24 100" stroke-dashoffset="124" opacity="0">
-      <animate attributeName="opacity" values="0;0;1;1;0;0" keyTimes="0;0.7083;0.7133;0.7229;0.7279;1" dur="24.0s" repeatCount="indefinite"/>
-      <animate attributeName="stroke-dashoffset" values="124;0" dur="0.35s" repeatCount="indefinite"/>
-    </path>
-  </g>
-  <!-- Step 5: Candidate Probability Popover (unmounts at 0.7271!) -->
-  <g id="candidate-popover-5" opacity="0">
-    <animate attributeName="opacity" values="0;0;1;1;0;0" keyTimes="0;0.7146;0.7196;0.7271;0.7321;1" dur="24.0s" repeatCount="indefinite"/>
-    <rect x="494" y="324" width="164" height="50" rx="6" fill="#1F242C" stroke="#EA580C" stroke-width="1"/>
-    <text class="m4" x="504" y="339" font-size="9" font-weight="bold" fill="#EA580C">&#9656; Custom models 86%</text>
-    <text class="m4" x="504" y="353" font-size="8.5" fill="#6E7681">Fine-tuned 9%</text>
-    <text class="m4" x="504" y="366" font-size="8.5" fill="#6E7681">Proprietary 5%</text>
-  </g>
-  <!-- Step 5: Full Capability Card 5 (Custom models) -->
-  <g id="output-card-5" opacity="0">
-    <animate attributeName="opacity" values="0;0;1;1;0;0" keyTimes="0;0.7283;0.7333;0.9500;0.9800;1" calcMode="linear" dur="24.0s" repeatCount="indefinite"/>
-    <rect x="494" y="320" width="320" height="58" rx="8" fill="#111620" stroke="#1E2638" stroke-width="1">
-      <animate attributeName="stroke" values="#1E2638;#1E2638;#EA580C;#1E2638;#1E2638" keyTimes="0;0.7283;0.7333;0.7583;1" dur="24.0s" calcMode="discrete" repeatCount="indefinite"/>
-    </rect>
-    <!-- Card Number -->
-    <text class="m4" x="508" y="338" font-size="10" font-weight="bold" fill="#EA580C">05</text>
-    <!-- Card Title -->
-    <text class="sans" x="528" y="338" font-size="12.5" font-weight="600" fill="#F0F6FC">Custom models</text>
-    <!-- Top-Right Winner Score Pill -->
-    <rect x="736" y="326" width="68" height="16" rx="4" fill="rgba(234,88,12,0.14)" stroke="rgba(234,88,12,0.4)" stroke-width="1"/>
-    <text class="m4" x="770" y="338" font-size="8" font-weight="bold" fill="#EA580C" text-anchor="middle">Custom</text>
-    <!-- Meta Description -->
-    <text class="m4" x="508" y="354" font-size="9.5" fill="#8B949E">Trained on your data, shaped to work.</text>
-    <!-- Token Decomposition -->
-    <text class="m4" x="508" y="369" font-size="8.5" fill="#6E7681">tokens: Custom · mod · els</text>
-  </g>
-  <!-- Step 5: Return Spline (travels 0.7292 to 0.7417) -->
-  <g id="return-loop-5" opacity="0">
-    <animate attributeName="opacity" values="0;0;1;0.4;0;0" keyTimes="0;0.7292;0.7342;0.7417;0.7467;1" dur="24.0s" repeatCount="indefinite"/>
-    <path d="M 494 374 C 450 420, 446 420, 416 404" pathLength="100" fill="none" stroke="#EA580C" stroke-opacity="0.6" stroke-width="1.3" stroke-dasharray="3 4"/>
-    <path d="M 494 374 C 450 420, 446 420, 416 404" pathLength="100" fill="none" stroke="#EA580C" stroke-width="2.2" stroke-linecap="round" stroke-dasharray="20 100" stroke-dashoffset="120">
-      <animate attributeName="stroke-dashoffset" values="120;0" dur="0.30s" repeatCount="indefinite"/>
+    <!-- Step 5: Forward Spline Beam -->
+    <g id="ffn-output-beam-5">
+      <path d="M 436 208 C 465 208, 475 349.0, 494 349.0" pathLength="100" fill="none" stroke="#D97706" stroke-width="1.3" stroke-opacity="0">
+        <animate attributeName="stroke-opacity" values="0;0;0.8;0.15;0;0" keyTimes="0;0.7083;0.7133;0.7208;0.7258;1" dur="24.0s" repeatCount="indefinite"/>
+      </path>
+      <path d="M 436 208 C 465 208, 475 349.0, 494 349.0" pathLength="100" fill="none" stroke="#D97706" stroke-width="2.4" stroke-linecap="round" stroke-dasharray="24 100" stroke-dashoffset="124" opacity="0">
+        <animate attributeName="opacity" values="0;0;1;1;0;0" keyTimes="0;0.7083;0.7133;0.7208;0.7258;1" dur="24.0s" repeatCount="indefinite"/>
+        <animate attributeName="stroke-dashoffset" values="124;0" dur="0.30s" repeatCount="indefinite"/>
+      </path>
+    </g>
+    <!-- Step 5: Candidate Probability Popover (350ms hold on step 5) -->
+    <g id="candidate-popover-5" opacity="0">
+      <animate attributeName="opacity" values="0;0;1;1;0;0" keyTimes="0;0.7146;0.7196;0.7292;0.7342;1" dur="24.0s" repeatCount="indefinite"/>
+      <rect x="494" y="324" width="164" height="50" rx="6" fill="#1F242C" stroke="#EA580C" stroke-width="1"/>
+      <text class="m4" x="504" y="339" font-size="9" font-weight="bold" fill="#EA580C">&#9656; Custom models 86%</text>
+      <text class="m4" x="504" y="353" font-size="8.5" fill="#6E7681">Fine-tuned 9%</text>
+      <text class="m4" x="504" y="366" font-size="8.5" fill="#6E7681">Proprietary 5%</text>
+    </g>
+    <!-- Step 5: Full Capability Card 5 (Custom models) -->
+    <g id="output-card-5" opacity="0">
+      <animate attributeName="opacity" values="0;0;1;1;0;0" keyTimes="0;0.7300;0.7342;0.9500;0.9800;1" calcMode="linear" dur="24.0s" repeatCount="indefinite"/>
+      <rect x="494" y="320" width="320" height="58" rx="8" fill="#111620" stroke="#1E2638" stroke-width="1">
+        <animate attributeName="stroke" values="#1E2638;#1E2638;#EA580C;#1E2638;#1E2638" keyTimes="0;0.7300;0.7342;0.7600;1" dur="24.0s" calcMode="discrete" repeatCount="indefinite"/>
+      </rect>
+      <!-- Card Number -->
+      <text class="m4" x="508" y="338" font-size="10" font-weight="bold" fill="#EA580C">05</text>
+      <!-- Card Title -->
+      <text class="sans" x="528" y="338" font-size="12.5" font-weight="600" fill="#F0F6FC">Custom models</text>
+      <!-- Top-Right Winner Score Pill -->
+      <rect x="736" y="326" width="68" height="16" rx="4" fill="rgba(234,88,12,0.14)" stroke="rgba(234,88,12,0.4)" stroke-width="1"/>
+      <text class="m4" x="770" y="338" font-size="8" font-weight="bold" fill="#EA580C" text-anchor="middle">Custom</text>
+      <!-- Meta Description -->
+      <text class="m4" x="508" y="354" font-size="9.5" fill="#8B949E">Trained on your data, shaped to work.</text>
+      <!-- Token Decomposition -->
+      <text class="m4" x="508" y="369" font-size="8.5" fill="#6E7681">tokens: Custom · mod · els</text>
+    </g>
+    <!-- Step 5: Return Spline (active pulse -> settles to persistent opacity: 0.18) -->
+    <g id="return-loop-5" opacity="0">
+      <!-- Active pulse: 0 -> 1 -> settles to 0.18 during quiescent hold -> 0 at reset -->
+      <animate attributeName="opacity" values="0;0;1;0.18;0.18;0;0" keyTimes="0;0.7313;0.7363;0.7438;0.9500;0.9800;1" dur="24.0s" repeatCount="indefinite"/>
+      <path d="M 494 374 C 450 420, 446 420, 416 404" pathLength="100" fill="none" stroke="#EA580C" stroke-opacity="0.75" stroke-width="1.3" stroke-dasharray="3 4"/>
+      <path d="M 494 374 C 450 420, 446 420, 416 404" pathLength="100" fill="none" stroke="#EA580C" stroke-width="2.2" stroke-linecap="round" stroke-dasharray="20 100" stroke-dashoffset="120">
+        <animate attributeName="stroke-dashoffset" values="120;0" dur="0.30s" repeatCount="indefinite"/>
+      </path>
+    </g>
+    <!-- Step 5: Localized Causal Attention Arc (pulses upon column drop) -->
+    <path d="M 416 352 Q 369.5 310 323 352" pathLength="100" fill="none" stroke="#F97316" stroke-width="1.6" stroke-linecap="round" stroke-dasharray="14 100" stroke-dashoffset="114" opacity="0">
+      <animate attributeName="opacity" values="0;0;0.75;0;0" keyTimes="0;0.7438;0.7488;0.7688;1" dur="24.0s" repeatCount="indefinite"/>
+      <animate attributeName="stroke-dashoffset" values="114;0" dur="0.60s" repeatCount="indefinite"/>
     </path>
   </g>
 </svg>

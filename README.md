@@ -1,43 +1,9 @@
-<div align="center">
+# Warisul Rafin
 
-# Warisul
+Director, Dept. of SaaS at [Orpheus](https://orpheusit.com/). I build backends in Go, fine-tune LLMs, and ship custom software and AI work for businesses.
 
-**Cloud Infrastructure • DevOps • Security**
+Before that: sysadmin, DevOps, full-stack. I still run a bunch of servers at home and self-host most of what I use.
 
----
+Off the clock I'm usually tweaking some LLM thing anyway.
 
-## Focus
-
-Cloud infrastructure architect. Building reliable systems and exploring zero trust architecture and cloud native security.
-
----
-
-## Tech Stack
-
-Cloud infrastructure: AWS, GCP, Azure, Docker, Kubernetes, Terraform, Ansible.
-
-Backend: Python, JavaScript, TypeScript, Node.js, React, Django, FastAPI, Next.js.
-
-DevOps and CI/CD: Git, GitHub Actions, Jenkins, GitLab.
-
-Operations and observability: Linux, Bash, PostgreSQL, Redis, Grafana, Prometheus.
-
----
-
-## Certifications
-
-- AWS Cloud Solutions Architect
-- Google Cybersecurity Certificate
-- IBM Full Stack Software Developer
-- Microsoft Cybersecurity Analyst
-- Meta React Native Specialization
-
----
-
-## Connect
-
-[Portfolio](https://www.warisul.com) · [LinkedIn](https://www.linkedin.com/in/warisul-rafin) · [Twitter](https://twitter.com/warisul) · [Email](mailto:contact@warisul.com)
-
----
-
-</div>
+Elsewhere: [warisul.com](https://www.warisul.com) · [blog](https://blog.warisul.com) · [LinkedIn](https://www.linkedin.com/in/warisul-rafin) · [contact@warisul.com](mailto:contact@warisul.com)

@@ -12,6 +12,6 @@ And yes, I'm an audiophile. That means the homelab has a sibling: a listening co
 
 athrLabs is where that work reaches clients: work flows in one end, the AI pipeline handles it, and resolved outcomes come out the other. The repetitive stuff runs itself, and people get to do the interesting part.
 
-<img src="assets/ai-solutions.svg" alt="AI-integrated systems pipeline: client work flows in, AI stages process it, resolved work comes out" width="100%">
+<img src="assets/ai-solutions.svg" alt="AI-integrated systems: transformer forward pass from business prompt to 5 autonomous output solutions" width="100%">
 
 Elsewhere: [warisul.com](https://www.warisul.com) · [blog](https://blog.warisul.com) · [LinkedIn](https://www.linkedin.com/in/warisul-rafin) · [contact@warisul.com](mailto:contact@warisul.com)

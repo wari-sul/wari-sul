@@ -1,5 +1,5 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="840" height="444" viewBox="0 0 840 444" role="img" aria-label="AI-integrated systems: transformer forward pass architecture from question to 5 autonomous outcomes">
-  <desc>Visual walkthrough of a transformer forward pass: a business question types into prompt box, breaks into 9 tokens and embeddings, flows through multi-head self-attention and a 12-layer feed-forward block, and autoregressively generates 5 intelligent business capabilities.</desc>
+  <desc>Granular walkthrough of a transformer forward pass: prompt ingestion, tokenisation, embedding projection, self-attention, 12-layer FFN sweep, and 5 autoregressive loop cycles generating enterprise AI capabilities.</desc>
   <defs>
     <linearGradient id="accent" x1="0" y1="0" x2="1" y2="0">
       <stop offset="0%" stop-color="#7C3AED"/>
@@ -9,10 +9,10 @@
     <pattern id="gridP" width="32" height="32" patternUnits="userSpaceOnUse">
       <path d="M 32 0 L 0 0 0 32" fill="none" stroke="#ffffff" stroke-opacity="0.04" stroke-width="1"/>
     </pattern>
-    <!-- Typing clipPath for prompt box: smooth 0 to 2.2s reveal -->
+    <!-- Prompt Typing clipPath -->
     <clipPath id="twPrompt">
-      <rect x="56" y="66" height="24" width="0">
-        <animate attributeName="width" calcMode="linear" values="0;0;95;255;255;255;0" keyTimes="0;0.01;0.0667;0.1222;0.9833;0.9944;1" dur="18.0s" repeatCount="indefinite"/>
+      <rect x="190" y="66" height="24" width="0">
+        <animate attributeName="width" calcMode="linear" values="0;0;105;265;265;265;0" keyTimes="0;0.01;0.0545;0.1000;0.9636;0.9909;1" dur="22.0s" repeatCount="indefinite"/>
       </rect>
     </clipPath>
     <style>
@@ -22,7 +22,7 @@
     </style>
   </defs>
 
-  <!-- Window Container (static) -->
+  <!-- Window Container -->
   <rect width="840" height="444" rx="12" fill="#0D1117" stroke="#30363D" stroke-width="1"/>
   <rect width="840" height="444" rx="12" fill="url(#gridP)"/>
   <rect x="0" y="44" width="840" height="2" fill="url(#accent)" opacity="0.85"/>
@@ -33,477 +33,517 @@
   <circle cx="66" cy="22" r="6" fill="#28C840"/>
   <text class="m4 tt" x="420" y="26" text-anchor="middle">athrLabs &#183; systems that learn as you work</text>
 
-  <!-- ================= FLOW A: PROMPT BOX ================= -->
-  <!-- Visible from start, types, completes, and STAYS -->
+  <!-- ================= FLOW A: TOP PROMPT CARD ================= -->
+  <!-- Starts active, types, accepts at 2.4s, dims to opacity 0.2 at 3.2s, and STAYS as ghost card -->
   <g id="flow-a-prompt">
-    <rect x="24" y="56" width="516" height="40" rx="8" fill="#161B22" stroke="#30363D" stroke-width="1"/>
-    <text class="m4" x="40" y="81" font-size="16" font-weight="bold" fill="#FB923C">›</text>
+    <animate attributeName="opacity" values="1;1;0.2;0.2;0;1" keyTimes="0;0.1091;0.1455;0.9636;0.9909;1" calcMode="linear" dur="22.0s" repeatCount="indefinite"/>
+    <rect x="160" y="56" width="520" height="42" rx="10" fill="#161B22" stroke="#30363D" stroke-width="1"/>
     
-    <!-- Typing text with clipPath -->
+    <!-- Caret > -->
+    <text class="m4" x="176" y="82" font-size="16" font-weight="bold" fill="#FB923C">›</text>
+    
+    <!-- Typing Text with ClipPath -->
     <g clip-path="url(#twPrompt)">
-      <text class="m4" x="56" y="81" font-size="13" font-weight="500" fill="#E6EDF3">What can AI<tspan fill="#6E7681"> do for my business?</tspan></text>
+      <text class="m4" x="194" y="82" font-size="13" font-weight="500" fill="#E6EDF3">What can AI <tspan fill="#6E7681">do for my business?</tspan></text>
     </g>
 
-    <!-- Accepted glowing terracotta state (activates at 2.4s = 0.1333 keyTime, STAYS through 17.7s) -->
+    <!-- Solidified Accepted State (activates at 2.2s = 0.1000 keyTime) -->
     <g opacity="0">
-      <animate attributeName="opacity" values="0;0;1;1;0;0" keyTimes="0;0.1300;0.1333;0.9833;0.9944;1" calcMode="linear" dur="18.0s" repeatCount="indefinite"/>
-      <text class="m4" x="56" y="81" font-size="13" font-weight="500" fill="#E6EDF3">What can AI<tspan fill="#FB923C"> do for my business?</tspan></text>
+      <animate attributeName="opacity" values="0;0;1;1;0" keyTimes="0;0.0980;0.1000;0.9636;1" calcMode="linear" dur="22.0s" repeatCount="indefinite"/>
+      <text class="m4" x="194" y="82" font-size="13" font-weight="500" fill="#E6EDF3">What can AI <tspan fill="#FB923C">do for my business?</tspan></text>
     </g>
 
-    <!-- Smoothly moving and blinking cursor during typing (0s to 2.4s) -->
-    <rect x="56" y="68" width="2" height="17" fill="#FB923C" opacity="1">
-      <animate attributeName="x" values="56;56;151;311;311;311;56" keyTimes="0;0.01;0.0667;0.1222;0.1333;0.9833;1" calcMode="linear" dur="18.0s" repeatCount="indefinite"/>
-      <animate attributeName="opacity" values="1;0;1;0;1;0;1;0;1;0;1;0;0;0;1" keyTimes="0;0.015;0.03;0.045;0.06;0.075;0.09;0.105;0.12;0.13;0.135;0.14;0.145;0.9833;1" calcMode="discrete" dur="18.0s" repeatCount="indefinite"/>
-    </rect>
+    <!-- Tab to accept pill (dismisses at 2.2s) -->
+    <g opacity="1">
+      <animate attributeName="opacity" values="1;1;0;0;1" keyTimes="0;0.0980;0.1000;0.9909;1" calcMode="discrete" dur="22.0s" repeatCount="indefinite"/>
+      <rect x="560" y="66" width="108" height="22" rx="5" fill="#1F242C" stroke="#30363D" stroke-width="1"/>
+      <text class="m4" x="614" y="81" font-size="10.5" fill="#8B949E" text-anchor="middle">&#8677; Tab to accept</text>
+    </g>
 
-    <!-- Shortcut Hint -->
-    <text class="m4" x="526" y="81" font-size="11" fill="#6E7681" text-anchor="end">&#8984; Tab to accept</text>
+    <!-- Cursor -->
+    <rect x="194" y="69" width="2" height="17" fill="#FB923C">
+      <animate attributeName="x" values="194;194;299;459;459;459;194" keyTimes="0;0.01;0.0545;0.1000;0.1455;0.9636;1" calcMode="linear" dur="22.0s" repeatCount="indefinite"/>
+      <animate attributeName="opacity" values="1;0;1;0;1;0;1;0;0;0;1" keyTimes="0;0.02;0.04;0.06;0.08;0.10;0.12;0.14;0.15;0.9636;1" calcMode="discrete" dur="22.0s" repeatCount="indefinite"/>
+    </rect>
   </g>
 
-  <!-- ================= PHASE INDICATOR TAGS ================= -->
-  <g id="phase-tags">
-    <!-- Tag 1: Tokens (highlights during Flow B: 2.6s - 4.8s / 0.1444 - 0.2667) -->
-    <rect x="24" y="104" width="60" height="18" rx="4" fill="#161B22" stroke="#30363D" stroke-width="1">
-      <animate attributeName="stroke" values="#30363D;#30363D;#FB923C;#30363D;#30363D" keyTimes="0;0.1444;0.1611;0.2667;1" dur="18.0s" calcMode="discrete" repeatCount="indefinite"/>
-    </rect>
-    <text class="m4" x="54" y="117" font-size="9.5" fill="#8B949E" text-anchor="middle">
-      Tokens
-      <animate attributeName="fill" values="#8B949E;#8B949E;#FB923C;#8B949E;#8B949E" keyTimes="0;0.1444;0.1611;0.2667;1" dur="18.0s" calcMode="discrete" repeatCount="indefinite"/>
-    </text>
-
-    <!-- Tag 2: Self-Attention (highlights during Flow D: 7.2s - 9.8s / 0.4000 - 0.5444) -->
-    <rect x="92" y="104" width="94" height="18" rx="4" fill="#161B22" stroke="#30363D" stroke-width="1">
-      <animate attributeName="stroke" values="#30363D;#30363D;#FB923C;#30363D;#30363D" keyTimes="0;0.4000;0.4167;0.5444;1" dur="18.0s" calcMode="discrete" repeatCount="indefinite"/>
-    </rect>
-    <text class="m4" x="139" y="117" font-size="9.5" fill="#8B949E" text-anchor="middle">
-      Self-Attention
-      <animate attributeName="fill" values="#8B949E;#8B949E;#FB923C;#8B949E;#8B949E" keyTimes="0;0.4000;0.4167;0.5444;1" dur="18.0s" calcMode="discrete" repeatCount="indefinite"/>
-    </text>
-
-    <!-- Tag 3: Feed-Forward (highlights during Flow E: 9.8s - 12.2s / 0.5444 - 0.6778) -->
-    <rect x="194" y="104" width="90" height="18" rx="4" fill="#161B22" stroke="#30363D" stroke-width="1">
-      <animate attributeName="stroke" values="#30363D;#30363D;#FB923C;#30363D;#30363D" keyTimes="0;0.5444;0.5611;0.6778;1" dur="18.0s" calcMode="discrete" repeatCount="indefinite"/>
-    </rect>
-    <text class="m4" x="239" y="117" font-size="9.5" fill="#8B949E" text-anchor="middle">
-      Feed-Forward
-      <animate attributeName="fill" values="#8B949E;#8B949E;#FB923C;#8B949E;#8B949E" keyTimes="0;0.5444;0.5611;0.6778;1" dur="18.0s" calcMode="discrete" repeatCount="indefinite"/>
-    </text>
-
-    <!-- Tag 4: Autoregressive (highlights during Flow F: 12.2s - 16.2s / 0.6778 - 0.9000) -->
-    <rect x="292" y="104" width="98" height="18" rx="4" fill="#161B22" stroke="#30363D" stroke-width="1">
-      <animate attributeName="stroke" values="#30363D;#30363D;#FB923C;#30363D;#30363D" keyTimes="0;0.6778;0.6944;0.9000;1" dur="18.0s" calcMode="discrete" repeatCount="indefinite"/>
-    </rect>
-    <text class="m4" x="341" y="117" font-size="9.5" fill="#8B949E" text-anchor="middle">
-      Autoregressive
-      <animate attributeName="fill" values="#8B949E;#8B949E;#FB923C;#8B949E;#8B949E" keyTimes="0;0.6778;0.6944;0.9000;1" dur="18.0s" calcMode="discrete" repeatCount="indefinite"/>
-    </text>
-
-    <!-- Layer Counter Chip (transitions 01/12 -> 12/12 during Flow E) -->
-    <rect x="460" y="104" width="80" height="18" rx="4" fill="#161B22" stroke="#30363D" stroke-width="1">
-      <animate attributeName="stroke" values="#30363D;#30363D;#FB923C;#30363D;#30363D" keyTimes="0;0.5444;0.5611;0.9833;1" dur="18.0s" calcMode="discrete" repeatCount="indefinite"/>
-    </rect>
-    <text class="m4" x="500" y="117" font-size="10" font-weight="600" fill="#6E7681" text-anchor="middle">
-      layer 12/12
-      <animate attributeName="fill" values="#6E7681;#6E7681;#FB923C;#6E7681;#6E7681" keyTimes="0;0.5444;0.5611;0.9833;1" dur="18.0s" calcMode="discrete" repeatCount="indefinite"/>
-    </text>
+  <!-- Ingestion 3-dot loading indicator below prompt (active 2.4s to 3.2s) -->
+  <g opacity="0">
+    <animate attributeName="opacity" values="0;0;1;1;0;0" keyTimes="0;0.1091;0.1182;0.1455;0.1545;1" calcMode="linear" dur="22.0s" repeatCount="indefinite"/>
+    <circle cx="410" cy="108" r="2.5" fill="#FB923C"><animate attributeName="opacity" values="0.3;1;0.3" dur="0.6s" repeatCount="indefinite"/></circle>
+    <circle cx="420" cy="108" r="2.5" fill="#FB923C"><animate attributeName="opacity" values="0.3;1;0.3" dur="0.6s" begin="0.2s" repeatCount="indefinite"/></circle>
+    <circle cx="430" cy="108" r="2.5" fill="#FB923C"><animate attributeName="opacity" values="0.3;1;0.3" dur="0.6s" begin="0.4s" repeatCount="indefinite"/></circle>
   </g>
 
-
-  <!-- ================= FLOW B: 9 TOKEN CHIPS ================= -->
-  <!-- Appears at 2.6s, STAYS through 17.7s -->
+  <!-- ================= FLOW B: 8 TOKEN PILL CHIPS ================= -->
+  <!-- Drops beneath prompt (3.2s to 5.2s), then dissolves into vector baseline -->
   <g id="flow-b-tokens" opacity="0">
-    <animate attributeName="opacity" values="0;0;1;1;0;0" keyTimes="0;0.1444;0.1611;0.9833;0.9944;1" calcMode="linear" dur="18.0s" repeatCount="indefinite"/>
+    <animate attributeName="opacity" values="0;0;1;1;0;0" keyTimes="0;0.1455;0.1545;0.2273;0.2364;1" calcMode="linear" dur="22.0s" repeatCount="indefinite"/>
 
-    <rect x="20" y="278" width="44" height="19" rx="5" fill="#161B22" stroke="#30363D" stroke-width="1.0"/>
-    <text class="m4" x="42" y="292" font-size="10.5" font-weight="500" fill="#E6EDF3" text-anchor="middle">What</text>
-    <text class="m4" x="42" y="307" font-size="8.5" fill="#8B949E" text-anchor="middle">3923</text>
-    <rect x="76" y="278" width="44" height="19" rx="5" fill="#161B22" stroke="#30363D" stroke-width="1.0"/>
-    <text class="m4" x="98" y="292" font-size="10.5" font-weight="500" fill="#E6EDF3" text-anchor="middle">can</text>
-    <text class="m4" x="98" y="307" font-size="8.5" fill="#8B949E" text-anchor="middle">649</text>
-    <rect x="132" y="278" width="44" height="19" rx="5" fill="#161B22" stroke="#30363D" stroke-width="1.0"/>
-    <text class="m4" x="154" y="292" font-size="10.5" font-weight="500" fill="#E6EDF3" text-anchor="middle">AI</text>
-    <text class="m4" x="154" y="307" font-size="8.5" fill="#8B949E" text-anchor="middle">15837</text>
-    <rect x="188" y="278" width="44" height="19" rx="5" fill="#161B22" stroke="#30363D" stroke-width="1.0"/>
-    <text class="m4" x="210" y="292" font-size="10.5" font-weight="500" fill="#E6EDF3" text-anchor="middle">do</text>
-    <text class="m4" x="210" y="307" font-size="8.5" fill="#8B949E" text-anchor="middle">466</text>
-    <rect x="244" y="278" width="44" height="19" rx="5" fill="#161B22" stroke="#30363D" stroke-width="1.0"/>
-    <text class="m4" x="266" y="292" font-size="10.5" font-weight="500" fill="#E6EDF3" text-anchor="middle">for</text>
-    <text class="m4" x="266" y="307" font-size="8.5" fill="#8B949E" text-anchor="middle">329</text>
-    <rect x="300" y="278" width="44" height="19" rx="5" fill="#161B22" stroke="#30363D" stroke-width="1.0"/>
-    <text class="m4" x="322" y="292" font-size="10.5" font-weight="500" fill="#E6EDF3" text-anchor="middle">my</text>
-    <text class="m4" x="322" y="307" font-size="8.5" fill="#8B949E" text-anchor="middle">1820</text>
-    <rect x="356" y="278" width="44" height="19" rx="5" fill="#1F242C" stroke="#FB923C" stroke-width="1.3"/>
-    <text class="m4" x="378" y="292" font-size="10.5" font-weight="500" fill="#E6EDF3" text-anchor="middle">busi</text>
-    <text class="m4" x="378" y="307" font-size="8.5" fill="#8B949E" text-anchor="middle">26722</text>
-    <rect x="412" y="278" width="44" height="19" rx="5" fill="#1F242C" stroke="#FB923C" stroke-width="1.3"/>
-    <text class="m4" x="434" y="292" font-size="10.5" font-weight="500" fill="#E6EDF3" text-anchor="middle">ness</text>
-    <text class="m4" x="434" y="307" font-size="8.5" fill="#8B949E" text-anchor="middle">1108</text>
-    <rect x="468" y="278" width="44" height="19" rx="5" fill="#161B22" stroke="#30363D" stroke-width="1.0"/>
-    <text class="m4" x="490" y="292" font-size="10.5" font-weight="500" fill="#E6EDF3" text-anchor="middle">?</text>
-    <text class="m4" x="490" y="307" font-size="8.5" fill="#8B949E" text-anchor="middle">30</text>
+    <g>
+      <rect x="28" y="112" width="44" height="20" rx="5" fill="#161B22" stroke="#30363D" stroke-width="1"/>
+      <text class="m4" x="50" y="126" font-size="10.5" font-weight="500" fill="#E6EDF3" text-anchor="middle">What</text>
+      <text class="m4" x="50" y="141" font-size="8.5" fill="#6E7681" text-anchor="middle">2061</text>
+    </g>
+    <g>
+      <rect x="78" y="112" width="44" height="20" rx="5" fill="#161B22" stroke="#30363D" stroke-width="1"/>
+      <text class="m4" x="100" y="126" font-size="10.5" font-weight="500" fill="#E6EDF3" text-anchor="middle">can</text>
+      <text class="m4" x="100" y="141" font-size="8.5" fill="#6E7681" text-anchor="middle">649</text>
+    </g>
+    <g>
+      <rect x="128" y="112" width="44" height="20" rx="5" fill="#161B22" stroke="#30363D" stroke-width="1"/>
+      <text class="m4" x="150" y="126" font-size="10.5" font-weight="500" fill="#E6EDF3" text-anchor="middle">AI</text>
+      <text class="m4" x="150" y="141" font-size="8.5" fill="#6E7681" text-anchor="middle">9552</text>
+    </g>
+    <g>
+      <rect x="178" y="112" width="44" height="20" rx="5" fill="#161B22" stroke="#30363D" stroke-width="1"/>
+      <text class="m4" x="200" y="126" font-size="10.5" font-weight="500" fill="#E6EDF3" text-anchor="middle">do</text>
+      <text class="m4" x="200" y="141" font-size="8.5" fill="#6E7681" text-anchor="middle">477</text>
+    </g>
+    <g>
+      <rect x="228" y="112" width="44" height="20" rx="5" fill="#161B22" stroke="#30363D" stroke-width="1"/>
+      <text class="m4" x="250" y="126" font-size="10.5" font-weight="500" fill="#E6EDF3" text-anchor="middle">for</text>
+      <text class="m4" x="250" y="141" font-size="8.5" fill="#6E7681" text-anchor="middle">337</text>
+    </g>
+    <g>
+      <rect x="278" y="112" width="44" height="20" rx="5" fill="#161B22" stroke="#30363D" stroke-width="1"/>
+      <text class="m4" x="300" y="126" font-size="10.5" font-weight="500" fill="#E6EDF3" text-anchor="middle">my</text>
+      <text class="m4" x="300" y="141" font-size="8.5" fill="#6E7681" text-anchor="middle">856</text>
+    </g>
+    <g>
+      <rect x="328" y="112" width="44" height="20" rx="5" fill="#161B22" stroke="#FB923C" stroke-width="1"/>
+      <text class="m4" x="350" y="126" font-size="10.5" font-weight="500" fill="#E6EDF3" text-anchor="middle">business</text>
+      <text class="m4" x="350" y="141" font-size="8.5" fill="#6E7681" text-anchor="middle">3168</text>
+    </g>
+    <g>
+      <rect x="378" y="112" width="44" height="20" rx="5" fill="#161B22" stroke="#30363D" stroke-width="1"/>
+      <text class="m4" x="400" y="126" font-size="10.5" font-weight="500" fill="#E6EDF3" text-anchor="middle">?</text>
+      <text class="m4" x="400" y="141" font-size="8.5" fill="#6E7681" text-anchor="middle">30</text>
+    </g>
   </g>
 
-  <!-- ================= FLOW C: EMBEDDINGS & BASELINE ================= -->
-  <!-- Appears at 4.8s, STAYS through 17.7s -->
-  <g id="flow-c-embeddings" opacity="0">
-    <animate attributeName="opacity" values="0;0;1;1;0;0" keyTimes="0;0.2667;0.2833;0.9833;0.9944;1" calcMode="linear" dur="18.0s" repeatCount="indefinite"/>
-    
-    <!-- Sequence baseline draws across left-to-right (4.8s to 6.2s / 0.2667 to 0.3444) -->
-    <line x1="30" y1="404" x2="490" y2="404" stroke="#30363D" stroke-width="1" stroke-dasharray="460" stroke-dashoffset="460">
-      <animate attributeName="stroke-dashoffset" values="460;460;0;0;460" keyTimes="0;0.2667;0.3444;0.9833;1" calcMode="linear" dur="18.0s" repeatCount="indefinite"/>
+  <!-- ================= FLOW C: SEQUENCE BASELINE & VECTOR COLUMNS ================= -->
+  <g id="flow-c-baseline">
+    <!-- Sequence Baseline Floor Line (grows from x=30 to 450) -->
+    <line x1="30" y1="404" x2="450" y2="404" stroke="#30363D" stroke-width="1" stroke-dasharray="420" stroke-dashoffset="420">
+      <animate attributeName="stroke-dashoffset" values="420;420;0;0;420" keyTimes="0;0.2364;0.3182;0.9636;1" calcMode="linear" dur="22.0s" repeatCount="indefinite"/>
     </line>
+    <!-- Baseline Header Label -->
+    <text class="m4" x="30" y="422" font-size="9.5" fill="#6E7681">
+      <tspan>Context Sequence · 13 Vector Columns</tspan>
+      <animate attributeName="fill" values="#6E7681;#6E7681;#FB923C;#6E7681;#6E7681" keyTimes="0;0.2364;0.3182;0.9636;1" dur="22.0s" calcMode="discrete" repeatCount="indefinite"/>
+    </text>
+    <!-- Autoregressive loop blinking indicator -->
+    <text class="m4" x="255" y="422" font-size="9.5" font-weight="bold" fill="#FB923C" opacity="0">
+      <animate attributeName="opacity" values="0;0;1;0;1;0;1;0;1;0;1;0;0" keyTimes="0;0.5273;0.5364;0.5818;0.5909;0.6364;0.6455;0.6909;0.7000;0.7455;0.7545;0.8000;1" calcMode="discrete" dur="22.0s" repeatCount="indefinite"/>
+      [Autoregressive loop]
+    </text>
 
-    <rect x="36.5" y="314" width="11" height="5" rx="1.5" fill="#FB923C" opacity="0.90"/>
-    <rect x="36.5" y="321" width="11" height="5" rx="1.5" fill="#21262D" opacity="0.28"/>
-    <rect x="36.5" y="328" width="11" height="5" rx="1.5" fill="#21262D" opacity="0.28"/>
-    <rect x="36.5" y="335" width="11" height="5" rx="1.5" fill="#21262D" opacity="0.28"/>
-    <rect x="36.5" y="342" width="11" height="5" rx="1.5" fill="#21262D" opacity="0.28"/>
-    <rect x="36.5" y="349" width="11" height="5" rx="1.5" fill="#FB923C" opacity="0.90"/>
-    <rect x="36.5" y="356" width="11" height="5" rx="1.5" fill="#21262D" opacity="0.28"/>
-    <rect x="36.5" y="363" width="11" height="5" rx="1.5" fill="#FB923C" opacity="0.90"/>
-    <rect x="36.5" y="370" width="11" height="5" rx="1.5" fill="#21262D" opacity="0.28"/>
-    <rect x="36.5" y="377" width="11" height="5" rx="1.5" fill="#21262D" opacity="0.28"/>
-    <rect x="36.5" y="384" width="11" height="5" rx="1.5" fill="#21262D" opacity="0.28"/>
-    <rect x="36.5" y="391" width="11" height="5" rx="1.5" fill="#21262D" opacity="0.28"/>
-    <rect x="92.5" y="314" width="11" height="5" rx="1.5" fill="#21262D" opacity="0.28"/>
-    <rect x="92.5" y="321" width="11" height="5" rx="1.5" fill="#FB923C" opacity="0.90"/>
-    <rect x="92.5" y="328" width="11" height="5" rx="1.5" fill="#21262D" opacity="0.28"/>
-    <rect x="92.5" y="335" width="11" height="5" rx="1.5" fill="#FB923C" opacity="0.90"/>
-    <rect x="92.5" y="342" width="11" height="5" rx="1.5" fill="#21262D" opacity="0.28"/>
-    <rect x="92.5" y="349" width="11" height="5" rx="1.5" fill="#21262D" opacity="0.28"/>
-    <rect x="92.5" y="356" width="11" height="5" rx="1.5" fill="#21262D" opacity="0.28"/>
-    <rect x="92.5" y="363" width="11" height="5" rx="1.5" fill="#21262D" opacity="0.28"/>
-    <rect x="92.5" y="370" width="11" height="5" rx="1.5" fill="#FB923C" opacity="0.90"/>
-    <rect x="92.5" y="377" width="11" height="5" rx="1.5" fill="#21262D" opacity="0.28"/>
-    <rect x="92.5" y="384" width="11" height="5" rx="1.5" fill="#FB923C" opacity="0.90"/>
-    <rect x="92.5" y="391" width="11" height="5" rx="1.5" fill="#21262D" opacity="0.28"/>
-    <rect x="148.5" y="314" width="11" height="5" rx="1.5" fill="#21262D" opacity="0.28"/>
-    <rect x="148.5" y="321" width="11" height="5" rx="1.5" fill="#21262D" opacity="0.28"/>
-    <rect x="148.5" y="328" width="11" height="5" rx="1.5" fill="#21262D" opacity="0.28"/>
-    <rect x="148.5" y="335" width="11" height="5" rx="1.5" fill="#21262D" opacity="0.28"/>
-    <rect x="148.5" y="342" width="11" height="5" rx="1.5" fill="#FB923C" opacity="0.90"/>
-    <rect x="148.5" y="349" width="11" height="5" rx="1.5" fill="#21262D" opacity="0.28"/>
-    <rect x="148.5" y="356" width="11" height="5" rx="1.5" fill="#FB923C" opacity="0.90"/>
-    <rect x="148.5" y="363" width="11" height="5" rx="1.5" fill="#21262D" opacity="0.28"/>
-    <rect x="148.5" y="370" width="11" height="5" rx="1.5" fill="#21262D" opacity="0.28"/>
-    <rect x="148.5" y="377" width="11" height="5" rx="1.5" fill="#21262D" opacity="0.28"/>
-    <rect x="148.5" y="384" width="11" height="5" rx="1.5" fill="#21262D" opacity="0.28"/>
-    <rect x="148.5" y="391" width="11" height="5" rx="1.5" fill="#FB923C" opacity="0.90"/>
-    <rect x="204.5" y="314" width="11" height="5" rx="1.5" fill="#FB923C" opacity="0.90"/>
-    <rect x="204.5" y="321" width="11" height="5" rx="1.5" fill="#21262D" opacity="0.28"/>
-    <rect x="204.5" y="328" width="11" height="5" rx="1.5" fill="#FB923C" opacity="0.90"/>
-    <rect x="204.5" y="335" width="11" height="5" rx="1.5" fill="#21262D" opacity="0.28"/>
-    <rect x="204.5" y="342" width="11" height="5" rx="1.5" fill="#21262D" opacity="0.28"/>
-    <rect x="204.5" y="349" width="11" height="5" rx="1.5" fill="#21262D" opacity="0.28"/>
-    <rect x="204.5" y="356" width="11" height="5" rx="1.5" fill="#21262D" opacity="0.28"/>
-    <rect x="204.5" y="363" width="11" height="5" rx="1.5" fill="#FB923C" opacity="0.90"/>
-    <rect x="204.5" y="370" width="11" height="5" rx="1.5" fill="#21262D" opacity="0.28"/>
-    <rect x="204.5" y="377" width="11" height="5" rx="1.5" fill="#FB923C" opacity="0.90"/>
-    <rect x="204.5" y="384" width="11" height="5" rx="1.5" fill="#21262D" opacity="0.28"/>
-    <rect x="204.5" y="391" width="11" height="5" rx="1.5" fill="#21262D" opacity="0.28"/>
-    <rect x="260.5" y="314" width="11" height="5" rx="1.5" fill="#21262D" opacity="0.28"/>
-    <rect x="260.5" y="321" width="11" height="5" rx="1.5" fill="#21262D" opacity="0.28"/>
-    <rect x="260.5" y="328" width="11" height="5" rx="1.5" fill="#21262D" opacity="0.28"/>
-    <rect x="260.5" y="335" width="11" height="5" rx="1.5" fill="#FB923C" opacity="0.90"/>
-    <rect x="260.5" y="342" width="11" height="5" rx="1.5" fill="#21262D" opacity="0.28"/>
-    <rect x="260.5" y="349" width="11" height="5" rx="1.5" fill="#FB923C" opacity="0.90"/>
-    <rect x="260.5" y="356" width="11" height="5" rx="1.5" fill="#21262D" opacity="0.28"/>
-    <rect x="260.5" y="363" width="11" height="5" rx="1.5" fill="#21262D" opacity="0.28"/>
-    <rect x="260.5" y="370" width="11" height="5" rx="1.5" fill="#21262D" opacity="0.28"/>
-    <rect x="260.5" y="377" width="11" height="5" rx="1.5" fill="#21262D" opacity="0.28"/>
-    <rect x="260.5" y="384" width="11" height="5" rx="1.5" fill="#FB923C" opacity="0.90"/>
-    <rect x="260.5" y="391" width="11" height="5" rx="1.5" fill="#21262D" opacity="0.28"/>
-    <rect x="316.5" y="314" width="11" height="5" rx="1.5" fill="#21262D" opacity="0.28"/>
-    <rect x="316.5" y="321" width="11" height="5" rx="1.5" fill="#FB923C" opacity="0.90"/>
-    <rect x="316.5" y="328" width="11" height="5" rx="1.5" fill="#21262D" opacity="0.28"/>
-    <rect x="316.5" y="335" width="11" height="5" rx="1.5" fill="#21262D" opacity="0.28"/>
-    <rect x="316.5" y="342" width="11" height="5" rx="1.5" fill="#21262D" opacity="0.28"/>
-    <rect x="316.5" y="349" width="11" height="5" rx="1.5" fill="#21262D" opacity="0.28"/>
-    <rect x="316.5" y="356" width="11" height="5" rx="1.5" fill="#FB923C" opacity="0.90"/>
-    <rect x="316.5" y="363" width="11" height="5" rx="1.5" fill="#21262D" opacity="0.28"/>
-    <rect x="316.5" y="370" width="11" height="5" rx="1.5" fill="#FB923C" opacity="0.90"/>
-    <rect x="316.5" y="377" width="11" height="5" rx="1.5" fill="#21262D" opacity="0.28"/>
-    <rect x="316.5" y="384" width="11" height="5" rx="1.5" fill="#21262D" opacity="0.28"/>
-    <rect x="316.5" y="391" width="11" height="5" rx="1.5" fill="#21262D" opacity="0.28"/>
-    <rect x="372.5" y="314" width="11" height="5" rx="1.5" fill="#21262D" opacity="0.28"/>
-    <rect x="372.5" y="321" width="11" height="5" rx="1.5" fill="#21262D" opacity="0.28"/>
-    <rect x="372.5" y="328" width="11" height="5" rx="1.5" fill="#FB923C" opacity="0.90"/>
-    <rect x="372.5" y="335" width="11" height="5" rx="1.5" fill="#21262D" opacity="0.28"/>
-    <rect x="372.5" y="342" width="11" height="5" rx="1.5" fill="#FB923C" opacity="0.90"/>
-    <rect x="372.5" y="349" width="11" height="5" rx="1.5" fill="#21262D" opacity="0.28"/>
-    <rect x="372.5" y="356" width="11" height="5" rx="1.5" fill="#21262D" opacity="0.28"/>
-    <rect x="372.5" y="363" width="11" height="5" rx="1.5" fill="#21262D" opacity="0.28"/>
-    <rect x="372.5" y="370" width="11" height="5" rx="1.5" fill="#21262D" opacity="0.28"/>
-    <rect x="372.5" y="377" width="11" height="5" rx="1.5" fill="#FB923C" opacity="0.90"/>
-    <rect x="372.5" y="384" width="11" height="5" rx="1.5" fill="#21262D" opacity="0.28"/>
-    <rect x="372.5" y="391" width="11" height="5" rx="1.5" fill="#FB923C" opacity="0.90"/>
-    <rect x="428.5" y="314" width="11" height="5" rx="1.5" fill="#FB923C" opacity="0.90"/>
-    <rect x="428.5" y="321" width="11" height="5" rx="1.5" fill="#21262D" opacity="0.28"/>
-    <rect x="428.5" y="328" width="11" height="5" rx="1.5" fill="#21262D" opacity="0.28"/>
-    <rect x="428.5" y="335" width="11" height="5" rx="1.5" fill="#21262D" opacity="0.28"/>
-    <rect x="428.5" y="342" width="11" height="5" rx="1.5" fill="#21262D" opacity="0.28"/>
-    <rect x="428.5" y="349" width="11" height="5" rx="1.5" fill="#FB923C" opacity="0.90"/>
-    <rect x="428.5" y="356" width="11" height="5" rx="1.5" fill="#21262D" opacity="0.28"/>
-    <rect x="428.5" y="363" width="11" height="5" rx="1.5" fill="#FB923C" opacity="0.90"/>
-    <rect x="428.5" y="370" width="11" height="5" rx="1.5" fill="#21262D" opacity="0.28"/>
-    <rect x="428.5" y="377" width="11" height="5" rx="1.5" fill="#21262D" opacity="0.28"/>
-    <rect x="428.5" y="384" width="11" height="5" rx="1.5" fill="#21262D" opacity="0.28"/>
-    <rect x="428.5" y="391" width="11" height="5" rx="1.5" fill="#21262D" opacity="0.28"/>
-    <rect x="484.5" y="314" width="11" height="5" rx="1.5" fill="#21262D" opacity="0.28"/>
-    <rect x="484.5" y="321" width="11" height="5" rx="1.5" fill="#FB923C" opacity="0.90"/>
-    <rect x="484.5" y="328" width="11" height="5" rx="1.5" fill="#21262D" opacity="0.28"/>
-    <rect x="484.5" y="335" width="11" height="5" rx="1.5" fill="#FB923C" opacity="0.90"/>
-    <rect x="484.5" y="342" width="11" height="5" rx="1.5" fill="#21262D" opacity="0.28"/>
-    <rect x="484.5" y="349" width="11" height="5" rx="1.5" fill="#21262D" opacity="0.28"/>
-    <rect x="484.5" y="356" width="11" height="5" rx="1.5" fill="#21262D" opacity="0.28"/>
-    <rect x="484.5" y="363" width="11" height="5" rx="1.5" fill="#21262D" opacity="0.28"/>
-    <rect x="484.5" y="370" width="11" height="5" rx="1.5" fill="#FB923C" opacity="0.90"/>
-    <rect x="484.5" y="377" width="11" height="5" rx="1.5" fill="#21262D" opacity="0.28"/>
-    <rect x="484.5" y="384" width="11" height="5" rx="1.5" fill="#FB923C" opacity="0.90"/>
-    <rect x="484.5" y="391" width="11" height="5" rx="1.5" fill="#21262D" opacity="0.28"/>
+    <!-- Initial 8 Prompt Vector Columns (appear at 5.2s, STAY) -->
+    <g opacity="0">
+      <animate attributeName="opacity" values="0;0;1;1;0;0" keyTimes="0;0.2364;0.2455;0.9636;0.9909;1" calcMode="linear" dur="22.0s" repeatCount="indefinite"/>
+
+      <circle cx="44" cy="358" r="3.2" fill="#FB923C" opacity="0.95"/>
+      <circle cx="44" cy="369" r="3.2" fill="#30363D" opacity="0.45"/>
+      <circle cx="44" cy="380" r="3.2" fill="#30363D" opacity="0.45"/>
+      <circle cx="44" cy="391" r="3.2" fill="#30363D" opacity="0.45"/>
+      <circle cx="76" cy="358" r="3.2" fill="#30363D" opacity="0.45"/>
+      <circle cx="76" cy="369" r="3.2" fill="#FB923C" opacity="0.95"/>
+      <circle cx="76" cy="380" r="3.2" fill="#30363D" opacity="0.45"/>
+      <circle cx="76" cy="391" r="3.2" fill="#30363D" opacity="0.45"/>
+      <circle cx="108" cy="358" r="3.2" fill="#30363D" opacity="0.45"/>
+      <circle cx="108" cy="369" r="3.2" fill="#30363D" opacity="0.45"/>
+      <circle cx="108" cy="380" r="3.2" fill="#FB923C" opacity="0.95"/>
+      <circle cx="108" cy="391" r="3.2" fill="#30363D" opacity="0.45"/>
+      <circle cx="140" cy="358" r="3.2" fill="#30363D" opacity="0.45"/>
+      <circle cx="140" cy="369" r="3.2" fill="#30363D" opacity="0.45"/>
+      <circle cx="140" cy="380" r="3.2" fill="#30363D" opacity="0.45"/>
+      <circle cx="140" cy="391" r="3.2" fill="#FB923C" opacity="0.95"/>
+      <circle cx="172" cy="358" r="3.2" fill="#30363D" opacity="0.45"/>
+      <circle cx="172" cy="369" r="3.2" fill="#30363D" opacity="0.45"/>
+      <circle cx="172" cy="380" r="3.2" fill="#30363D" opacity="0.45"/>
+      <circle cx="172" cy="391" r="3.2" fill="#30363D" opacity="0.45"/>
+      <circle cx="204" cy="358" r="3.2" fill="#FB923C" opacity="0.95"/>
+      <circle cx="204" cy="369" r="3.2" fill="#30363D" opacity="0.45"/>
+      <circle cx="204" cy="380" r="3.2" fill="#30363D" opacity="0.45"/>
+      <circle cx="204" cy="391" r="3.2" fill="#30363D" opacity="0.45"/>
+      <circle cx="236" cy="358" r="3.2" fill="#30363D" opacity="0.45"/>
+      <circle cx="236" cy="369" r="3.2" fill="#FB923C" opacity="0.95"/>
+      <circle cx="236" cy="380" r="3.2" fill="#30363D" opacity="0.45"/>
+      <circle cx="236" cy="391" r="3.2" fill="#30363D" opacity="0.45"/>
+      <circle cx="268" cy="358" r="3.2" fill="#30363D" opacity="0.45"/>
+      <circle cx="268" cy="369" r="3.2" fill="#30363D" opacity="0.45"/>
+      <circle cx="268" cy="380" r="3.2" fill="#FB923C" opacity="0.95"/>
+      <circle cx="268" cy="391" r="3.2" fill="#30363D" opacity="0.45"/>
+    </g>
+    <!-- Autoregressive Generated Column 9 (Card 1) -->
+    <g opacity="0">
+      <animate attributeName="opacity" values="0;0;1;1;0;0" keyTimes="0;0.5500;0.5568;0.9636;0.9909;1" calcMode="linear" dur="22.0s" repeatCount="indefinite"/>
+      <!-- Landing Ripple Ring -->
+      <circle cx="300" cy="404" r="6" fill="none" stroke="#FB923C" stroke-width="1.2">
+        <animate attributeName="r" values="3;10;3" dur="1.2s" repeatCount="indefinite"/>
+        <animate attributeName="opacity" values="0.8;0;0" dur="1.2s" repeatCount="indefinite"/>
+      </circle>
+
+      <circle cx="300" cy="358" r="3.2" fill="#FB923C" opacity="0.95"/>
+      <circle cx="300" cy="369" r="3.2" fill="#FB923C" opacity="0.95"/>
+      <circle cx="300" cy="380" r="3.2" fill="#FB923C" opacity="0.95"/>
+      <circle cx="300" cy="391" r="3.2" fill="#FB923C" opacity="0.95"/>
+    </g>
+    <!-- Autoregressive Generated Column 10 (Card 2) -->
+    <g opacity="0">
+      <animate attributeName="opacity" values="0;0;1;1;0;0" keyTimes="0;0.6045;0.6114;0.9636;0.9909;1" calcMode="linear" dur="22.0s" repeatCount="indefinite"/>
+      <!-- Landing Ripple Ring -->
+      <circle cx="332" cy="404" r="6" fill="none" stroke="#FB923C" stroke-width="1.2">
+        <animate attributeName="r" values="3;10;3" dur="1.2s" repeatCount="indefinite"/>
+        <animate attributeName="opacity" values="0.8;0;0" dur="1.2s" repeatCount="indefinite"/>
+      </circle>
+
+      <circle cx="332" cy="358" r="3.2" fill="#FB923C" opacity="0.95"/>
+      <circle cx="332" cy="369" r="3.2" fill="#FB923C" opacity="0.95"/>
+      <circle cx="332" cy="380" r="3.2" fill="#FB923C" opacity="0.95"/>
+      <circle cx="332" cy="391" r="3.2" fill="#FB923C" opacity="0.95"/>
+    </g>
+    <!-- Autoregressive Generated Column 11 (Card 3) -->
+    <g opacity="0">
+      <animate attributeName="opacity" values="0;0;1;1;0;0" keyTimes="0;0.6591;0.6659;0.9636;0.9909;1" calcMode="linear" dur="22.0s" repeatCount="indefinite"/>
+      <!-- Landing Ripple Ring -->
+      <circle cx="364" cy="404" r="6" fill="none" stroke="#FB923C" stroke-width="1.2">
+        <animate attributeName="r" values="3;10;3" dur="1.2s" repeatCount="indefinite"/>
+        <animate attributeName="opacity" values="0.8;0;0" dur="1.2s" repeatCount="indefinite"/>
+      </circle>
+
+      <circle cx="364" cy="358" r="3.2" fill="#FB923C" opacity="0.95"/>
+      <circle cx="364" cy="369" r="3.2" fill="#FB923C" opacity="0.95"/>
+      <circle cx="364" cy="380" r="3.2" fill="#FB923C" opacity="0.95"/>
+      <circle cx="364" cy="391" r="3.2" fill="#FB923C" opacity="0.95"/>
+    </g>
+    <!-- Autoregressive Generated Column 12 (Card 4) -->
+    <g opacity="0">
+      <animate attributeName="opacity" values="0;0;1;1;0;0" keyTimes="0;0.7136;0.7205;0.9636;0.9909;1" calcMode="linear" dur="22.0s" repeatCount="indefinite"/>
+      <!-- Landing Ripple Ring -->
+      <circle cx="396" cy="404" r="6" fill="none" stroke="#FB923C" stroke-width="1.2">
+        <animate attributeName="r" values="3;10;3" dur="1.2s" repeatCount="indefinite"/>
+        <animate attributeName="opacity" values="0.8;0;0" dur="1.2s" repeatCount="indefinite"/>
+      </circle>
+
+      <circle cx="396" cy="358" r="3.2" fill="#FB923C" opacity="0.95"/>
+      <circle cx="396" cy="369" r="3.2" fill="#FB923C" opacity="0.95"/>
+      <circle cx="396" cy="380" r="3.2" fill="#FB923C" opacity="0.95"/>
+      <circle cx="396" cy="391" r="3.2" fill="#FB923C" opacity="0.95"/>
+    </g>
+    <!-- Autoregressive Generated Column 13 (Card 5) -->
+    <g opacity="0">
+      <animate attributeName="opacity" values="0;0;1;1;0;0" keyTimes="0;0.7682;0.7750;0.9636;0.9909;1" calcMode="linear" dur="22.0s" repeatCount="indefinite"/>
+      <!-- Landing Ripple Ring -->
+      <circle cx="428" cy="404" r="6" fill="none" stroke="#FB923C" stroke-width="1.2">
+        <animate attributeName="r" values="3;10;3" dur="1.2s" repeatCount="indefinite"/>
+        <animate attributeName="opacity" values="0.8;0;0" dur="1.2s" repeatCount="indefinite"/>
+      </circle>
+
+      <circle cx="428" cy="358" r="3.2" fill="#FB923C" opacity="0.95"/>
+      <circle cx="428" cy="369" r="3.2" fill="#FB923C" opacity="0.95"/>
+      <circle cx="428" cy="380" r="3.2" fill="#FB923C" opacity="0.95"/>
+      <circle cx="428" cy="391" r="3.2" fill="#FB923C" opacity="0.95"/>
+    </g>
   </g>
 
   <!-- ================= FLOW D: SELF-ATTENTION ARCS ================= -->
-  <!-- Appears at 7.2s, STAYS through 17.7s -->
+  <!-- Active 7.0s - 9.4s, then DISSOLVES to make room for FFN block -->
   <g id="flow-d-attention" opacity="0">
-    <animate attributeName="opacity" values="0;0;1;1;0;0" keyTimes="0;0.4000;0.4167;0.9833;0.9944;1" calcMode="linear" dur="18.0s" repeatCount="indefinite"/>
+    <animate attributeName="opacity" values="0;0;1;1;0;0" keyTimes="0;0.3182;0.3273;0.4273;0.4364;1" calcMode="linear" dur="22.0s" repeatCount="indefinite"/>
+    <!-- Self-Attention Mode Badge -->
+    <rect x="44" y="224" width="102" height="18" rx="4" fill="#161B22" stroke="#FB923C" stroke-width="1"/>
+    <text class="m4" x="95" y="237" font-size="9.5" fill="#FB923C" text-anchor="middle">Self-Attention</text>
 
-    <path d="M 154 278 Q 182.0 250.2 210 278" pathLength="100" fill="none" stroke="#38BDF8" stroke-width="1.2" stroke-opacity="0.25"/>
-    <path d="M 154 278 Q 182.0 250.2 210 278" pathLength="100" fill="none" stroke="#38BDF8" stroke-width="2.2" stroke-linecap="round" stroke-dasharray="14 100" stroke-dashoffset="114">
-      <animate attributeName="stroke-dashoffset" values="114;0" dur="2.0s" repeatCount="indefinite"/>
+    <path d="M 108 354 Q 124.0 317.0 140 354" pathLength="100" fill="none" stroke="#38BDF8" stroke-width="1.3" stroke-opacity="0.35"/>
+    <path d="M 108 354 Q 124.0 317.0 140 354" pathLength="100" fill="none" stroke="#38BDF8" stroke-width="2.4" stroke-linecap="round" stroke-dasharray="16 100" stroke-dashoffset="116">
+      <animate attributeName="stroke-dashoffset" values="116;0" dur="1.2s" repeatCount="indefinite"/>
     </path>
-    <path d="M 154 278 Q 266.0 226.6 378 278" pathLength="100" fill="none" stroke="#38BDF8" stroke-width="1.2" stroke-opacity="0.25"/>
-    <path d="M 154 278 Q 266.0 226.6 378 278" pathLength="100" fill="none" stroke="#38BDF8" stroke-width="2.2" stroke-linecap="round" stroke-dasharray="14 100" stroke-dashoffset="114">
-      <animate attributeName="stroke-dashoffset" values="114;0" dur="2.0s" repeatCount="indefinite"/>
+    <path d="M 108 354 Q 172.0 290.2 236 354" pathLength="100" fill="none" stroke="#38BDF8" stroke-width="1.3" stroke-opacity="0.35"/>
+    <path d="M 108 354 Q 172.0 290.2 236 354" pathLength="100" fill="none" stroke="#38BDF8" stroke-width="2.4" stroke-linecap="round" stroke-dasharray="16 100" stroke-dashoffset="116">
+      <animate attributeName="stroke-dashoffset" values="116;0" dur="1.2s" repeatCount="indefinite"/>
     </path>
-    <path d="M 42 278 Q 126.0 225.5 210 278" pathLength="100" fill="none" stroke="#FB923C" stroke-width="1.2" stroke-opacity="0.25"/>
-    <path d="M 42 278 Q 126.0 225.5 210 278" pathLength="100" fill="none" stroke="#FB923C" stroke-width="2.2" stroke-linecap="round" stroke-dasharray="14 100" stroke-dashoffset="114">
-      <animate attributeName="stroke-dashoffset" values="114;0" dur="2.0s" repeatCount="indefinite"/>
+    <path d="M 44 354 Q 92.0 299.1 140 354" pathLength="100" fill="none" stroke="#FB923C" stroke-width="1.3" stroke-opacity="0.35"/>
+    <path d="M 44 354 Q 92.0 299.1 140 354" pathLength="100" fill="none" stroke="#FB923C" stroke-width="2.4" stroke-linecap="round" stroke-dasharray="16 100" stroke-dashoffset="116">
+      <animate attributeName="stroke-dashoffset" values="116;0" dur="1.2s" repeatCount="indefinite"/>
     </path>
-    <path d="M 98 278 Q 154.0 233.3 210 278" pathLength="100" fill="none" stroke="#FB923C" stroke-width="1.2" stroke-opacity="0.25"/>
-    <path d="M 98 278 Q 154.0 233.3 210 278" pathLength="100" fill="none" stroke="#FB923C" stroke-width="2.2" stroke-linecap="round" stroke-dasharray="14 100" stroke-dashoffset="114">
-      <animate attributeName="stroke-dashoffset" values="114;0" dur="2.0s" repeatCount="indefinite"/>
+    <path d="M 76 354 Q 108.0 308.1 140 354" pathLength="100" fill="none" stroke="#FB923C" stroke-width="1.3" stroke-opacity="0.35"/>
+    <path d="M 76 354 Q 108.0 308.1 140 354" pathLength="100" fill="none" stroke="#FB923C" stroke-width="2.4" stroke-linecap="round" stroke-dasharray="16 100" stroke-dashoffset="116">
+      <animate attributeName="stroke-dashoffset" values="116;0" dur="1.2s" repeatCount="indefinite"/>
     </path>
-    <path d="M 322 278 Q 350.0 232.2 378 278" pathLength="100" fill="none" stroke="#F59E0B" stroke-width="1.2" stroke-opacity="0.25"/>
-    <path d="M 322 278 Q 350.0 232.2 378 278" pathLength="100" fill="none" stroke="#F59E0B" stroke-width="2.2" stroke-linecap="round" stroke-dasharray="14 100" stroke-dashoffset="114">
-      <animate attributeName="stroke-dashoffset" values="114;0" dur="2.0s" repeatCount="indefinite"/>
+    <path d="M 204 354 Q 220.0 317.0 236 354" pathLength="100" fill="none" stroke="#F59E0B" stroke-width="1.3" stroke-opacity="0.35"/>
+    <path d="M 204 354 Q 220.0 317.0 236 354" pathLength="100" fill="none" stroke="#F59E0B" stroke-width="2.4" stroke-linecap="round" stroke-dasharray="16 100" stroke-dashoffset="116">
+      <animate attributeName="stroke-dashoffset" values="116;0" dur="1.2s" repeatCount="indefinite"/>
     </path>
-    <path d="M 378 278 Q 406.0 232.2 434 278" pathLength="100" fill="none" stroke="#F59E0B" stroke-width="1.2" stroke-opacity="0.25"/>
-    <path d="M 378 278 Q 406.0 232.2 434 278" pathLength="100" fill="none" stroke="#F59E0B" stroke-width="2.2" stroke-linecap="round" stroke-dasharray="14 100" stroke-dashoffset="114">
-      <animate attributeName="stroke-dashoffset" values="114;0" dur="2.0s" repeatCount="indefinite"/>
+    <path d="M 172 354 Q 204.0 308.1 236 354" pathLength="100" fill="none" stroke="#F59E0B" stroke-width="1.3" stroke-opacity="0.35"/>
+    <path d="M 172 354 Q 204.0 308.1 236 354" pathLength="100" fill="none" stroke="#F59E0B" stroke-width="2.4" stroke-linecap="round" stroke-dasharray="16 100" stroke-dashoffset="116">
+      <animate attributeName="stroke-dashoffset" values="116;0" dur="1.2s" repeatCount="indefinite"/>
     </path>
-    <path d="M 266 278 Q 350.0 216.5 434 278" pathLength="100" fill="none" stroke="#F59E0B" stroke-width="1.2" stroke-opacity="0.25"/>
-    <path d="M 266 278 Q 350.0 216.5 434 278" pathLength="100" fill="none" stroke="#F59E0B" stroke-width="2.2" stroke-linecap="round" stroke-dasharray="14 100" stroke-dashoffset="114">
-      <animate attributeName="stroke-dashoffset" values="114;0" dur="2.0s" repeatCount="indefinite"/>
+    <path d="M 236 354 Q 252.0 317.0 268 354" pathLength="100" fill="none" stroke="#F59E0B" stroke-width="1.3" stroke-opacity="0.35"/>
+    <path d="M 236 354 Q 252.0 317.0 268 354" pathLength="100" fill="none" stroke="#F59E0B" stroke-width="2.4" stroke-linecap="round" stroke-dasharray="16 100" stroke-dashoffset="116">
+      <animate attributeName="stroke-dashoffset" values="116;0" dur="1.2s" repeatCount="indefinite"/>
     </path>
   </g>
 
-  <!-- ================= FLOW E: FEED-FORWARD BLOCK ================= -->
-  <!-- Appears at 9.8s, STAYS through 17.7s -->
+  <!-- ================= FLOW E: FEED-FORWARD NETWORK BLOCK ================= -->
+  <!-- Appears at 9.8s, STAYS through 21.2s -->
   <g id="flow-e-ffn" opacity="0">
-    <animate attributeName="opacity" values="0;0;1;1;0;0" keyTimes="0;0.5444;0.5611;0.9833;0.9944;1" calcMode="linear" dur="18.0s" repeatCount="indefinite"/>
+    <animate attributeName="opacity" values="0;0;1;1;0;0" keyTimes="0;0.4455;0.4545;0.9636;0.9909;1" calcMode="linear" dur="22.0s" repeatCount="indefinite"/>
 
-    <!-- Echo outline -->
-    <rect x="154" y="124" width="260" height="92" rx="8" fill="none" stroke="rgba(255,255,255,0.06)" stroke-width="1"/>
-    <!-- Main FFN Panel -->
-    <rect x="150" y="128" width="260" height="92" rx="8" fill="#161B22" stroke="#30363D" stroke-width="1"/>
-    <text class="m4" x="162" y="142" font-size="8.5" font-weight="bold" fill="#6E7681" letter-spacing="1">TRANSFORMER FFN BLOCK</text>
+    <!-- FFN Main Panel -->
+    <rect x="54" y="136" width="360" height="154" rx="10" fill="#161B22" stroke="#30363D" stroke-width="1"/>
+    <text class="m4" x="70" y="153" font-size="9" font-weight="bold" fill="#6E7681" letter-spacing="1">TRANSFORMER FFN BLOCK</text>
+    
+    <!-- Synchronized Layer Counter (ticks 0/12 to 12/12 from 9.8s to 11.6s) -->
+    <rect x="330" y="142" width="74" height="18" rx="4" fill="#1F242C" stroke="#30363D" stroke-width="1">
+      <animate attributeName="stroke" values="#30363D;#30363D;#FB923C;#30363D;#30363D" keyTimes="0;0.4455;0.4636;0.5273;1" dur="22.0s" calcMode="discrete" repeatCount="indefinite"/>
+    </rect>
+    <text class="m4" x="367" y="155" font-size="9.5" font-weight="bold" fill="#FB923C" text-anchor="middle">
+      <tspan>Layer 12/12</tspan>
+    </text>
 
-    <path d="M 185.0 153.8 L 280.0 151.2 M 185.0 153.8 L 280.0 161.5 M 185.0 153.8 L 280.0 171.8 M 185.0 153.8 L 280.0 182.2 M 185.0 153.8 L 280.0 192.5 M 185.0 153.8 L 280.0 202.8 M 185.0 169.2 L 280.0 151.2 M 185.0 169.2 L 280.0 161.5 M 185.0 169.2 L 280.0 171.8 M 185.0 169.2 L 280.0 182.2 M 185.0 169.2 L 280.0 192.5 M 185.0 169.2 L 280.0 202.8 M 185.0 184.8 L 280.0 151.2 M 185.0 184.8 L 280.0 161.5 M 185.0 184.8 L 280.0 171.8 M 185.0 184.8 L 280.0 182.2 M 185.0 184.8 L 280.0 192.5 M 185.0 184.8 L 280.0 202.8 M 185.0 200.2 L 280.0 151.2 M 185.0 200.2 L 280.0 161.5 M 185.0 200.2 L 280.0 171.8 M 185.0 200.2 L 280.0 182.2 M 185.0 200.2 L 280.0 192.5 M 185.0 200.2 L 280.0 202.8 M 280.0 151.2 L 375.0 152.2 M 280.0 151.2 L 375.0 164.6 M 280.0 151.2 L 375.0 177.0 M 280.0 151.2 L 375.0 189.4 M 280.0 151.2 L 375.0 201.8 M 280.0 161.5 L 375.0 152.2 M 280.0 161.5 L 375.0 164.6 M 280.0 161.5 L 375.0 177.0 M 280.0 161.5 L 375.0 189.4 M 280.0 161.5 L 375.0 201.8 M 280.0 171.8 L 375.0 152.2 M 280.0 171.8 L 375.0 164.6 M 280.0 171.8 L 375.0 177.0 M 280.0 171.8 L 375.0 189.4 M 280.0 171.8 L 375.0 201.8 M 280.0 182.2 L 375.0 152.2 M 280.0 182.2 L 375.0 164.6 M 280.0 182.2 L 375.0 177.0 M 280.0 182.2 L 375.0 189.4 M 280.0 182.2 L 375.0 201.8 M 280.0 192.5 L 375.0 152.2 M 280.0 192.5 L 375.0 164.6 M 280.0 192.5 L 375.0 177.0 M 280.0 192.5 L 375.0 189.4 M 280.0 192.5 L 375.0 201.8 M 280.0 202.8 L 375.0 152.2 M 280.0 202.8 L 375.0 164.6 M 280.0 202.8 L 375.0 177.0 M 280.0 202.8 L 375.0 189.4 M 280.0 202.8 L 375.0 201.8" stroke="#FFFFFF" stroke-opacity="0.08" stroke-width="1"/>
-    <path d="M 42 314 C 42 250, 175 250, 175 220 M 98 314 C 98 250, 201 250, 201 220 M 154 314 C 154 250, 227 250, 227 220 M 210 314 C 210 250, 253 250, 253 220 M 266 314 C 266 250, 279 250, 279 220 M 322 314 C 322 250, 305 250, 305 220 M 378 314 C 378 250, 331 250, 331 220 M 434 314 C 434 250, 357 250, 357 220 M 490 314 C 490 250, 383 250, 383 220" fill="none" stroke="#FB923C" stroke-width="1" stroke-opacity="0.3"/>
-    <path d="M 185.0 153.8 L 280.0 161.5 L 375.0 164.6" pathLength="100" fill="none" stroke="#FB923C" stroke-width="2" stroke-linecap="round" stroke-dasharray="16 100" stroke-dashoffset="116">
-      <animate attributeName="stroke-dashoffset" values="116;0" dur="2.0s" repeatCount="indefinite"/>
+    <path d="M 105 167.0 L 205 164.0 M 105 167.0 L 205 176.0 M 105 167.0 L 205 188.0 M 105 167.0 L 205 200.0 M 105 167.0 L 205 212.0 M 105 167.0 L 205 224.0 M 105 185.0 L 205 164.0 M 105 185.0 L 205 176.0 M 105 185.0 L 205 188.0 M 105 185.0 L 205 200.0 M 105 185.0 L 205 212.0 M 105 185.0 L 205 224.0 M 105 203.0 L 205 164.0 M 105 203.0 L 205 176.0 M 105 203.0 L 205 188.0 M 105 203.0 L 205 200.0 M 105 203.0 L 205 212.0 M 105 203.0 L 205 224.0 M 105 221.0 L 205 164.0 M 105 221.0 L 205 176.0 M 105 221.0 L 205 188.0 M 105 221.0 L 205 200.0 M 105 221.0 L 205 212.0 M 105 221.0 L 205 224.0 M 205 164.0 L 305 165.2 M 205 164.0 L 305 179.6 M 205 164.0 L 305 194.0 M 205 164.0 L 305 208.4 M 205 164.0 L 305 222.8 M 205 176.0 L 305 165.2 M 205 176.0 L 305 179.6 M 205 176.0 L 305 194.0 M 205 176.0 L 305 208.4 M 205 176.0 L 305 222.8 M 205 188.0 L 305 165.2 M 205 188.0 L 305 179.6 M 205 188.0 L 305 194.0 M 205 188.0 L 305 208.4 M 205 188.0 L 305 222.8 M 205 200.0 L 305 165.2 M 205 200.0 L 305 179.6 M 205 200.0 L 305 194.0 M 205 200.0 L 305 208.4 M 205 200.0 L 305 222.8 M 205 212.0 L 305 165.2 M 205 212.0 L 305 179.6 M 205 212.0 L 305 194.0 M 205 212.0 L 305 208.4 M 205 212.0 L 305 222.8 M 205 224.0 L 305 165.2 M 205 224.0 L 305 179.6 M 205 224.0 L 305 194.0 M 205 224.0 L 305 208.4 M 205 224.0 L 305 222.8" stroke="#FFFFFF" stroke-opacity="0.08" stroke-width="1"/>
+    <path d="M 44 356 C 44 320, 85 320, 85 290 M 76 356 C 76 320, 125 320, 125 290 M 108 356 C 108 320, 165 320, 165 290 M 140 356 C 140 320, 205 320, 205 290 M 172 356 C 172 320, 245 320, 245 290 M 204 356 C 204 320, 285 320, 285 290 M 236 356 C 236 320, 325 320, 325 290 M 268 356 C 268 320, 365 320, 365 290" fill="none" stroke="#FB923C" stroke-width="1" stroke-opacity="0.25"/>
+    <path d="M 105 167.0 L 205 176.0 L 305 179.6" pathLength="100" fill="none" stroke="#FB923C" stroke-width="2.2" stroke-linecap="round" stroke-dasharray="18 100" stroke-dashoffset="118">
+      <animate attributeName="stroke-dashoffset" values="118;0" dur="1.6s" repeatCount="indefinite"/>
     </path>
-    <path d="M 185.0 169.2 L 280.0 182.2 L 375.0 189.4" pathLength="100" fill="none" stroke="#F59E0B" stroke-width="2" stroke-linecap="round" stroke-dasharray="16 100" stroke-dashoffset="116">
-      <animate attributeName="stroke-dashoffset" values="116;0" dur="2.0s" repeatCount="indefinite"/>
+    <path d="M 105 185.0 L 205 200.0 L 305 208.4" pathLength="100" fill="none" stroke="#FB923C" stroke-width="2.2" stroke-linecap="round" stroke-dasharray="18 100" stroke-dashoffset="118">
+      <animate attributeName="stroke-dashoffset" values="118;0" dur="1.6s" repeatCount="indefinite"/>
     </path>
-    <path d="M 185.0 184.8 L 280.0 192.5 L 375.0 177.0" pathLength="100" fill="none" stroke="#FB923C" stroke-width="2" stroke-linecap="round" stroke-dasharray="16 100" stroke-dashoffset="116">
-      <animate attributeName="stroke-dashoffset" values="116;0" dur="2.0s" repeatCount="indefinite"/>
+    <path d="M 105 203.0 L 205 212.0 L 305 194.0" pathLength="100" fill="none" stroke="#FB923C" stroke-width="2.2" stroke-linecap="round" stroke-dasharray="18 100" stroke-dashoffset="118">
+      <animate attributeName="stroke-dashoffset" values="118;0" dur="1.6s" repeatCount="indefinite"/>
     </path>
-    <circle cx="185.0" cy="153.8" r="3.2" fill="#38BDF8"/>
-    <circle cx="185.0" cy="169.2" r="3.2" fill="#38BDF8"/>
-    <circle cx="185.0" cy="184.8" r="3.2" fill="#38BDF8"/>
-    <circle cx="185.0" cy="200.2" r="3.2" fill="#38BDF8"/>
-    <circle cx="280.0" cy="151.2" r="3.2" fill="#FB923C"/>
-    <circle cx="280.0" cy="161.5" r="3.2" fill="#FB923C"/>
-    <circle cx="280.0" cy="171.8" r="3.2" fill="#FB923C"/>
-    <circle cx="280.0" cy="182.2" r="3.2" fill="#FB923C"/>
-    <circle cx="280.0" cy="192.5" r="3.2" fill="#FB923C"/>
-    <circle cx="280.0" cy="202.8" r="3.2" fill="#FB923C"/>
-    <circle cx="375.0" cy="152.2" r="3.2" fill="#F59E0B"/>
-    <circle cx="375.0" cy="164.6" r="3.2" fill="#F59E0B"/>
-    <circle cx="375.0" cy="177.0" r="3.2" fill="#F59E0B"/>
-    <circle cx="375.0" cy="189.4" r="3.2" fill="#F59E0B"/>
-    <circle cx="375.0" cy="201.8" r="3.2" fill="#F59E0B"/>
+    <circle cx="105" cy="167.0" r="3.5" fill="#38BDF8"/>
+    <circle cx="105" cy="185.0" r="3.5" fill="#38BDF8"/>
+    <circle cx="105" cy="203.0" r="3.5" fill="#38BDF8"/>
+    <circle cx="105" cy="221.0" r="3.5" fill="#38BDF8"/>
+    <circle cx="205" cy="164.0" r="3.5" fill="#FB923C"/>
+    <circle cx="205" cy="176.0" r="3.5" fill="#FB923C"/>
+    <circle cx="205" cy="188.0" r="3.5" fill="#FB923C"/>
+    <circle cx="205" cy="200.0" r="3.5" fill="#FB923C"/>
+    <circle cx="205" cy="212.0" r="3.5" fill="#FB923C"/>
+    <circle cx="205" cy="224.0" r="3.5" fill="#FB923C"/>
+    <circle cx="305" cy="165.2" r="3.5" fill="#F59E0B"/>
+    <circle cx="305" cy="179.6" r="3.5" fill="#F59E0B"/>
+    <circle cx="305" cy="194.0" r="3.5" fill="#F59E0B"/>
+    <circle cx="305" cy="208.4" r="3.5" fill="#F59E0B"/>
+    <circle cx="305" cy="222.8" r="3.5" fill="#F59E0B"/>
   </g>
 
   <!-- ================= FLOW F: AUTOREGRESSIVE OUTPUT CARDS ================= -->
-  <!-- Cards generate sequentially (01 to 05), each STAYS active -->
+  <!-- 5 sequential steps: Beam -> Candidate Popover -> Card Expands -> Return Loop to Baseline -->
   <g id="flow-f-generation">
 
-    <!-- Card 0 Generation Beam -->
-    <path d="M 410 174 C 460 174, 510 90.0, 558 90.0" pathLength="100" fill="none" stroke="#F59E0B" stroke-width="1.2" stroke-opacity="0">
-      <animate attributeName="stroke-opacity" values="0;0;0.5;0.15;0;0" keyTimes="0;0.6778;0.6878;0.7167;0.7267;1" dur="18.0s" repeatCount="indefinite"/>
+    <!-- Step 1: Forward Beam -->
+    <path d="M 414 213 C 460 213, 480 88.0, 514 88.0" pathLength="100" fill="none" stroke="#F59E0B" stroke-width="1.3" stroke-opacity="0">
+      <animate attributeName="stroke-opacity" values="0;0;0.8;0.15;0;0" keyTimes="0;0.5273;0.5373;0.5455;0.5555;1" dur="22.0s" repeatCount="indefinite"/>
     </path>
-    <path d="M 410 174 C 460 174, 510 90.0, 558 90.0" pathLength="100" fill="none" stroke="#F59E0B" stroke-width="2.2" stroke-linecap="round" stroke-dasharray="20 100" stroke-dashoffset="120" opacity="0">
-      <animate attributeName="opacity" values="0;0;1;1;0;0" keyTimes="0;0.6778;0.6878;0.7167;0.7267;1" dur="18.0s" repeatCount="indefinite"/>
-      <animate attributeName="stroke-dashoffset" values="120;0" dur="0.7s" repeatCount="indefinite"/>
+    <path d="M 414 213 C 460 213, 480 88.0, 514 88.0" pathLength="100" fill="none" stroke="#F59E0B" stroke-width="2.4" stroke-linecap="round" stroke-dasharray="24 100" stroke-dashoffset="124" opacity="0">
+      <animate attributeName="opacity" values="0;0;1;1;0;0" keyTimes="0;0.5273;0.5373;0.5455;0.5555;1" dur="22.0s" repeatCount="indefinite"/>
+      <animate attributeName="stroke-dashoffset" values="124;0" dur="0.4s" repeatCount="indefinite"/>
     </path>
-    <!-- Baseline Tick 1 -->
+    <!-- Step 1: Candidate Distribution Popover -->
     <g opacity="0">
-      <animate attributeName="opacity" values="0;0;1;1;0;0" keyTimes="0;0.6778;0.6917;0.9833;0.9944;1" calcMode="linear" dur="18.0s" repeatCount="indefinite"/>
-      <rect x="497.5" y="395" width="7" height="18" rx="2" fill="rgba(251,146,60,0.25)" stroke="#FB923C" stroke-width="0.8"/>
+      <animate attributeName="opacity" values="0;0;1;1;0;0" keyTimes="0;0.5364;0.5464;0.5500;0.5600;1" dur="22.0s" repeatCount="indefinite"/>
+      <rect x="514" y="64" width="160" height="48" rx="6" fill="#1F242C" stroke="#FB923C" stroke-width="1"/>
+      <text class="m4" x="522" y="78" font-size="9" font-weight="bold" fill="#FB923C">&#9656; Automation 72%</text>
+      <text class="m4" x="522" y="91" font-size="8.5" fill="#6E7681">Predictive 18%</text>
+      <text class="m4" x="522" y="103" font-size="8.5" fill="#6E7681">Workflows 10%</text>
     </g>
-    <!-- Output Card 0: Automation -->
+    <!-- Step 1: Output Card 1 (Automation) -->
     <g opacity="0">
-      <animate attributeName="opacity" values="0;0;1;1;0;0" keyTimes="0;0.6778;0.6917;0.9833;0.9944;1" calcMode="linear" dur="18.0s" repeatCount="indefinite"/>
-      <rect x="558" y="56" width="258" height="68" rx="8" fill="#161B22" stroke="#30363D" stroke-width="1">
-        <animate attributeName="stroke" values="#30363D;#30363D;#FB923C;#30363D;#30363D" keyTimes="0;0.6778;0.6917;0.7278;1" dur="18.0s" calcMode="discrete" repeatCount="indefinite"/>
+      <animate attributeName="opacity" values="0;0;1;1;0;0" keyTimes="0;0.5500;0.5591;0.9636;0.9909;1" calcMode="linear" dur="22.0s" repeatCount="indefinite"/>
+      <rect x="514" y="56" width="300" height="64" rx="8" fill="#161B22" stroke="#30363D" stroke-width="1">
+        <animate attributeName="stroke" values="#30363D;#30363D;#FB923C;#30363D;#30363D" keyTimes="0;0.5500;0.5591;0.5900;1" dur="22.0s" calcMode="discrete" repeatCount="indefinite"/>
       </rect>
       <!-- Number -->
-      <text class="m4" x="572" y="76" font-size="10" font-weight="bold" fill="#FB923C">01</text>
+      <text class="m4" x="528" y="76" font-size="10.5" font-weight="bold" fill="#FB923C">01</text>
       <!-- Title -->
-      <text class="sans" x="592" y="76" font-size="13" font-weight="600" fill="#E6EDF3">Automation</text>
-      <!-- Win Candidate Chip -->
-      <rect x="748" y="65" width="58" height="16" rx="4" fill="rgba(251,146,60,0.12)" stroke="rgba(251,146,60,0.4)" stroke-width="1"/>
-      <text class="m4" x="777" y="77" font-size="9" font-weight="bold" fill="#FB923C" text-anchor="middle">Auto 84%</text>
-      <!-- Meta -->
-      <text class="m4" x="572" y="95" font-size="10" fill="#8B949E">Repetitive work runs itself.</text>
-      <!-- Tokens -->
-      <text class="m4" x="572" y="112" font-size="8.5" fill="#6E7681">tokens: Auto · mation</text>
+      <text class="sans" x="548" y="76" font-size="13" font-weight="600" fill="#E6EDF3">Automation</text>
+      <!-- Candidate Winner Pill -->
+      <rect x="734" y="64" width="72" height="17" rx="4" fill="rgba(251,146,60,0.14)" stroke="rgba(251,146,60,0.4)" stroke-width="1"/>
+      <text class="m4" x="770" y="76" font-size="8.5" font-weight="bold" fill="#FB923C" text-anchor="middle">Automation</text>
+      <!-- Description -->
+      <text class="m4" x="528" y="94" font-size="10" fill="#8B949E">Repetitive work runs itself.</text>
+      <!-- Token breakdown -->
+      <text class="m4" x="528" y="110" font-size="8.5" fill="#6E7681">tokens: Auto · mation</text>
     </g>
-    <!-- Card 1 Generation Beam -->
-    <path d="M 410 174 C 460 174, 510 166.0, 558 166.0" pathLength="100" fill="none" stroke="#F59E0B" stroke-width="1.2" stroke-opacity="0">
-      <animate attributeName="stroke-opacity" values="0;0;0.5;0.15;0;0" keyTimes="0;0.7222;0.7322;0.7611;0.7711;1" dur="18.0s" repeatCount="indefinite"/>
-    </path>
-    <path d="M 410 174 C 460 174, 510 166.0, 558 166.0" pathLength="100" fill="none" stroke="#F59E0B" stroke-width="2.2" stroke-linecap="round" stroke-dasharray="20 100" stroke-dashoffset="120" opacity="0">
-      <animate attributeName="opacity" values="0;0;1;1;0;0" keyTimes="0;0.7222;0.7322;0.7611;0.7711;1" dur="18.0s" repeatCount="indefinite"/>
-      <animate attributeName="stroke-dashoffset" values="120;0" dur="0.7s" repeatCount="indefinite"/>
-    </path>
-    <!-- Baseline Tick 2 -->
+    <!-- Step 1: Return Loop Spine to Column 9 -->
     <g opacity="0">
-      <animate attributeName="opacity" values="0;0;1;1;0;0" keyTimes="0;0.7222;0.7361;0.9833;0.9944;1" calcMode="linear" dur="18.0s" repeatCount="indefinite"/>
-      <rect x="508.5" y="395" width="7" height="18" rx="2" fill="rgba(251,146,60,0.25)" stroke="#FB923C" stroke-width="0.8"/>
+      <animate attributeName="opacity" values="0;0;1;0.4;0;0" keyTimes="0;0.5545;0.5645;0.5818;0.5918;1" dur="22.0s" repeatCount="indefinite"/>
+      <path d="M 514 116 C 460 435, 340 435, 300 404" pathLength="100" fill="none" stroke="#FB923C" stroke-opacity="0.6" stroke-width="1.3" stroke-dasharray="3 4"/>
+      <path d="M 514 116 C 460 435, 340 435, 300 404" pathLength="100" fill="none" stroke="#FB923C" stroke-width="2.2" stroke-linecap="round" stroke-dasharray="20 100" stroke-dashoffset="120">
+        <animate attributeName="stroke-dashoffset" values="120;0" dur="0.6s" repeatCount="indefinite"/>
+      </path>
     </g>
-    <!-- Output Card 1: Self-learning systems -->
+    <!-- Step 2: Forward Beam -->
+    <path d="M 414 213 C 460 213, 480 160.0, 514 160.0" pathLength="100" fill="none" stroke="#F59E0B" stroke-width="1.3" stroke-opacity="0">
+      <animate attributeName="stroke-opacity" values="0;0;0.8;0.15;0;0" keyTimes="0;0.5818;0.5918;0.6000;0.6100;1" dur="22.0s" repeatCount="indefinite"/>
+    </path>
+    <path d="M 414 213 C 460 213, 480 160.0, 514 160.0" pathLength="100" fill="none" stroke="#F59E0B" stroke-width="2.4" stroke-linecap="round" stroke-dasharray="24 100" stroke-dashoffset="124" opacity="0">
+      <animate attributeName="opacity" values="0;0;1;1;0;0" keyTimes="0;0.5818;0.5918;0.6000;0.6100;1" dur="22.0s" repeatCount="indefinite"/>
+      <animate attributeName="stroke-dashoffset" values="124;0" dur="0.4s" repeatCount="indefinite"/>
+    </path>
+    <!-- Step 2: Candidate Distribution Popover -->
     <g opacity="0">
-      <animate attributeName="opacity" values="0;0;1;1;0;0" keyTimes="0;0.7222;0.7361;0.9833;0.9944;1" calcMode="linear" dur="18.0s" repeatCount="indefinite"/>
-      <rect x="558" y="132" width="258" height="68" rx="8" fill="#161B22" stroke="#30363D" stroke-width="1">
-        <animate attributeName="stroke" values="#30363D;#30363D;#FB923C;#30363D;#30363D" keyTimes="0;0.7222;0.7361;0.7722;1" dur="18.0s" calcMode="discrete" repeatCount="indefinite"/>
+      <animate attributeName="opacity" values="0;0;1;1;0;0" keyTimes="0;0.5909;0.6009;0.6045;0.6145;1" dur="22.0s" repeatCount="indefinite"/>
+      <rect x="514" y="136" width="160" height="48" rx="6" fill="#1F242C" stroke="#FB923C" stroke-width="1"/>
+      <text class="m4" x="522" y="150" font-size="9" font-weight="bold" fill="#FB923C">&#9656; Self-learning 68%</text>
+      <text class="m4" x="522" y="163" font-size="8.5" fill="#6E7681">Adaptive 21%</text>
+      <text class="m4" x="522" y="175" font-size="8.5" fill="#6E7681">Heuristic 11%</text>
+    </g>
+    <!-- Step 2: Output Card 2 (Self-learning systems) -->
+    <g opacity="0">
+      <animate attributeName="opacity" values="0;0;1;1;0;0" keyTimes="0;0.6045;0.6136;0.9636;0.9909;1" calcMode="linear" dur="22.0s" repeatCount="indefinite"/>
+      <rect x="514" y="128" width="300" height="64" rx="8" fill="#161B22" stroke="#30363D" stroke-width="1">
+        <animate attributeName="stroke" values="#30363D;#30363D;#FB923C;#30363D;#30363D" keyTimes="0;0.6045;0.6136;0.6445;1" dur="22.0s" calcMode="discrete" repeatCount="indefinite"/>
       </rect>
       <!-- Number -->
-      <text class="m4" x="572" y="152" font-size="10" font-weight="bold" fill="#FB923C">02</text>
+      <text class="m4" x="528" y="148" font-size="10.5" font-weight="bold" fill="#FB923C">02</text>
       <!-- Title -->
-      <text class="sans" x="592" y="152" font-size="13" font-weight="600" fill="#E6EDF3">Self-learning systems</text>
-      <!-- Win Candidate Chip -->
-      <rect x="748" y="141" width="58" height="16" rx="4" fill="rgba(251,146,60,0.12)" stroke="rgba(251,146,60,0.4)" stroke-width="1"/>
-      <text class="m4" x="777" y="153" font-size="9" font-weight="bold" fill="#FB923C" text-anchor="middle">Self- 78%</text>
-      <!-- Meta -->
-      <text class="m4" x="572" y="171" font-size="10" fill="#8B949E">Sharper with every dataset.</text>
-      <!-- Tokens -->
-      <text class="m4" x="572" y="188" font-size="8.5" fill="#6E7681">tokens: Self- · learn · ing · tems</text>
+      <text class="sans" x="548" y="148" font-size="13" font-weight="600" fill="#E6EDF3">Self-learning systems</text>
+      <!-- Candidate Winner Pill -->
+      <rect x="734" y="136" width="72" height="17" rx="4" fill="rgba(251,146,60,0.14)" stroke="rgba(251,146,60,0.4)" stroke-width="1"/>
+      <text class="m4" x="770" y="148" font-size="8.5" font-weight="bold" fill="#FB923C" text-anchor="middle">Self-learning</text>
+      <!-- Description -->
+      <text class="m4" x="528" y="166" font-size="10" fill="#8B949E">Sharper with every dataset.</text>
+      <!-- Token breakdown -->
+      <text class="m4" x="528" y="182" font-size="8.5" fill="#6E7681">tokens: Self- · learn · ing · tems</text>
     </g>
-    <!-- Card 2 Generation Beam -->
-    <path d="M 410 174 C 460 174, 510 242.0, 558 242.0" pathLength="100" fill="none" stroke="#F59E0B" stroke-width="1.2" stroke-opacity="0">
-      <animate attributeName="stroke-opacity" values="0;0;0.5;0.15;0;0" keyTimes="0;0.7667;0.7767;0.8056;0.8156;1" dur="18.0s" repeatCount="indefinite"/>
-    </path>
-    <path d="M 410 174 C 460 174, 510 242.0, 558 242.0" pathLength="100" fill="none" stroke="#F59E0B" stroke-width="2.2" stroke-linecap="round" stroke-dasharray="20 100" stroke-dashoffset="120" opacity="0">
-      <animate attributeName="opacity" values="0;0;1;1;0;0" keyTimes="0;0.7667;0.7767;0.8056;0.8156;1" dur="18.0s" repeatCount="indefinite"/>
-      <animate attributeName="stroke-dashoffset" values="120;0" dur="0.7s" repeatCount="indefinite"/>
-    </path>
-    <!-- Baseline Tick 3 -->
+    <!-- Step 2: Return Loop Spine to Column 10 -->
     <g opacity="0">
-      <animate attributeName="opacity" values="0;0;1;1;0;0" keyTimes="0;0.7667;0.7806;0.9833;0.9944;1" calcMode="linear" dur="18.0s" repeatCount="indefinite"/>
-      <rect x="519.5" y="395" width="7" height="18" rx="2" fill="rgba(251,146,60,0.25)" stroke="#FB923C" stroke-width="0.8"/>
+      <animate attributeName="opacity" values="0;0;1;0.4;0;0" keyTimes="0;0.6091;0.6191;0.6364;0.6464;1" dur="22.0s" repeatCount="indefinite"/>
+      <path d="M 514 188 C 460 435, 372 435, 332 404" pathLength="100" fill="none" stroke="#FB923C" stroke-opacity="0.6" stroke-width="1.3" stroke-dasharray="3 4"/>
+      <path d="M 514 188 C 460 435, 372 435, 332 404" pathLength="100" fill="none" stroke="#FB923C" stroke-width="2.2" stroke-linecap="round" stroke-dasharray="20 100" stroke-dashoffset="120">
+        <animate attributeName="stroke-dashoffset" values="120;0" dur="0.6s" repeatCount="indefinite"/>
+      </path>
     </g>
-    <!-- Output Card 2: Forecasts -->
+    <!-- Step 3: Forward Beam -->
+    <path d="M 414 213 C 460 213, 480 232.0, 514 232.0" pathLength="100" fill="none" stroke="#F59E0B" stroke-width="1.3" stroke-opacity="0">
+      <animate attributeName="stroke-opacity" values="0;0;0.8;0.15;0;0" keyTimes="0;0.6364;0.6464;0.6545;0.6645;1" dur="22.0s" repeatCount="indefinite"/>
+    </path>
+    <path d="M 414 213 C 460 213, 480 232.0, 514 232.0" pathLength="100" fill="none" stroke="#F59E0B" stroke-width="2.4" stroke-linecap="round" stroke-dasharray="24 100" stroke-dashoffset="124" opacity="0">
+      <animate attributeName="opacity" values="0;0;1;1;0;0" keyTimes="0;0.6364;0.6464;0.6545;0.6645;1" dur="22.0s" repeatCount="indefinite"/>
+      <animate attributeName="stroke-dashoffset" values="124;0" dur="0.4s" repeatCount="indefinite"/>
+    </path>
+    <!-- Step 3: Candidate Distribution Popover -->
     <g opacity="0">
-      <animate attributeName="opacity" values="0;0;1;1;0;0" keyTimes="0;0.7667;0.7806;0.9833;0.9944;1" calcMode="linear" dur="18.0s" repeatCount="indefinite"/>
-      <rect x="558" y="208" width="258" height="68" rx="8" fill="#161B22" stroke="#30363D" stroke-width="1">
-        <animate attributeName="stroke" values="#30363D;#30363D;#FB923C;#30363D;#30363D" keyTimes="0;0.7667;0.7806;0.8167;1" dur="18.0s" calcMode="discrete" repeatCount="indefinite"/>
+      <animate attributeName="opacity" values="0;0;1;1;0;0" keyTimes="0;0.6455;0.6555;0.6591;0.6691;1" dur="22.0s" repeatCount="indefinite"/>
+      <rect x="514" y="208" width="160" height="48" rx="6" fill="#1F242C" stroke="#FB923C" stroke-width="1"/>
+      <text class="m4" x="522" y="222" font-size="9" font-weight="bold" fill="#FB923C">&#9656; Forecasts 79%</text>
+      <text class="m4" x="522" y="235" font-size="8.5" fill="#6E7681">Projections 14%</text>
+      <text class="m4" x="522" y="247" font-size="8.5" fill="#6E7681">Trends 7%</text>
+    </g>
+    <!-- Step 3: Output Card 3 (Forecasts) -->
+    <g opacity="0">
+      <animate attributeName="opacity" values="0;0;1;1;0;0" keyTimes="0;0.6591;0.6682;0.9636;0.9909;1" calcMode="linear" dur="22.0s" repeatCount="indefinite"/>
+      <rect x="514" y="200" width="300" height="64" rx="8" fill="#161B22" stroke="#30363D" stroke-width="1">
+        <animate attributeName="stroke" values="#30363D;#30363D;#FB923C;#30363D;#30363D" keyTimes="0;0.6591;0.6682;0.6991;1" dur="22.0s" calcMode="discrete" repeatCount="indefinite"/>
       </rect>
       <!-- Number -->
-      <text class="m4" x="572" y="228" font-size="10" font-weight="bold" fill="#FB923C">03</text>
+      <text class="m4" x="528" y="220" font-size="10.5" font-weight="bold" fill="#FB923C">03</text>
       <!-- Title -->
-      <text class="sans" x="592" y="228" font-size="13" font-weight="600" fill="#E6EDF3">Forecasts</text>
-      <!-- Win Candidate Chip -->
-      <rect x="748" y="217" width="58" height="16" rx="4" fill="rgba(251,146,60,0.12)" stroke="rgba(251,146,60,0.4)" stroke-width="1"/>
-      <text class="m4" x="777" y="229" font-size="9" font-weight="bold" fill="#FB923C" text-anchor="middle">Fore 81%</text>
-      <!-- Meta -->
-      <text class="m4" x="572" y="247" font-size="10" fill="#8B949E">See tomorrow's demand today.</text>
-      <!-- Tokens -->
-      <text class="m4" x="572" y="264" font-size="8.5" fill="#6E7681">tokens: Fore · casts</text>
+      <text class="sans" x="548" y="220" font-size="13" font-weight="600" fill="#E6EDF3">Forecasts</text>
+      <!-- Candidate Winner Pill -->
+      <rect x="734" y="208" width="72" height="17" rx="4" fill="rgba(251,146,60,0.14)" stroke="rgba(251,146,60,0.4)" stroke-width="1"/>
+      <text class="m4" x="770" y="220" font-size="8.5" font-weight="bold" fill="#FB923C" text-anchor="middle">Forecasts</text>
+      <!-- Description -->
+      <text class="m4" x="528" y="238" font-size="10" fill="#8B949E">See tomorrow's demand today.</text>
+      <!-- Token breakdown -->
+      <text class="m4" x="528" y="254" font-size="8.5" fill="#6E7681">tokens: Fore · casts</text>
     </g>
-    <!-- Card 3 Generation Beam -->
-    <path d="M 410 174 C 460 174, 510 318.0, 558 318.0" pathLength="100" fill="none" stroke="#F59E0B" stroke-width="1.2" stroke-opacity="0">
-      <animate attributeName="stroke-opacity" values="0;0;0.5;0.15;0;0" keyTimes="0;0.8111;0.8211;0.8500;0.8600;1" dur="18.0s" repeatCount="indefinite"/>
-    </path>
-    <path d="M 410 174 C 460 174, 510 318.0, 558 318.0" pathLength="100" fill="none" stroke="#F59E0B" stroke-width="2.2" stroke-linecap="round" stroke-dasharray="20 100" stroke-dashoffset="120" opacity="0">
-      <animate attributeName="opacity" values="0;0;1;1;0;0" keyTimes="0;0.8111;0.8211;0.8500;0.8600;1" dur="18.0s" repeatCount="indefinite"/>
-      <animate attributeName="stroke-dashoffset" values="120;0" dur="0.7s" repeatCount="indefinite"/>
-    </path>
-    <!-- Baseline Tick 4 -->
+    <!-- Step 3: Return Loop Spine to Column 11 -->
     <g opacity="0">
-      <animate attributeName="opacity" values="0;0;1;1;0;0" keyTimes="0;0.8111;0.8250;0.9833;0.9944;1" calcMode="linear" dur="18.0s" repeatCount="indefinite"/>
-      <rect x="530.5" y="395" width="7" height="18" rx="2" fill="rgba(251,146,60,0.25)" stroke="#FB923C" stroke-width="0.8"/>
+      <animate attributeName="opacity" values="0;0;1;0.4;0;0" keyTimes="0;0.6636;0.6736;0.6909;0.7009;1" dur="22.0s" repeatCount="indefinite"/>
+      <path d="M 514 260 C 460 435, 404 435, 364 404" pathLength="100" fill="none" stroke="#FB923C" stroke-opacity="0.6" stroke-width="1.3" stroke-dasharray="3 4"/>
+      <path d="M 514 260 C 460 435, 404 435, 364 404" pathLength="100" fill="none" stroke="#FB923C" stroke-width="2.2" stroke-linecap="round" stroke-dasharray="20 100" stroke-dashoffset="120">
+        <animate attributeName="stroke-dashoffset" values="120;0" dur="0.6s" repeatCount="indefinite"/>
+      </path>
     </g>
-    <!-- Output Card 3: AI assistants -->
+    <!-- Step 4: Forward Beam -->
+    <path d="M 414 213 C 460 213, 480 304.0, 514 304.0" pathLength="100" fill="none" stroke="#F59E0B" stroke-width="1.3" stroke-opacity="0">
+      <animate attributeName="stroke-opacity" values="0;0;0.8;0.15;0;0" keyTimes="0;0.6909;0.7009;0.7091;0.7191;1" dur="22.0s" repeatCount="indefinite"/>
+    </path>
+    <path d="M 414 213 C 460 213, 480 304.0, 514 304.0" pathLength="100" fill="none" stroke="#F59E0B" stroke-width="2.4" stroke-linecap="round" stroke-dasharray="24 100" stroke-dashoffset="124" opacity="0">
+      <animate attributeName="opacity" values="0;0;1;1;0;0" keyTimes="0;0.6909;0.7009;0.7091;0.7191;1" dur="22.0s" repeatCount="indefinite"/>
+      <animate attributeName="stroke-dashoffset" values="124;0" dur="0.4s" repeatCount="indefinite"/>
+    </path>
+    <!-- Step 4: Candidate Distribution Popover -->
     <g opacity="0">
-      <animate attributeName="opacity" values="0;0;1;1;0;0" keyTimes="0;0.8111;0.8250;0.9833;0.9944;1" calcMode="linear" dur="18.0s" repeatCount="indefinite"/>
-      <rect x="558" y="284" width="258" height="68" rx="8" fill="#161B22" stroke="#30363D" stroke-width="1">
-        <animate attributeName="stroke" values="#30363D;#30363D;#FB923C;#30363D;#30363D" keyTimes="0;0.8111;0.8250;0.8611;1" dur="18.0s" calcMode="discrete" repeatCount="indefinite"/>
+      <animate attributeName="opacity" values="0;0;1;1;0;0" keyTimes="0;0.7000;0.7100;0.7136;0.7236;1" dur="22.0s" repeatCount="indefinite"/>
+      <rect x="514" y="280" width="160" height="48" rx="6" fill="#1F242C" stroke="#FB923C" stroke-width="1"/>
+      <text class="m4" x="522" y="294" font-size="9" font-weight="bold" fill="#FB923C">&#9656; AI assistants 85%</text>
+      <text class="m4" x="522" y="307" font-size="8.5" fill="#6E7681">Copilots 10%</text>
+      <text class="m4" x="522" y="319" font-size="8.5" fill="#6E7681">Agents 5%</text>
+    </g>
+    <!-- Step 4: Output Card 4 (AI assistants) -->
+    <g opacity="0">
+      <animate attributeName="opacity" values="0;0;1;1;0;0" keyTimes="0;0.7136;0.7227;0.9636;0.9909;1" calcMode="linear" dur="22.0s" repeatCount="indefinite"/>
+      <rect x="514" y="272" width="300" height="64" rx="8" fill="#161B22" stroke="#30363D" stroke-width="1">
+        <animate attributeName="stroke" values="#30363D;#30363D;#FB923C;#30363D;#30363D" keyTimes="0;0.7136;0.7227;0.7536;1" dur="22.0s" calcMode="discrete" repeatCount="indefinite"/>
       </rect>
       <!-- Number -->
-      <text class="m4" x="572" y="304" font-size="10" font-weight="bold" fill="#FB923C">04</text>
+      <text class="m4" x="528" y="292" font-size="10.5" font-weight="bold" fill="#FB923C">04</text>
       <!-- Title -->
-      <text class="sans" x="592" y="304" font-size="13" font-weight="600" fill="#E6EDF3">AI assistants</text>
-      <!-- Win Candidate Chip -->
-      <rect x="748" y="293" width="58" height="16" rx="4" fill="rgba(251,146,60,0.12)" stroke="rgba(251,146,60,0.4)" stroke-width="1"/>
-      <text class="m4" x="777" y="305" font-size="9" font-weight="bold" fill="#FB923C" text-anchor="middle">AI 88%</text>
-      <!-- Meta -->
-      <text class="m4" x="572" y="323" font-size="10" fill="#8B949E">Answers for customers and team.</text>
-      <!-- Tokens -->
-      <text class="m4" x="572" y="340" font-size="8.5" fill="#6E7681">tokens: AI · assis · tants</text>
+      <text class="sans" x="548" y="292" font-size="13" font-weight="600" fill="#E6EDF3">AI assistants</text>
+      <!-- Candidate Winner Pill -->
+      <rect x="734" y="280" width="72" height="17" rx="4" fill="rgba(251,146,60,0.14)" stroke="rgba(251,146,60,0.4)" stroke-width="1"/>
+      <text class="m4" x="770" y="292" font-size="8.5" font-weight="bold" fill="#FB923C" text-anchor="middle">AI</text>
+      <!-- Description -->
+      <text class="m4" x="528" y="310" font-size="10" fill="#8B949E">Answers for customers and team.</text>
+      <!-- Token breakdown -->
+      <text class="m4" x="528" y="326" font-size="8.5" fill="#6E7681">tokens: AI · assis · tants</text>
     </g>
-    <!-- Card 4 Generation Beam -->
-    <path d="M 410 174 C 460 174, 510 394.0, 558 394.0" pathLength="100" fill="none" stroke="#F59E0B" stroke-width="1.2" stroke-opacity="0">
-      <animate attributeName="stroke-opacity" values="0;0;0.5;0.15;0;0" keyTimes="0;0.8556;0.8656;0.8944;0.9044;1" dur="18.0s" repeatCount="indefinite"/>
-    </path>
-    <path d="M 410 174 C 460 174, 510 394.0, 558 394.0" pathLength="100" fill="none" stroke="#F59E0B" stroke-width="2.2" stroke-linecap="round" stroke-dasharray="20 100" stroke-dashoffset="120" opacity="0">
-      <animate attributeName="opacity" values="0;0;1;1;0;0" keyTimes="0;0.8556;0.8656;0.8944;0.9044;1" dur="18.0s" repeatCount="indefinite"/>
-      <animate attributeName="stroke-dashoffset" values="120;0" dur="0.7s" repeatCount="indefinite"/>
-    </path>
-    <!-- Baseline Tick 5 -->
+    <!-- Step 4: Return Loop Spine to Column 12 -->
     <g opacity="0">
-      <animate attributeName="opacity" values="0;0;1;1;0;0" keyTimes="0;0.8556;0.8694;0.9833;0.9944;1" calcMode="linear" dur="18.0s" repeatCount="indefinite"/>
-      <rect x="541.5" y="395" width="7" height="18" rx="2" fill="rgba(251,146,60,0.25)" stroke="#FB923C" stroke-width="0.8"/>
+      <animate attributeName="opacity" values="0;0;1;0.4;0;0" keyTimes="0;0.7182;0.7282;0.7455;0.7555;1" dur="22.0s" repeatCount="indefinite"/>
+      <path d="M 514 332 C 460 435, 436 435, 396 404" pathLength="100" fill="none" stroke="#FB923C" stroke-opacity="0.6" stroke-width="1.3" stroke-dasharray="3 4"/>
+      <path d="M 514 332 C 460 435, 436 435, 396 404" pathLength="100" fill="none" stroke="#FB923C" stroke-width="2.2" stroke-linecap="round" stroke-dasharray="20 100" stroke-dashoffset="120">
+        <animate attributeName="stroke-dashoffset" values="120;0" dur="0.6s" repeatCount="indefinite"/>
+      </path>
     </g>
-    <!-- Output Card 4: Custom models -->
+    <!-- Step 5: Forward Beam -->
+    <path d="M 414 213 C 460 213, 480 376.0, 514 376.0" pathLength="100" fill="none" stroke="#F59E0B" stroke-width="1.3" stroke-opacity="0">
+      <animate attributeName="stroke-opacity" values="0;0;0.8;0.15;0;0" keyTimes="0;0.7455;0.7555;0.7636;0.7736;1" dur="22.0s" repeatCount="indefinite"/>
+    </path>
+    <path d="M 414 213 C 460 213, 480 376.0, 514 376.0" pathLength="100" fill="none" stroke="#F59E0B" stroke-width="2.4" stroke-linecap="round" stroke-dasharray="24 100" stroke-dashoffset="124" opacity="0">
+      <animate attributeName="opacity" values="0;0;1;1;0;0" keyTimes="0;0.7455;0.7555;0.7636;0.7736;1" dur="22.0s" repeatCount="indefinite"/>
+      <animate attributeName="stroke-dashoffset" values="124;0" dur="0.4s" repeatCount="indefinite"/>
+    </path>
+    <!-- Step 5: Candidate Distribution Popover -->
     <g opacity="0">
-      <animate attributeName="opacity" values="0;0;1;1;0;0" keyTimes="0;0.8556;0.8694;0.9833;0.9944;1" calcMode="linear" dur="18.0s" repeatCount="indefinite"/>
-      <rect x="558" y="360" width="258" height="68" rx="8" fill="#161B22" stroke="#30363D" stroke-width="1">
-        <animate attributeName="stroke" values="#30363D;#30363D;#FB923C;#30363D;#30363D" keyTimes="0;0.8556;0.8694;0.9056;1" dur="18.0s" calcMode="discrete" repeatCount="indefinite"/>
+      <animate attributeName="opacity" values="0;0;1;1;0;0" keyTimes="0;0.7545;0.7645;0.7682;0.7782;1" dur="22.0s" repeatCount="indefinite"/>
+      <rect x="514" y="352" width="160" height="48" rx="6" fill="#1F242C" stroke="#FB923C" stroke-width="1"/>
+      <text class="m4" x="522" y="366" font-size="9" font-weight="bold" fill="#FB923C">&#9656; Custom models 81%</text>
+      <text class="m4" x="522" y="379" font-size="8.5" fill="#6E7681">Fine-tunes 13%</text>
+      <text class="m4" x="522" y="391" font-size="8.5" fill="#6E7681">Embeddings 6%</text>
+    </g>
+    <!-- Step 5: Output Card 5 (Custom models) -->
+    <g opacity="0">
+      <animate attributeName="opacity" values="0;0;1;1;0;0" keyTimes="0;0.7682;0.7773;0.9636;0.9909;1" calcMode="linear" dur="22.0s" repeatCount="indefinite"/>
+      <rect x="514" y="344" width="300" height="64" rx="8" fill="#161B22" stroke="#30363D" stroke-width="1">
+        <animate attributeName="stroke" values="#30363D;#30363D;#FB923C;#30363D;#30363D" keyTimes="0;0.7682;0.7773;0.8082;1" dur="22.0s" calcMode="discrete" repeatCount="indefinite"/>
       </rect>
       <!-- Number -->
-      <text class="m4" x="572" y="380" font-size="10" font-weight="bold" fill="#FB923C">05</text>
+      <text class="m4" x="528" y="364" font-size="10.5" font-weight="bold" fill="#FB923C">05</text>
       <!-- Title -->
-      <text class="sans" x="592" y="380" font-size="13" font-weight="600" fill="#E6EDF3">Custom models</text>
-      <!-- Win Candidate Chip -->
-      <rect x="748" y="369" width="58" height="16" rx="4" fill="rgba(251,146,60,0.12)" stroke="rgba(251,146,60,0.4)" stroke-width="1"/>
-      <text class="m4" x="777" y="381" font-size="9" font-weight="bold" fill="#FB923C" text-anchor="middle">Custom 83%</text>
-      <!-- Meta -->
-      <text class="m4" x="572" y="399" font-size="10" fill="#8B949E">Trained on your data, shaped to work.</text>
-      <!-- Tokens -->
-      <text class="m4" x="572" y="416" font-size="8.5" fill="#6E7681">tokens: Custom · mod · els</text>
+      <text class="sans" x="548" y="364" font-size="13" font-weight="600" fill="#E6EDF3">Custom models</text>
+      <!-- Candidate Winner Pill -->
+      <rect x="734" y="352" width="72" height="17" rx="4" fill="rgba(251,146,60,0.14)" stroke="rgba(251,146,60,0.4)" stroke-width="1"/>
+      <text class="m4" x="770" y="364" font-size="8.5" font-weight="bold" fill="#FB923C" text-anchor="middle">Custom</text>
+      <!-- Description -->
+      <text class="m4" x="528" y="382" font-size="10" fill="#8B949E">Trained on your data, shaped to work.</text>
+      <!-- Token breakdown -->
+      <text class="m4" x="528" y="398" font-size="8.5" fill="#6E7681">tokens: Custom · mod · els</text>
     </g>
-    <!-- Autoregressive Feedback Loop -->
+    <!-- Step 5: Return Loop Spine to Column 13 -->
     <g opacity="0">
-      <animate attributeName="opacity" values="0;0;1;1;0;0" keyTimes="0;0.8778;0.8978;0.9833;0.9944;1" calcMode="linear" dur="18.0s" repeatCount="indefinite"/>
-      <path d="M 558 394 C 595 435, 540 435, 540 404" fill="none" stroke="#FB923C" stroke-opacity="0.6" stroke-width="1.2" stroke-dasharray="3 4"/>
-      <circle cx="540" cy="404" r="8" fill="none" stroke="#FB923C" stroke-width="1.2">
-        <animate attributeName="r" values="3;10;3" dur="2.0s" repeatCount="indefinite"/>
-        <animate attributeName="opacity" values="0.3;0.9;0.3" dur="2.0s" repeatCount="indefinite"/>
-      </circle>
+      <animate attributeName="opacity" values="0;0;1;0.4;0;0" keyTimes="0;0.7727;0.7827;0.8000;0.8100;1" dur="22.0s" repeatCount="indefinite"/>
+      <path d="M 514 404 C 460 435, 468 435, 428 404" pathLength="100" fill="none" stroke="#FB923C" stroke-opacity="0.6" stroke-width="1.3" stroke-dasharray="3 4"/>
+      <path d="M 514 404 C 460 435, 468 435, 428 404" pathLength="100" fill="none" stroke="#FB923C" stroke-width="2.2" stroke-linecap="round" stroke-dasharray="20 100" stroke-dashoffset="120">
+        <animate attributeName="stroke-dashoffset" values="120;0" dur="0.6s" repeatCount="indefinite"/>
+      </path>
     </g>
   </g>
 </svg>

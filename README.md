@@ -1,4 +1,4 @@
-<img src="assets/header-terminal.svg" alt="terminal session - docker compose up, unsloth fine-tune run, wrangler deploy" width="100%">
+<img src="assets/header-terminal.svg" alt="terminal session - docker compose up, Qwen3.8-27B fine-tune pipeline, pnpm run deploy:prod" width="100%">
 
 # SM Warisul A. Rafin
 

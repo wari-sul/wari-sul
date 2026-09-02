@@ -2,13 +2,13 @@
 
 # SM Warisul A. Rafin
 
-By day, Director of the SaaS department at [Orpheus](https://orpheusit.com/), leading our SaaS products, most of them AI.
+I’m Director of SaaS at [Orpheus](https://orpheusit.com/), where I lead the development of our SaaS products—most of them powered by AI.
 
-By night, founder of [athrLabs](https://athr.app): AI fine-tuning, AI products, web design, system and infrastructure management, automation, and whatever else I feel like building.
+I’m also the founder of [athrLabs](https://athr.app), where I build AI products, fine-tune models, design websites, manage systems and infrastructure, and automate the work between them.
 
-Before all that: sysadmin, DevOps, full-stack. I still run a bunch of servers at home and self-host most of what I use.
+My background is in systems administration, DevOps, and full-stack development. I still run a small collection of servers at home and self-host much of the software I use.
 
-athrLabs is where that work goes to clients: systems with AI integrated into them, so repetitive work stops being someone's task.
+Through athrLabs, I help clients build systems with AI integrated into their workflows—turning repetitive, manual work into reliable automation.
 
 <img src="assets/ai-solutions.svg" alt="AI-integrated systems pipeline: client work flows in, AI stages process it, resolved work comes out" width="100%">
 

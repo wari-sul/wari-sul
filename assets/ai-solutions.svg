@@ -33,7 +33,7 @@
   <circle cx="26" cy="22" r="6" fill="#FF5F57"/>
   <circle cx="46" cy="22" r="6" fill="#FEBC2E"/>
   <circle cx="66" cy="22" r="6" fill="#28C840"/>
-  <text class="m3 t3" x="400" y="26" text-anchor="middle">orpheus.ai · systems with ai inside</text>
+  <text class="m3 t3" x="400" y="26" text-anchor="middle">athrLabs · systems with ai inside</text>
 
   <!-- left: incoming client work -->
   <rect x="40" y="70" width="170" height="110" rx="12" fill="#161B22" stroke="#FFFFFF" stroke-opacity="0.08"/>

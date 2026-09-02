@@ -1,14 +1,14 @@
-<img src="assets/header-terminal.svg" alt="terminal intro - whoami, stack, state" width="100%">
+<img src="assets/header-terminal.svg" alt="terminal session - docker compose up, unsloth fine-tune run, wrangler deploy" width="100%">
 
 # SM Warisul A. Rafin
 
-Director, Dept. of SaaS at [Orpheus](https://orpheusit.com/). I build backends in Go, fine-tune LLMs, and ship custom software and AI work for businesses.
+By day, Director of the SaaS department at [Orpheus](https://orpheusit.com/), leading our SaaS products, most of them AI.
 
-Before that: sysadmin, DevOps, full-stack. I still run a bunch of servers at home and self-host most of what I use.
+By night, founder of [athrLabs](https://athr.app): AI fine-tuning, AI products, web design, system and infrastructure management, automation, and whatever else I feel like building.
 
-Off the clock I'm usually tweaking some LLM thing anyway.
+Before all that: sysadmin, DevOps, full-stack. I still run a bunch of servers at home and self-host most of what I use.
 
-At Orpheus this is the day job: building systems with AI integrated into them, so repetitive client work stops being someone's task.
+athrLabs is where that work goes to clients: systems with AI integrated into them, so repetitive work stops being someone's task.
 
 <img src="assets/ai-solutions.svg" alt="AI-integrated systems pipeline: client work flows in, AI stages process it, resolved work comes out" width="100%">
 

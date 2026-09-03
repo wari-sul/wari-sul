@@ -10,7 +10,7 @@ The origin story: sysadmin first, then DevOps, then full-stack. I still do all t
 
 And yes, I'm an audiophile. That means the homelab has a sibling: a listening corner with amps, DACs, and headphones that cost more than they reasonably should. The servers handle the data, the tubes and planar drivers handle the mood. Two hobbies, one questionable electricity bill.
 
-athrLabs is where that work reaches clients: work flows in one end, the AI pipeline handles it, and resolved outcomes come out the other. The repetitive stuff runs itself, and people get to do the interesting part.
+athrLabs turns high-level questions into deployable infrastructure. The visualization below shows that forward pass in action: tokenizing business intent, routing it through attention layers, and generating five autonomous operational outcomes that keep businesses moving.
 
 <img src="assets/ai-solutions.svg?v=3.1" alt="AI-integrated systems: transformer forward pass from business prompt to 5 autonomous output solutions" width="100%">
 

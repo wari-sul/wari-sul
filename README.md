@@ -16,4 +16,4 @@ athrLabs turns high-level questions into deployable infrastructure. The visualiz
 
 ---
 
-`›` `web` [warisul.com](https://www.warisul.com) &nbsp;·&nbsp; `blog` [blog.warisul.com](https://blog.warisul.com) &nbsp;·&nbsp; `network` [in/warisul-rafin](https://www.linkedin.com/in/warisul-rafin) &nbsp;·&nbsp; `direct` [contact@warisul.com](mailto:contact@warisul.com)
+`›` `web` [warisul.com](https://www.warisul.com) `·` `blog` [blog.warisul.com](https://blog.warisul.com) `·` `network` [in/warisul-rafin](https://www.linkedin.com/in/warisul-rafin) `·` `direct` [contact@warisul.com](mailto:contact@warisul.com)

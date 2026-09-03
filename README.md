@@ -16,54 +16,42 @@ athrLabs turns high-level questions into deployable infrastructure. The visualiz
 
 ---
 
-### [Preview Option 1: System Endpoints Table]
+### [Preview 4A: Centered Terminal Dock]
 
-| Service | Address | Target | Status |
-| :--- | :--- | :--- | :--- |
-| **Production** | [warisul.com](https://www.warisul.com) | Portfolio, systems, and client lab showcase | `200 OK · edge` |
-| **Dispatches** | [blog.warisul.com](https://blog.warisul.com) | Notes on models, self-hosting, and audio engineering | `200 OK · active` |
-| **Network** | [in/warisul-rafin](https://www.linkedin.com/in/warisul-rafin) | SaaS leadership, client advisory, and career trajectory | `verified` |
-| **Direct Wire** | [contact@warisul.com](mailto:contact@warisul.com) | Encrypted inbox for advisory, contracts, and collaborations | `open` |
-
----
-
-### [Preview Option 2: Terminal Command Palette / Routed Pipes]
-
-› **Web** `→` [warisul.com](https://www.warisul.com) · client work, lab experiments, and architecture cases  
-› **Blog** `→` [blog.warisul.com](https://blog.warisul.com) · engineering deep dives, homelab builds, and listening setups  
-› **LinkedIn** `→` [in/warisul-rafin](https://www.linkedin.com/in/warisul-rafin) · director of SaaS, agency leadership, and engineering  
-› **Signal** `→` [contact@warisul.com](mailto:contact@warisul.com) · direct inquiries, consulting, and project briefs  
+<p align="center">
+  <code>web</code> <a href="https://www.warisul.com">warisul.com</a> &nbsp;&bull;&nbsp;
+  <code>blog</code> <a href="https://blog.warisul.com">blog.warisul.com</a> &nbsp;&bull;&nbsp;
+  <code>network</code> <a href="https://www.linkedin.com/in/warisul-rafin">in/warisul-rafin</a> &nbsp;&bull;&nbsp;
+  <code>direct</code> <a href="mailto:contact@warisul.com">contact@warisul.com</a>
+</p>
 
 ---
 
-### [Preview Option 3: Cyber IDE Pill Cards]
+### [Preview 4B: Terminal Command Prompt Prefix]
 
-<table>
-  <tr>
-    <td width="50%" valign="top">
-      <a href="https://www.warisul.com"><b>🌐 warisul.com</b></a><br>
-      <sub>Production portfolio, agency work, and interactive systems.</sub>
-    </td>
-    <td width="50%" valign="top">
-      <a href="https://blog.warisul.com"><b>📝 blog.warisul.com</b></a><br>
-      <sub>Technical writing on LLMs, DevOps, homelabs, and audio.</sub>
-    </td>
-  </tr>
-  <tr>
-    <td width="50%" valign="top">
-      <a href="https://www.linkedin.com/in/warisul-rafin"><b>💼 LinkedIn</b></a><br>
-      <sub>Director of SaaS at Orpheus, leadership, and advisory.</sub>
-    </td>
-    <td width="50%" valign="top">
-      <a href="mailto:contact@warisul.com"><b>📬 Direct Wire</b></a><br>
-      <sub>contact@warisul.com for inquiries, contracts, and collaborations.</sub>
-    </td>
-  </tr>
-</table>
+<p align="center">
+  <code>~ $ connect</code> &nbsp;&nbsp;
+  <code>web</code> <a href="https://www.warisul.com">warisul.com</a> &nbsp;·&nbsp;
+  <code>blog</code> <a href="https://blog.warisul.com">blog.warisul.com</a> &nbsp;·&nbsp;
+  <code>network</code> <a href="https://www.linkedin.com/in/warisul-rafin">in/warisul-rafin</a> &nbsp;·&nbsp;
+  <code>direct</code> <a href="mailto:contact@warisul.com">contact@warisul.com</a>
+</p>
 
 ---
 
-### [Preview Option 4: Minimalist Monospace Capsule Line]
+### [Preview 4C: Indexed Capsule Nodes]
 
-`web` [warisul.com](https://www.warisul.com) &nbsp;·&nbsp; `blog` [blog.warisul.com](https://blog.warisul.com) &nbsp;·&nbsp; `network` [in/warisul-rafin](https://www.linkedin.com/in/warisul-rafin) &nbsp;·&nbsp; `direct` [contact@warisul.com](mailto:contact@warisul.com)
+<p align="center">
+  <code>01/web</code> <a href="https://www.warisul.com">warisul.com</a> &nbsp;&bull;&nbsp;
+  <code>02/blog</code> <a href="https://blog.warisul.com">blog.warisul.com</a> &nbsp;&bull;&nbsp;
+  <code>03/net</code> <a href="https://www.linkedin.com/in/warisul-rafin">in/warisul-rafin</a> &nbsp;&bull;&nbsp;
+  <code>04/msg</code> <a href="mailto:contact@warisul.com">contact@warisul.com</a>
+</p>
+
+---
+
+### [Preview 4D: Left-Aligned Directional Pipes]
+
+`›` `web` [warisul.com](https://www.warisul.com) &nbsp;·&nbsp; `blog` [blog.warisul.com](https://blog.warisul.com) &nbsp;·&nbsp; `network` [in/warisul-rafin](https://www.linkedin.com/in/warisul-rafin) &nbsp;·&nbsp; `direct` [contact@warisul.com](mailto:contact@warisul.com)
+
 

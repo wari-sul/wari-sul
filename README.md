@@ -14,4 +14,56 @@ athrLabs turns high-level questions into deployable infrastructure. The visualiz
 
 <img src="assets/ai-solutions.svg?v=3.1" alt="AI-integrated systems: transformer forward pass from business prompt to 5 autonomous output solutions" width="100%">
 
-Elsewhere: [warisul.com](https://www.warisul.com) · [blog](https://blog.warisul.com) · [LinkedIn](https://www.linkedin.com/in/warisul-rafin) · [contact@warisul.com](mailto:contact@warisul.com)
+---
+
+### [Preview Option 1: System Endpoints Table]
+
+| Service | Address | Target | Status |
+| :--- | :--- | :--- | :--- |
+| **Production** | [warisul.com](https://www.warisul.com) | Portfolio, systems, and client lab showcase | `200 OK · edge` |
+| **Dispatches** | [blog.warisul.com](https://blog.warisul.com) | Notes on models, self-hosting, and audio engineering | `200 OK · active` |
+| **Network** | [in/warisul-rafin](https://www.linkedin.com/in/warisul-rafin) | SaaS leadership, client advisory, and career trajectory | `verified` |
+| **Direct Wire** | [contact@warisul.com](mailto:contact@warisul.com) | Encrypted inbox for advisory, contracts, and collaborations | `open` |
+
+---
+
+### [Preview Option 2: Terminal Command Palette / Routed Pipes]
+
+› **Web** `→` [warisul.com](https://www.warisul.com) · client work, lab experiments, and architecture cases  
+› **Blog** `→` [blog.warisul.com](https://blog.warisul.com) · engineering deep dives, homelab builds, and listening setups  
+› **LinkedIn** `→` [in/warisul-rafin](https://www.linkedin.com/in/warisul-rafin) · director of SaaS, agency leadership, and engineering  
+› **Signal** `→` [contact@warisul.com](mailto:contact@warisul.com) · direct inquiries, consulting, and project briefs  
+
+---
+
+### [Preview Option 3: Cyber IDE Pill Cards]
+
+<table>
+  <tr>
+    <td width="50%" valign="top">
+      <a href="https://www.warisul.com"><b>🌐 warisul.com</b></a><br>
+      <sub>Production portfolio, agency work, and interactive systems.</sub>
+    </td>
+    <td width="50%" valign="top">
+      <a href="https://blog.warisul.com"><b>📝 blog.warisul.com</b></a><br>
+      <sub>Technical writing on LLMs, DevOps, homelabs, and audio.</sub>
+    </td>
+  </tr>
+  <tr>
+    <td width="50%" valign="top">
+      <a href="https://www.linkedin.com/in/warisul-rafin"><b>💼 LinkedIn</b></a><br>
+      <sub>Director of SaaS at Orpheus, leadership, and advisory.</sub>
+    </td>
+    <td width="50%" valign="top">
+      <a href="mailto:contact@warisul.com"><b>📬 Direct Wire</b></a><br>
+      <sub>contact@warisul.com for inquiries, contracts, and collaborations.</sub>
+    </td>
+  </tr>
+</table>
+
+---
+
+### [Preview Option 4: Minimalist Monospace Capsule Line]
+
+`web` [warisul.com](https://www.warisul.com) &nbsp;·&nbsp; `blog` [blog.warisul.com](https://blog.warisul.com) &nbsp;·&nbsp; `network` [in/warisul-rafin](https://www.linkedin.com/in/warisul-rafin) &nbsp;·&nbsp; `direct` [contact@warisul.com](mailto:contact@warisul.com)
+

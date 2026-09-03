@@ -133,13 +133,13 @@
     </g>
   </g>
 
-  <!-- ================= STAGE 3: EMBEDDING MATRIX (MATHEMATICALLY CENTERED) ================= -->
+  <!-- ================= STAGE 3: EMBEDDING LOOKUP MATRIX (CENTERED) ================= -->
   <g id="embedding-matrix-tensor" opacity="0">
     <animate attributeName="opacity" values="0;0;1;1;0;0" keyTimes="0;0.2100;0.2150;0.3250;0.3300;1" calcMode="linear" dur="20.0s" repeatCount="indefinite"/>
     <!-- Centered Card Container (Symmetric 19px margins!) -->
-    <rect x="26" y="148" width="372" height="106" rx="8" fill="#111620" stroke="#1E2638" stroke-width="1"/>
-    <!-- Clear Header Band with 12px breathing room to grid (Zero Collision!) -->
-    <text class="m4" x="45" y="164" font-size="8" font-weight="bold" fill="#6E7681" letter-spacing="0.8">EMBEDDING MATRIX &#183; 9&#215;12 LOOKUP TENSOR</text>
+    <rect x="26" y="146" width="372" height="108" rx="8" fill="#111620" stroke="#1E2638" stroke-width="1"/>
+    <!-- Centered Understated Title -->
+    <text class="m4" x="212" y="164" font-size="8.5" font-weight="bold" fill="#6E7681" letter-spacing="1.2" text-anchor="middle">EMBEDDING LOOKUP MATRIX</text>
 
     <!-- Matrix Column 0 -->
     <rect x="45" y="176.0" width="30" height="4.5" rx="1.5" fill="rgba(234,88,12,0.75)"/>
@@ -259,53 +259,53 @@
     <rect x="349" y="234.0" width="30" height="4.5" rx="1.5" fill="rgba(234,88,12,0.75)"/>
     <rect x="349" y="239.8" width="30" height="4.5" rx="1.5" fill="rgba(255,255,255,0.06)"/>
     <!-- Extrusion Ray 0: shoots 4.50s, lands 4.66s -->
-    <line x1="60" y1="246" x2="38" y2="330" stroke="#EA580C" stroke-width="1.4" stroke-opacity="0">
+    <line x1="60" y1="246" x2="38" y2="396" stroke="#EA580C" stroke-width="1.4" stroke-opacity="0">
       <animate attributeName="stroke-opacity" values="0;0;0.9;0.9;0;0" keyTimes="0;0.2250;0.2280;0.2330;0.2355;1" dur="20.0s" repeatCount="indefinite"/>
     </line>
     <!-- Extrusion Ray 1: shoots 4.70s, lands 4.86s -->
-    <line x1="98" y1="246" x2="64" y2="330" stroke="#EA580C" stroke-width="1.4" stroke-opacity="0">
+    <line x1="98" y1="246" x2="64" y2="396" stroke="#EA580C" stroke-width="1.4" stroke-opacity="0">
       <animate attributeName="stroke-opacity" values="0;0;0.9;0.9;0;0" keyTimes="0;0.2350;0.2380;0.2430;0.2455;1" dur="20.0s" repeatCount="indefinite"/>
     </line>
     <!-- Extrusion Ray 2: shoots 4.90s, lands 5.06s -->
-    <line x1="136" y1="246" x2="90" y2="330" stroke="#EA580C" stroke-width="1.4" stroke-opacity="0">
+    <line x1="136" y1="246" x2="90" y2="396" stroke="#EA580C" stroke-width="1.4" stroke-opacity="0">
       <animate attributeName="stroke-opacity" values="0;0;0.9;0.9;0;0" keyTimes="0;0.2450;0.2480;0.2530;0.2555;1" dur="20.0s" repeatCount="indefinite"/>
     </line>
     <!-- Extrusion Ray 3: shoots 5.10s, lands 5.26s -->
-    <line x1="174" y1="246" x2="116" y2="330" stroke="#EA580C" stroke-width="1.4" stroke-opacity="0">
+    <line x1="174" y1="246" x2="116" y2="396" stroke="#EA580C" stroke-width="1.4" stroke-opacity="0">
       <animate attributeName="stroke-opacity" values="0;0;0.9;0.9;0;0" keyTimes="0;0.2550;0.2580;0.2630;0.2655;1" dur="20.0s" repeatCount="indefinite"/>
     </line>
     <!-- Extrusion Ray 4: shoots 5.30s, lands 5.46s -->
-    <line x1="212" y1="246" x2="142" y2="330" stroke="#EA580C" stroke-width="1.4" stroke-opacity="0">
+    <line x1="212" y1="246" x2="142" y2="396" stroke="#EA580C" stroke-width="1.4" stroke-opacity="0">
       <animate attributeName="stroke-opacity" values="0;0;0.9;0.9;0;0" keyTimes="0;0.2650;0.2680;0.2730;0.2755;1" dur="20.0s" repeatCount="indefinite"/>
     </line>
     <!-- Extrusion Ray 5: shoots 5.50s, lands 5.66s -->
-    <line x1="250" y1="246" x2="168" y2="330" stroke="#EA580C" stroke-width="1.4" stroke-opacity="0">
+    <line x1="250" y1="246" x2="168" y2="396" stroke="#EA580C" stroke-width="1.4" stroke-opacity="0">
       <animate attributeName="stroke-opacity" values="0;0;0.9;0.9;0;0" keyTimes="0;0.2750;0.2780;0.2830;0.2855;1" dur="20.0s" repeatCount="indefinite"/>
     </line>
     <!-- Extrusion Ray 6: shoots 5.70s, lands 5.86s -->
-    <line x1="288" y1="246" x2="194" y2="330" stroke="#EA580C" stroke-width="1.4" stroke-opacity="0">
+    <line x1="288" y1="246" x2="194" y2="396" stroke="#EA580C" stroke-width="1.4" stroke-opacity="0">
       <animate attributeName="stroke-opacity" values="0;0;0.9;0.9;0;0" keyTimes="0;0.2850;0.2880;0.2930;0.2955;1" dur="20.0s" repeatCount="indefinite"/>
     </line>
     <!-- Extrusion Ray 7: shoots 5.90s, lands 6.06s -->
-    <line x1="326" y1="246" x2="220" y2="330" stroke="#EA580C" stroke-width="1.4" stroke-opacity="0">
+    <line x1="326" y1="246" x2="220" y2="396" stroke="#EA580C" stroke-width="1.4" stroke-opacity="0">
       <animate attributeName="stroke-opacity" values="0;0;0.9;0.9;0;0" keyTimes="0;0.2950;0.2980;0.3030;0.3055;1" dur="20.0s" repeatCount="indefinite"/>
     </line>
     <!-- Extrusion Ray 8: shoots 6.10s, lands 6.26s -->
-    <line x1="364" y1="246" x2="246" y2="330" stroke="#EA580C" stroke-width="1.4" stroke-opacity="0">
+    <line x1="364" y1="246" x2="246" y2="396" stroke="#EA580C" stroke-width="1.4" stroke-opacity="0">
       <animate attributeName="stroke-opacity" values="0;0;0.9;0.9;0;0" keyTimes="0;0.3050;0.3080;0.3130;0.3155;1" dur="20.0s" repeatCount="indefinite"/>
     </line>
   </g>
 
-  <!-- ================= 5. BASELINE AXES & DYNAMIC SEQUENCE LABELS ================= -->
+  <!-- ================= 5. BASELINE AXES & SYNCHRONIZED SEQUENCE LABELS ================= -->
   <g id="baseline-axis-group">
     <!-- Baseline Floor Line (draws from 4.2s to 6.3s = 0.2100 to 0.3150) -->
-    <line id="baseline-floor" x1="26" y1="398" x2="360" y2="398" stroke="#1E2638" stroke-width="1" stroke-dasharray="334" stroke-dashoffset="334">
-      <animate attributeName="stroke-dashoffset" values="334;334;0;0;334" keyTimes="0;0.2100;0.3150;0.9600;1" calcMode="linear" dur="20.0s" repeatCount="indefinite"/>
+    <line id="baseline-floor" x1="26" y1="398" x2="380" y2="398" stroke="#1E2638" stroke-width="1" stroke-dasharray="354" stroke-dashoffset="354">
+      <animate attributeName="stroke-dashoffset" values="354;354;0;0;354" keyTimes="0;0.2100;0.3150;0.9600;1" calcMode="linear" dur="20.0s" repeatCount="indefinite"/>
     </line>
 
-    <!-- Dynamic Sequence Label: x=28 (8 discrete ticks from 9 Tokens to 14 Columns <EOS>) -->
+    <!-- Strict 1:1 Synchronized Label Ticks (Zero Counter Lag!) -->
     <text class="m4" x="28" y="416" font-size="9" fill="#6E7681" opacity="0">
-      <animate attributeName="opacity" values="0;0;1;0;0" keyTimes="0;0.2330;0.2335;0.6040;1" calcMode="discrete" dur="20.0s" repeatCount="indefinite"/>
+      <animate attributeName="opacity" values="0;0;1;0;0" keyTimes="0;0.2330;0.2350;0.6040;1" calcMode="discrete" dur="20.0s" repeatCount="indefinite"/>
       Context Sequence &#183; 9 Tokens
     </text>
     <text class="m4" x="28" y="416" font-size="9" fill="#6E7681" opacity="0">
@@ -324,16 +324,23 @@
       <animate attributeName="opacity" values="0;0;1;0;0" keyTimes="0;0.7840;0.7845;0.8440;1" calcMode="discrete" dur="20.0s" repeatCount="indefinite"/>
       Context Sequence &#183; 13 Tokens
     </text>
-    <text class="m4" x="28" y="416" font-size="9" font-weight="bold" fill="#EA580C" opacity="0">
+    <text class="m4" x="28" y="416" font-size="9" font-weight="bold" fill="#F0F6FC" opacity="0">
       <animate attributeName="opacity" values="0;0;1;1;0;0" keyTimes="0;0.8440;0.8445;0.9600;0.9800;1" calcMode="discrete" dur="20.0s" repeatCount="indefinite"/>
-      Context Sequence &#183; 14 Columns &#183; &lt;EOS&gt;
+      Context Sequence &#183; 14 Tokens Complete
     </text>
 
-    <!-- Autoregressive Loop Sub-label at x=260 (shuts off before 16.88s, zero collision!) -->
-    <text class="m4" x="260" y="416" font-size="8.5" font-weight="bold" fill="#EA580C" opacity="0">
+    <!-- Clean Unbracketed Loop Status (offset rightward away from ripple collisions) -->
+    <text class="m4" x="260" y="416" font-size="8.5" font-weight="600" fill="#EA580C" opacity="0">
       <animate attributeName="opacity" values="0;0;1;0;1;0;1;0;1;0;1;0;0" keyTimes="0;0.5890;0.6040;0.6490;0.6640;0.7090;0.7240;0.7690;0.7840;0.8290;0.8440;0.8445;1" calcMode="discrete" dur="20.0s" repeatCount="indefinite"/>
-      [Autoregressive loop]
+      autoregressive loop
     </text>
+  </g>
+
+  <!-- Terminal <EOS> Capsule Badge (Anchored at true end of sequence: X=344, Y=366) -->
+  <g opacity="0">
+    <animate attributeName="opacity" values="0;0;1;1;0;0" keyTimes="0;0.8440;0.8470;0.9600;0.9800;1" calcMode="linear" dur="20.0s" repeatCount="indefinite"/>
+    <rect x="344" y="366" width="34" height="14" rx="3" fill="#1F242C" stroke="#EA580C" stroke-width="1"/>
+    <text class="m4" x="361" y="376.5" font-size="8" font-weight="bold" fill="#EA580C" text-anchor="middle">&lt;EOS&gt;</text>
   </g>
 
 
@@ -606,28 +613,28 @@
     <rect class="card-bg" x="44" y="132" width="340" height="144" rx="10" fill="#111620" stroke="#1E2638" stroke-width="1"/>
     <text class="m4" x="58" y="150" font-size="8.5" font-weight="bold" fill="#6E7681" letter-spacing="0.8">TRANSFORMER FFN BLOCK</text>
     
-    <!-- Dynamic Layer Counter: strictly non-overlapping equal 450ms windows (guaranteed zero dropouts!) -->
+    <!-- Dynamic Layer Counter: Enforced GPU Paint Triggers (Guaranteed zero frame-skips!) -->
     <rect x="306" y="138" width="70" height="17" rx="4" fill="#1F242C" stroke="#1E2638" stroke-width="1">
       <animate attributeName="stroke" values="#1E2638;#1E2638;#EA580C;#1E2638;#1E2638" keyTimes="0;0.4400;0.4500;0.5600;1" dur="20.0s" calcMode="discrete" repeatCount="indefinite"/>
     </rect>
-    <!-- layer 01/12 (0.4400 to 0.4625 = 450ms) -->
+    <!-- layer 01/12 (0.4350 to 0.4670) -->
     <text class="m4" x="341" y="150" font-size="9" font-weight="bold" fill="#6E7681" text-anchor="middle" opacity="0">
-      <animate attributeName="opacity" values="0;1;0;0" keyTimes="0;0.4400;0.4625;1" calcMode="discrete" dur="20.0s" repeatCount="indefinite"/>
+      <animate attributeName="opacity" values="0;1;1;0;0" keyTimes="0;0.4350;0.4650;0.4670;1" calcMode="linear" dur="20.0s" repeatCount="indefinite"/>
       layer 01/12
     </text>
-    <!-- layer 04/12 (0.4625 to 0.4850 = 450ms) -->
+    <!-- layer 04/12 (0.4650 to 0.5020) -->
     <text class="m4" x="341" y="150" font-size="9" font-weight="bold" fill="#EA580C" text-anchor="middle" opacity="0">
-      <animate attributeName="opacity" values="0;0;1;0;0" keyTimes="0;0.4400;0.4625;0.4850;1" calcMode="discrete" dur="20.0s" repeatCount="indefinite"/>
+      <animate attributeName="opacity" values="0;0;1;1;0;0" keyTimes="0;0.4650;0.4680;0.5000;0.5020;1" calcMode="linear" dur="20.0s" repeatCount="indefinite"/>
       layer 04/12
     </text>
-    <!-- layer 08/12 (0.4850 to 0.5075 = 450ms) -->
+    <!-- layer 08/12 (0.5000 to 0.5370) -->
     <text class="m4" x="341" y="150" font-size="9" font-weight="bold" fill="#EA580C" text-anchor="middle" opacity="0">
-      <animate attributeName="opacity" values="0;0;1;0;0" keyTimes="0;0.4625;0.4850;0.5075;1" calcMode="discrete" dur="20.0s" repeatCount="indefinite"/>
+      <animate attributeName="opacity" values="0;0;1;1;0;0" keyTimes="0;0.5000;0.5030;0.5350;0.5370;1" calcMode="linear" dur="20.0s" repeatCount="indefinite"/>
       layer 08/12
     </text>
-    <!-- layer 12/12 (0.5075 to 0.9600 = permanent hold) -->
+    <!-- layer 12/12 (0.5350 to 0.9800) -->
     <text class="m4" x="341" y="150" font-size="9" font-weight="bold" fill="#EA580C" text-anchor="middle" opacity="0">
-      <animate attributeName="opacity" values="0;0;1;0;0" keyTimes="0;0.4850;0.5075;0.9600;1" calcMode="discrete" dur="20.0s" repeatCount="indefinite"/>
+      <animate attributeName="opacity" values="0;0;1;1;0;0" keyTimes="0;0.5350;0.5380;0.9600;0.9800;1" calcMode="linear" dur="20.0s" repeatCount="indefinite"/>
       layer 12/12
     </text>
 
@@ -678,7 +685,7 @@
     </g>
     <!-- Step 1: Candidate Stack (.tf__cands) -->
     <g id="candidate-stack-1" opacity="0">
-      <animate attributeName="opacity" values="0;0;1;1;0;0" keyTimes="0;0.5690;0.5740;0.5850;0.5875;1" calcMode="linear" dur="20.0s" repeatCount="indefinite"/>
+      <animate attributeName="opacity" values="0;0;1;1;0;0" keyTimes="0;0.5660;0.5670;0.5860;0.5890;1" calcMode="linear" dur="20.0s" repeatCount="indefinite"/>
 
       <!-- Cand 0: Auto 84% -->
       <rect x="420" y="61.0" width="78" height="14" rx="4" fill="#1F242C" stroke="#EA580C" stroke-width="1"/>
@@ -692,9 +699,9 @@
     </g>
     <!-- Step 1: Capability Card (.tf-card) 1 (Automation) -->
     <g id="output-card-1" opacity="0">
-      <animate attributeName="opacity" values="0;0;1;1;0;0" keyTimes="0;0.5875;0.5915;0.9600;0.9800;1" calcMode="linear" dur="20.0s" repeatCount="indefinite"/>
+      <animate attributeName="opacity" values="0;0;1;1;0;0" keyTimes="0;0.5880;0.5920;0.9600;0.9800;1" calcMode="linear" dur="20.0s" repeatCount="indefinite"/>
       <rect x="516" y="56" width="296" height="56" rx="8" fill="#111620" stroke="#1E2638" stroke-width="1">
-        <animate attributeName="stroke" values="#1E2638;#1E2638;#EA580C;#1E2638;#1E2638" keyTimes="0;0.5875;0.5915;0.6175;1" dur="20.0s" calcMode="discrete" repeatCount="indefinite"/>
+        <animate attributeName="stroke" values="#1E2638;#1E2638;#EA580C;#1E2638;#1E2638" keyTimes="0;0.5880;0.5920;0.6180;1" dur="20.0s" calcMode="discrete" repeatCount="indefinite"/>
       </rect>
       <!-- Card Number -->
       <text class="m4" x="530" y="78" font-size="10.5" font-weight="bold" fill="#EA580C">01</text>
@@ -723,7 +730,7 @@
     </g>
     <!-- Step 2: Candidate Stack (.tf__cands) -->
     <g id="candidate-stack-2" opacity="0">
-      <animate attributeName="opacity" values="0;0;1;1;0;0" keyTimes="0;0.6290;0.6340;0.6450;0.6475;1" calcMode="linear" dur="20.0s" repeatCount="indefinite"/>
+      <animate attributeName="opacity" values="0;0;1;1;0;0" keyTimes="0;0.6260;0.6270;0.6460;0.6490;1" calcMode="linear" dur="20.0s" repeatCount="indefinite"/>
 
       <!-- Cand 0: Self- 78% -->
       <rect x="420" y="125.0" width="78" height="14" rx="4" fill="#1F242C" stroke="#EA580C" stroke-width="1"/>
@@ -737,9 +744,9 @@
     </g>
     <!-- Step 2: Capability Card (.tf-card) 2 (Self-learning systems) -->
     <g id="output-card-2" opacity="0">
-      <animate attributeName="opacity" values="0;0;1;1;0;0" keyTimes="0;0.6475;0.6515;0.9600;0.9800;1" calcMode="linear" dur="20.0s" repeatCount="indefinite"/>
+      <animate attributeName="opacity" values="0;0;1;1;0;0" keyTimes="0;0.6480;0.6520;0.9600;0.9800;1" calcMode="linear" dur="20.0s" repeatCount="indefinite"/>
       <rect x="516" y="120" width="296" height="56" rx="8" fill="#111620" stroke="#1E2638" stroke-width="1">
-        <animate attributeName="stroke" values="#1E2638;#1E2638;#EA580C;#1E2638;#1E2638" keyTimes="0;0.6475;0.6515;0.6775;1" dur="20.0s" calcMode="discrete" repeatCount="indefinite"/>
+        <animate attributeName="stroke" values="#1E2638;#1E2638;#EA580C;#1E2638;#1E2638" keyTimes="0;0.6480;0.6520;0.6780;1" dur="20.0s" calcMode="discrete" repeatCount="indefinite"/>
       </rect>
       <!-- Card Number -->
       <text class="m4" x="530" y="142" font-size="10.5" font-weight="bold" fill="#EA580C">02</text>
@@ -768,7 +775,7 @@
     </g>
     <!-- Step 3: Candidate Stack (.tf__cands) -->
     <g id="candidate-stack-3" opacity="0">
-      <animate attributeName="opacity" values="0;0;1;1;0;0" keyTimes="0;0.6890;0.6940;0.7050;0.7075;1" calcMode="linear" dur="20.0s" repeatCount="indefinite"/>
+      <animate attributeName="opacity" values="0;0;1;1;0;0" keyTimes="0;0.6860;0.6870;0.7060;0.7090;1" calcMode="linear" dur="20.0s" repeatCount="indefinite"/>
 
       <!-- Cand 0: Fore 81% -->
       <rect x="420" y="189.0" width="78" height="14" rx="4" fill="#1F242C" stroke="#EA580C" stroke-width="1"/>
@@ -782,9 +789,9 @@
     </g>
     <!-- Step 3: Capability Card (.tf-card) 3 (Forecasts) -->
     <g id="output-card-3" opacity="0">
-      <animate attributeName="opacity" values="0;0;1;1;0;0" keyTimes="0;0.7075;0.7115;0.9600;0.9800;1" calcMode="linear" dur="20.0s" repeatCount="indefinite"/>
+      <animate attributeName="opacity" values="0;0;1;1;0;0" keyTimes="0;0.7080;0.7120;0.9600;0.9800;1" calcMode="linear" dur="20.0s" repeatCount="indefinite"/>
       <rect x="516" y="184" width="296" height="56" rx="8" fill="#111620" stroke="#1E2638" stroke-width="1">
-        <animate attributeName="stroke" values="#1E2638;#1E2638;#EA580C;#1E2638;#1E2638" keyTimes="0;0.7075;0.7115;0.7375;1" dur="20.0s" calcMode="discrete" repeatCount="indefinite"/>
+        <animate attributeName="stroke" values="#1E2638;#1E2638;#EA580C;#1E2638;#1E2638" keyTimes="0;0.7080;0.7120;0.7380;1" dur="20.0s" calcMode="discrete" repeatCount="indefinite"/>
       </rect>
       <!-- Card Number -->
       <text class="m4" x="530" y="206" font-size="10.5" font-weight="bold" fill="#EA580C">03</text>
@@ -813,7 +820,7 @@
     </g>
     <!-- Step 4: Candidate Stack (.tf__cands) -->
     <g id="candidate-stack-4" opacity="0">
-      <animate attributeName="opacity" values="0;0;1;1;0;0" keyTimes="0;0.7490;0.7540;0.7650;0.7675;1" calcMode="linear" dur="20.0s" repeatCount="indefinite"/>
+      <animate attributeName="opacity" values="0;0;1;1;0;0" keyTimes="0;0.7460;0.7470;0.7660;0.7690;1" calcMode="linear" dur="20.0s" repeatCount="indefinite"/>
 
       <!-- Cand 0: AI  88% -->
       <rect x="420" y="253.0" width="78" height="14" rx="4" fill="#1F242C" stroke="#EA580C" stroke-width="1"/>
@@ -827,9 +834,9 @@
     </g>
     <!-- Step 4: Capability Card (.tf-card) 4 (AI assistants) -->
     <g id="output-card-4" opacity="0">
-      <animate attributeName="opacity" values="0;0;1;1;0;0" keyTimes="0;0.7675;0.7715;0.9600;0.9800;1" calcMode="linear" dur="20.0s" repeatCount="indefinite"/>
+      <animate attributeName="opacity" values="0;0;1;1;0;0" keyTimes="0;0.7680;0.7720;0.9600;0.9800;1" calcMode="linear" dur="20.0s" repeatCount="indefinite"/>
       <rect x="516" y="248" width="296" height="56" rx="8" fill="#111620" stroke="#1E2638" stroke-width="1">
-        <animate attributeName="stroke" values="#1E2638;#1E2638;#EA580C;#1E2638;#1E2638" keyTimes="0;0.7675;0.7715;0.7975;1" dur="20.0s" calcMode="discrete" repeatCount="indefinite"/>
+        <animate attributeName="stroke" values="#1E2638;#1E2638;#EA580C;#1E2638;#1E2638" keyTimes="0;0.7680;0.7720;0.7980;1" dur="20.0s" calcMode="discrete" repeatCount="indefinite"/>
       </rect>
       <!-- Card Number -->
       <text class="m4" x="530" y="270" font-size="10.5" font-weight="bold" fill="#EA580C">04</text>
@@ -858,7 +865,7 @@
     </g>
     <!-- Step 5: Candidate Stack (.tf__cands) -->
     <g id="candidate-stack-5" opacity="0">
-      <animate attributeName="opacity" values="0;0;1;1;0;0" keyTimes="0;0.8090;0.8140;0.8250;0.8275;1" calcMode="linear" dur="20.0s" repeatCount="indefinite"/>
+      <animate attributeName="opacity" values="0;0;1;1;0;0" keyTimes="0;0.8060;0.8070;0.8260;0.8290;1" calcMode="linear" dur="20.0s" repeatCount="indefinite"/>
 
       <!-- Cand 0: Custom 83% -->
       <rect x="420" y="317.0" width="78" height="14" rx="4" fill="#1F242C" stroke="#EA580C" stroke-width="1"/>
@@ -872,9 +879,9 @@
     </g>
     <!-- Step 5: Capability Card (.tf-card) 5 (Custom models) -->
     <g id="output-card-5" opacity="0">
-      <animate attributeName="opacity" values="0;0;1;1;0;0" keyTimes="0;0.8275;0.8315;0.9600;0.9800;1" calcMode="linear" dur="20.0s" repeatCount="indefinite"/>
+      <animate attributeName="opacity" values="0;0;1;1;0;0" keyTimes="0;0.8280;0.8320;0.9600;0.9800;1" calcMode="linear" dur="20.0s" repeatCount="indefinite"/>
       <rect x="516" y="312" width="296" height="56" rx="8" fill="#111620" stroke="#1E2638" stroke-width="1">
-        <animate attributeName="stroke" values="#1E2638;#1E2638;#EA580C;#1E2638;#1E2638" keyTimes="0;0.8275;0.8315;0.8575;1" dur="20.0s" calcMode="discrete" repeatCount="indefinite"/>
+        <animate attributeName="stroke" values="#1E2638;#1E2638;#EA580C;#1E2638;#1E2638" keyTimes="0;0.8280;0.8320;0.8580;1" dur="20.0s" calcMode="discrete" repeatCount="indefinite"/>
       </rect>
       <!-- Card Number -->
       <text class="m4" x="530" y="334" font-size="10.5" font-weight="bold" fill="#EA580C">05</text>

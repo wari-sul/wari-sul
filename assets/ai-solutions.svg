@@ -133,169 +133,179 @@
     </g>
   </g>
 
-  <!-- ================= STAGE 3: EMBEDDING LOOKUP MATRIX (9x12) ================= -->
+  <!-- ================= STAGE 3: EMBEDDING MATRIX (MATHEMATICALLY CENTERED) ================= -->
   <g id="embedding-matrix-tensor" opacity="0">
     <animate attributeName="opacity" values="0;0;1;1;0;0" keyTimes="0;0.2100;0.2150;0.3250;0.3300;1" calcMode="linear" dur="20.0s" repeatCount="indefinite"/>
-    <!-- Tensor Panel -->
-    <rect x="30" y="156" width="364" height="92" rx="8" fill="#111620" stroke="#1E2638" stroke-width="1"/>
-    <text class="m4" x="42" y="169" font-size="8" font-weight="bold" fill="#6E7681" letter-spacing="0.8">EMBEDDING MATRIX &#183; 9&#215;12 LOOKUP TENSOR</text>
+    <!-- Centered Card Container (Symmetric 19px margins!) -->
+    <rect x="26" y="148" width="372" height="106" rx="8" fill="#111620" stroke="#1E2638" stroke-width="1"/>
+    <!-- Clear Header Band with 12px breathing room to grid (Zero Collision!) -->
+    <text class="m4" x="45" y="164" font-size="8" font-weight="bold" fill="#6E7681" letter-spacing="0.8">EMBEDDING MATRIX &#183; 9&#215;12 LOOKUP TENSOR</text>
 
-    <rect x="29" y="170" width="30" height="4.5" rx="1.5" fill="rgba(234,88,12,0.75)"/>
-    <rect x="29" y="176" width="30" height="4.5" rx="1.5" fill="rgba(255,255,255,0.06)"/>
-    <rect x="29" y="182" width="30" height="4.5" rx="1.5" fill="rgba(255,255,255,0.06)"/>
-    <rect x="29" y="188" width="30" height="4.5" rx="1.5" fill="rgba(255,255,255,0.06)"/>
-    <rect x="29" y="194" width="30" height="4.5" rx="1.5" fill="rgba(255,255,255,0.06)"/>
-    <rect x="29" y="200" width="30" height="4.5" rx="1.5" fill="rgba(234,88,12,0.75)"/>
-    <rect x="29" y="206" width="30" height="4.5" rx="1.5" fill="rgba(255,255,255,0.06)"/>
-    <rect x="29" y="212" width="30" height="4.5" rx="1.5" fill="rgba(234,88,12,0.75)"/>
-    <rect x="29" y="218" width="30" height="4.5" rx="1.5" fill="rgba(255,255,255,0.06)"/>
-    <rect x="29" y="224" width="30" height="4.5" rx="1.5" fill="rgba(255,255,255,0.06)"/>
-    <rect x="29" y="230" width="30" height="4.5" rx="1.5" fill="rgba(255,255,255,0.06)"/>
-    <rect x="29" y="236" width="30" height="4.5" rx="1.5" fill="rgba(255,255,255,0.06)"/>
-    <rect x="67" y="170" width="30" height="4.5" rx="1.5" fill="rgba(255,255,255,0.06)"/>
-    <rect x="67" y="176" width="30" height="4.5" rx="1.5" fill="rgba(234,88,12,0.75)"/>
-    <rect x="67" y="182" width="30" height="4.5" rx="1.5" fill="rgba(255,255,255,0.06)"/>
-    <rect x="67" y="188" width="30" height="4.5" rx="1.5" fill="rgba(234,88,12,0.75)"/>
-    <rect x="67" y="194" width="30" height="4.5" rx="1.5" fill="rgba(255,255,255,0.06)"/>
-    <rect x="67" y="200" width="30" height="4.5" rx="1.5" fill="rgba(255,255,255,0.06)"/>
-    <rect x="67" y="206" width="30" height="4.5" rx="1.5" fill="rgba(255,255,255,0.06)"/>
-    <rect x="67" y="212" width="30" height="4.5" rx="1.5" fill="rgba(255,255,255,0.06)"/>
-    <rect x="67" y="218" width="30" height="4.5" rx="1.5" fill="rgba(234,88,12,0.75)"/>
-    <rect x="67" y="224" width="30" height="4.5" rx="1.5" fill="rgba(255,255,255,0.06)"/>
-    <rect x="67" y="230" width="30" height="4.5" rx="1.5" fill="rgba(234,88,12,0.75)"/>
-    <rect x="67" y="236" width="30" height="4.5" rx="1.5" fill="rgba(255,255,255,0.06)"/>
-    <rect x="105" y="170" width="30" height="4.5" rx="1.5" fill="rgba(255,255,255,0.06)"/>
-    <rect x="105" y="176" width="30" height="4.5" rx="1.5" fill="rgba(255,255,255,0.06)"/>
-    <rect x="105" y="182" width="30" height="4.5" rx="1.5" fill="rgba(255,255,255,0.06)"/>
-    <rect x="105" y="188" width="30" height="4.5" rx="1.5" fill="rgba(255,255,255,0.06)"/>
-    <rect x="105" y="194" width="30" height="4.5" rx="1.5" fill="rgba(234,88,12,0.75)"/>
-    <rect x="105" y="200" width="30" height="4.5" rx="1.5" fill="rgba(255,255,255,0.06)"/>
-    <rect x="105" y="206" width="30" height="4.5" rx="1.5" fill="rgba(234,88,12,0.75)"/>
-    <rect x="105" y="212" width="30" height="4.5" rx="1.5" fill="rgba(255,255,255,0.06)"/>
-    <rect x="105" y="218" width="30" height="4.5" rx="1.5" fill="rgba(255,255,255,0.06)"/>
-    <rect x="105" y="224" width="30" height="4.5" rx="1.5" fill="rgba(255,255,255,0.06)"/>
-    <rect x="105" y="230" width="30" height="4.5" rx="1.5" fill="rgba(255,255,255,0.06)"/>
-    <rect x="105" y="236" width="30" height="4.5" rx="1.5" fill="rgba(234,88,12,0.75)"/>
-    <rect x="143" y="170" width="30" height="4.5" rx="1.5" fill="rgba(234,88,12,0.75)"/>
-    <rect x="143" y="176" width="30" height="4.5" rx="1.5" fill="rgba(255,255,255,0.06)"/>
-    <rect x="143" y="182" width="30" height="4.5" rx="1.5" fill="rgba(234,88,12,0.75)"/>
-    <rect x="143" y="188" width="30" height="4.5" rx="1.5" fill="rgba(255,255,255,0.06)"/>
-    <rect x="143" y="194" width="30" height="4.5" rx="1.5" fill="rgba(255,255,255,0.06)"/>
-    <rect x="143" y="200" width="30" height="4.5" rx="1.5" fill="rgba(255,255,255,0.06)"/>
-    <rect x="143" y="206" width="30" height="4.5" rx="1.5" fill="rgba(255,255,255,0.06)"/>
-    <rect x="143" y="212" width="30" height="4.5" rx="1.5" fill="rgba(234,88,12,0.75)"/>
-    <rect x="143" y="218" width="30" height="4.5" rx="1.5" fill="rgba(255,255,255,0.06)"/>
-    <rect x="143" y="224" width="30" height="4.5" rx="1.5" fill="rgba(234,88,12,0.75)"/>
-    <rect x="143" y="230" width="30" height="4.5" rx="1.5" fill="rgba(255,255,255,0.06)"/>
-    <rect x="143" y="236" width="30" height="4.5" rx="1.5" fill="rgba(255,255,255,0.06)"/>
-    <rect x="181" y="170" width="30" height="4.5" rx="1.5" fill="rgba(255,255,255,0.06)"/>
-    <rect x="181" y="176" width="30" height="4.5" rx="1.5" fill="rgba(255,255,255,0.06)"/>
-    <rect x="181" y="182" width="30" height="4.5" rx="1.5" fill="rgba(255,255,255,0.06)"/>
-    <rect x="181" y="188" width="30" height="4.5" rx="1.5" fill="rgba(234,88,12,0.75)"/>
-    <rect x="181" y="194" width="30" height="4.5" rx="1.5" fill="rgba(255,255,255,0.06)"/>
-    <rect x="181" y="200" width="30" height="4.5" rx="1.5" fill="rgba(234,88,12,0.75)"/>
-    <rect x="181" y="206" width="30" height="4.5" rx="1.5" fill="rgba(255,255,255,0.06)"/>
-    <rect x="181" y="212" width="30" height="4.5" rx="1.5" fill="rgba(255,255,255,0.06)"/>
-    <rect x="181" y="218" width="30" height="4.5" rx="1.5" fill="rgba(255,255,255,0.06)"/>
-    <rect x="181" y="224" width="30" height="4.5" rx="1.5" fill="rgba(255,255,255,0.06)"/>
-    <rect x="181" y="230" width="30" height="4.5" rx="1.5" fill="rgba(234,88,12,0.75)"/>
-    <rect x="181" y="236" width="30" height="4.5" rx="1.5" fill="rgba(255,255,255,0.06)"/>
-    <rect x="219" y="170" width="30" height="4.5" rx="1.5" fill="rgba(255,255,255,0.06)"/>
-    <rect x="219" y="176" width="30" height="4.5" rx="1.5" fill="rgba(234,88,12,0.75)"/>
-    <rect x="219" y="182" width="30" height="4.5" rx="1.5" fill="rgba(255,255,255,0.06)"/>
-    <rect x="219" y="188" width="30" height="4.5" rx="1.5" fill="rgba(255,255,255,0.06)"/>
-    <rect x="219" y="194" width="30" height="4.5" rx="1.5" fill="rgba(255,255,255,0.06)"/>
-    <rect x="219" y="200" width="30" height="4.5" rx="1.5" fill="rgba(255,255,255,0.06)"/>
-    <rect x="219" y="206" width="30" height="4.5" rx="1.5" fill="rgba(234,88,12,0.75)"/>
-    <rect x="219" y="212" width="30" height="4.5" rx="1.5" fill="rgba(255,255,255,0.06)"/>
-    <rect x="219" y="218" width="30" height="4.5" rx="1.5" fill="rgba(234,88,12,0.75)"/>
-    <rect x="219" y="224" width="30" height="4.5" rx="1.5" fill="rgba(255,255,255,0.06)"/>
-    <rect x="219" y="230" width="30" height="4.5" rx="1.5" fill="rgba(255,255,255,0.06)"/>
-    <rect x="219" y="236" width="30" height="4.5" rx="1.5" fill="rgba(255,255,255,0.06)"/>
-    <rect x="257" y="170" width="30" height="4.5" rx="1.5" fill="rgba(255,255,255,0.06)"/>
-    <rect x="257" y="176" width="30" height="4.5" rx="1.5" fill="rgba(255,255,255,0.06)"/>
-    <rect x="257" y="182" width="30" height="4.5" rx="1.5" fill="rgba(234,88,12,0.75)"/>
-    <rect x="257" y="188" width="30" height="4.5" rx="1.5" fill="rgba(255,255,255,0.06)"/>
-    <rect x="257" y="194" width="30" height="4.5" rx="1.5" fill="rgba(234,88,12,0.75)"/>
-    <rect x="257" y="200" width="30" height="4.5" rx="1.5" fill="rgba(255,255,255,0.06)"/>
-    <rect x="257" y="206" width="30" height="4.5" rx="1.5" fill="rgba(255,255,255,0.06)"/>
-    <rect x="257" y="212" width="30" height="4.5" rx="1.5" fill="rgba(255,255,255,0.06)"/>
-    <rect x="257" y="218" width="30" height="4.5" rx="1.5" fill="rgba(255,255,255,0.06)"/>
-    <rect x="257" y="224" width="30" height="4.5" rx="1.5" fill="rgba(234,88,12,0.75)"/>
-    <rect x="257" y="230" width="30" height="4.5" rx="1.5" fill="rgba(255,255,255,0.06)"/>
-    <rect x="257" y="236" width="30" height="4.5" rx="1.5" fill="rgba(234,88,12,0.75)"/>
-    <rect x="295" y="170" width="30" height="4.5" rx="1.5" fill="rgba(234,88,12,0.75)"/>
-    <rect x="295" y="176" width="30" height="4.5" rx="1.5" fill="rgba(255,255,255,0.06)"/>
-    <rect x="295" y="182" width="30" height="4.5" rx="1.5" fill="rgba(255,255,255,0.06)"/>
-    <rect x="295" y="188" width="30" height="4.5" rx="1.5" fill="rgba(255,255,255,0.06)"/>
-    <rect x="295" y="194" width="30" height="4.5" rx="1.5" fill="rgba(255,255,255,0.06)"/>
-    <rect x="295" y="200" width="30" height="4.5" rx="1.5" fill="rgba(234,88,12,0.75)"/>
-    <rect x="295" y="206" width="30" height="4.5" rx="1.5" fill="rgba(255,255,255,0.06)"/>
-    <rect x="295" y="212" width="30" height="4.5" rx="1.5" fill="rgba(234,88,12,0.75)"/>
-    <rect x="295" y="218" width="30" height="4.5" rx="1.5" fill="rgba(255,255,255,0.06)"/>
-    <rect x="295" y="224" width="30" height="4.5" rx="1.5" fill="rgba(255,255,255,0.06)"/>
-    <rect x="295" y="230" width="30" height="4.5" rx="1.5" fill="rgba(255,255,255,0.06)"/>
-    <rect x="295" y="236" width="30" height="4.5" rx="1.5" fill="rgba(255,255,255,0.06)"/>
-    <rect x="333" y="170" width="30" height="4.5" rx="1.5" fill="rgba(255,255,255,0.06)"/>
-    <rect x="333" y="176" width="30" height="4.5" rx="1.5" fill="rgba(234,88,12,0.75)"/>
-    <rect x="333" y="182" width="30" height="4.5" rx="1.5" fill="rgba(255,255,255,0.06)"/>
-    <rect x="333" y="188" width="30" height="4.5" rx="1.5" fill="rgba(234,88,12,0.75)"/>
-    <rect x="333" y="194" width="30" height="4.5" rx="1.5" fill="rgba(255,255,255,0.06)"/>
-    <rect x="333" y="200" width="30" height="4.5" rx="1.5" fill="rgba(255,255,255,0.06)"/>
-    <rect x="333" y="206" width="30" height="4.5" rx="1.5" fill="rgba(255,255,255,0.06)"/>
-    <rect x="333" y="212" width="30" height="4.5" rx="1.5" fill="rgba(255,255,255,0.06)"/>
-    <rect x="333" y="218" width="30" height="4.5" rx="1.5" fill="rgba(234,88,12,0.75)"/>
-    <rect x="333" y="224" width="30" height="4.5" rx="1.5" fill="rgba(255,255,255,0.06)"/>
-    <rect x="333" y="230" width="30" height="4.5" rx="1.5" fill="rgba(234,88,12,0.75)"/>
-    <rect x="333" y="236" width="30" height="4.5" rx="1.5" fill="rgba(255,255,255,0.06)"/>
-    <!-- Extrusion Ray 0 -->
-    <line x1="44" y1="248" x2="38" y2="330" stroke="#EA580C" stroke-width="1.2" stroke-opacity="0">
-      <animate attributeName="stroke-opacity" values="0;0;0.8;0;0" keyTimes="0;0.2200;0.2250;0.2325;1" dur="20.0s" repeatCount="indefinite"/>
+    <!-- Matrix Column 0 -->
+    <rect x="45" y="176.0" width="30" height="4.5" rx="1.5" fill="rgba(234,88,12,0.75)"/>
+    <rect x="45" y="181.8" width="30" height="4.5" rx="1.5" fill="rgba(255,255,255,0.06)"/>
+    <rect x="45" y="187.6" width="30" height="4.5" rx="1.5" fill="rgba(255,255,255,0.06)"/>
+    <rect x="45" y="193.4" width="30" height="4.5" rx="1.5" fill="rgba(255,255,255,0.06)"/>
+    <rect x="45" y="199.2" width="30" height="4.5" rx="1.5" fill="rgba(255,255,255,0.06)"/>
+    <rect x="45" y="205.0" width="30" height="4.5" rx="1.5" fill="rgba(234,88,12,0.75)"/>
+    <rect x="45" y="210.8" width="30" height="4.5" rx="1.5" fill="rgba(255,255,255,0.06)"/>
+    <rect x="45" y="216.6" width="30" height="4.5" rx="1.5" fill="rgba(234,88,12,0.75)"/>
+    <rect x="45" y="222.4" width="30" height="4.5" rx="1.5" fill="rgba(255,255,255,0.06)"/>
+    <rect x="45" y="228.2" width="30" height="4.5" rx="1.5" fill="rgba(255,255,255,0.06)"/>
+    <rect x="45" y="234.0" width="30" height="4.5" rx="1.5" fill="rgba(255,255,255,0.06)"/>
+    <rect x="45" y="239.8" width="30" height="4.5" rx="1.5" fill="rgba(255,255,255,0.06)"/>
+    <!-- Matrix Column 1 -->
+    <rect x="83" y="176.0" width="30" height="4.5" rx="1.5" fill="rgba(255,255,255,0.06)"/>
+    <rect x="83" y="181.8" width="30" height="4.5" rx="1.5" fill="rgba(234,88,12,0.75)"/>
+    <rect x="83" y="187.6" width="30" height="4.5" rx="1.5" fill="rgba(255,255,255,0.06)"/>
+    <rect x="83" y="193.4" width="30" height="4.5" rx="1.5" fill="rgba(234,88,12,0.75)"/>
+    <rect x="83" y="199.2" width="30" height="4.5" rx="1.5" fill="rgba(255,255,255,0.06)"/>
+    <rect x="83" y="205.0" width="30" height="4.5" rx="1.5" fill="rgba(255,255,255,0.06)"/>
+    <rect x="83" y="210.8" width="30" height="4.5" rx="1.5" fill="rgba(255,255,255,0.06)"/>
+    <rect x="83" y="216.6" width="30" height="4.5" rx="1.5" fill="rgba(255,255,255,0.06)"/>
+    <rect x="83" y="222.4" width="30" height="4.5" rx="1.5" fill="rgba(234,88,12,0.75)"/>
+    <rect x="83" y="228.2" width="30" height="4.5" rx="1.5" fill="rgba(255,255,255,0.06)"/>
+    <rect x="83" y="234.0" width="30" height="4.5" rx="1.5" fill="rgba(234,88,12,0.75)"/>
+    <rect x="83" y="239.8" width="30" height="4.5" rx="1.5" fill="rgba(255,255,255,0.06)"/>
+    <!-- Matrix Column 2 -->
+    <rect x="121" y="176.0" width="30" height="4.5" rx="1.5" fill="rgba(255,255,255,0.06)"/>
+    <rect x="121" y="181.8" width="30" height="4.5" rx="1.5" fill="rgba(255,255,255,0.06)"/>
+    <rect x="121" y="187.6" width="30" height="4.5" rx="1.5" fill="rgba(255,255,255,0.06)"/>
+    <rect x="121" y="193.4" width="30" height="4.5" rx="1.5" fill="rgba(255,255,255,0.06)"/>
+    <rect x="121" y="199.2" width="30" height="4.5" rx="1.5" fill="rgba(234,88,12,0.75)"/>
+    <rect x="121" y="205.0" width="30" height="4.5" rx="1.5" fill="rgba(255,255,255,0.06)"/>
+    <rect x="121" y="210.8" width="30" height="4.5" rx="1.5" fill="rgba(234,88,12,0.75)"/>
+    <rect x="121" y="216.6" width="30" height="4.5" rx="1.5" fill="rgba(255,255,255,0.06)"/>
+    <rect x="121" y="222.4" width="30" height="4.5" rx="1.5" fill="rgba(255,255,255,0.06)"/>
+    <rect x="121" y="228.2" width="30" height="4.5" rx="1.5" fill="rgba(255,255,255,0.06)"/>
+    <rect x="121" y="234.0" width="30" height="4.5" rx="1.5" fill="rgba(255,255,255,0.06)"/>
+    <rect x="121" y="239.8" width="30" height="4.5" rx="1.5" fill="rgba(234,88,12,0.75)"/>
+    <!-- Matrix Column 3 -->
+    <rect x="159" y="176.0" width="30" height="4.5" rx="1.5" fill="rgba(234,88,12,0.75)"/>
+    <rect x="159" y="181.8" width="30" height="4.5" rx="1.5" fill="rgba(255,255,255,0.06)"/>
+    <rect x="159" y="187.6" width="30" height="4.5" rx="1.5" fill="rgba(234,88,12,0.75)"/>
+    <rect x="159" y="193.4" width="30" height="4.5" rx="1.5" fill="rgba(255,255,255,0.06)"/>
+    <rect x="159" y="199.2" width="30" height="4.5" rx="1.5" fill="rgba(255,255,255,0.06)"/>
+    <rect x="159" y="205.0" width="30" height="4.5" rx="1.5" fill="rgba(255,255,255,0.06)"/>
+    <rect x="159" y="210.8" width="30" height="4.5" rx="1.5" fill="rgba(255,255,255,0.06)"/>
+    <rect x="159" y="216.6" width="30" height="4.5" rx="1.5" fill="rgba(234,88,12,0.75)"/>
+    <rect x="159" y="222.4" width="30" height="4.5" rx="1.5" fill="rgba(255,255,255,0.06)"/>
+    <rect x="159" y="228.2" width="30" height="4.5" rx="1.5" fill="rgba(234,88,12,0.75)"/>
+    <rect x="159" y="234.0" width="30" height="4.5" rx="1.5" fill="rgba(255,255,255,0.06)"/>
+    <rect x="159" y="239.8" width="30" height="4.5" rx="1.5" fill="rgba(255,255,255,0.06)"/>
+    <!-- Matrix Column 4 -->
+    <rect x="197" y="176.0" width="30" height="4.5" rx="1.5" fill="rgba(255,255,255,0.06)"/>
+    <rect x="197" y="181.8" width="30" height="4.5" rx="1.5" fill="rgba(255,255,255,0.06)"/>
+    <rect x="197" y="187.6" width="30" height="4.5" rx="1.5" fill="rgba(255,255,255,0.06)"/>
+    <rect x="197" y="193.4" width="30" height="4.5" rx="1.5" fill="rgba(234,88,12,0.75)"/>
+    <rect x="197" y="199.2" width="30" height="4.5" rx="1.5" fill="rgba(255,255,255,0.06)"/>
+    <rect x="197" y="205.0" width="30" height="4.5" rx="1.5" fill="rgba(234,88,12,0.75)"/>
+    <rect x="197" y="210.8" width="30" height="4.5" rx="1.5" fill="rgba(255,255,255,0.06)"/>
+    <rect x="197" y="216.6" width="30" height="4.5" rx="1.5" fill="rgba(255,255,255,0.06)"/>
+    <rect x="197" y="222.4" width="30" height="4.5" rx="1.5" fill="rgba(255,255,255,0.06)"/>
+    <rect x="197" y="228.2" width="30" height="4.5" rx="1.5" fill="rgba(255,255,255,0.06)"/>
+    <rect x="197" y="234.0" width="30" height="4.5" rx="1.5" fill="rgba(234,88,12,0.75)"/>
+    <rect x="197" y="239.8" width="30" height="4.5" rx="1.5" fill="rgba(255,255,255,0.06)"/>
+    <!-- Matrix Column 5 -->
+    <rect x="235" y="176.0" width="30" height="4.5" rx="1.5" fill="rgba(255,255,255,0.06)"/>
+    <rect x="235" y="181.8" width="30" height="4.5" rx="1.5" fill="rgba(234,88,12,0.75)"/>
+    <rect x="235" y="187.6" width="30" height="4.5" rx="1.5" fill="rgba(255,255,255,0.06)"/>
+    <rect x="235" y="193.4" width="30" height="4.5" rx="1.5" fill="rgba(255,255,255,0.06)"/>
+    <rect x="235" y="199.2" width="30" height="4.5" rx="1.5" fill="rgba(255,255,255,0.06)"/>
+    <rect x="235" y="205.0" width="30" height="4.5" rx="1.5" fill="rgba(255,255,255,0.06)"/>
+    <rect x="235" y="210.8" width="30" height="4.5" rx="1.5" fill="rgba(234,88,12,0.75)"/>
+    <rect x="235" y="216.6" width="30" height="4.5" rx="1.5" fill="rgba(255,255,255,0.06)"/>
+    <rect x="235" y="222.4" width="30" height="4.5" rx="1.5" fill="rgba(234,88,12,0.75)"/>
+    <rect x="235" y="228.2" width="30" height="4.5" rx="1.5" fill="rgba(255,255,255,0.06)"/>
+    <rect x="235" y="234.0" width="30" height="4.5" rx="1.5" fill="rgba(255,255,255,0.06)"/>
+    <rect x="235" y="239.8" width="30" height="4.5" rx="1.5" fill="rgba(255,255,255,0.06)"/>
+    <!-- Matrix Column 6 -->
+    <rect x="273" y="176.0" width="30" height="4.5" rx="1.5" fill="rgba(255,255,255,0.06)"/>
+    <rect x="273" y="181.8" width="30" height="4.5" rx="1.5" fill="rgba(255,255,255,0.06)"/>
+    <rect x="273" y="187.6" width="30" height="4.5" rx="1.5" fill="rgba(234,88,12,0.75)"/>
+    <rect x="273" y="193.4" width="30" height="4.5" rx="1.5" fill="rgba(255,255,255,0.06)"/>
+    <rect x="273" y="199.2" width="30" height="4.5" rx="1.5" fill="rgba(234,88,12,0.75)"/>
+    <rect x="273" y="205.0" width="30" height="4.5" rx="1.5" fill="rgba(255,255,255,0.06)"/>
+    <rect x="273" y="210.8" width="30" height="4.5" rx="1.5" fill="rgba(255,255,255,0.06)"/>
+    <rect x="273" y="216.6" width="30" height="4.5" rx="1.5" fill="rgba(255,255,255,0.06)"/>
+    <rect x="273" y="222.4" width="30" height="4.5" rx="1.5" fill="rgba(255,255,255,0.06)"/>
+    <rect x="273" y="228.2" width="30" height="4.5" rx="1.5" fill="rgba(234,88,12,0.75)"/>
+    <rect x="273" y="234.0" width="30" height="4.5" rx="1.5" fill="rgba(255,255,255,0.06)"/>
+    <rect x="273" y="239.8" width="30" height="4.5" rx="1.5" fill="rgba(234,88,12,0.75)"/>
+    <!-- Matrix Column 7 -->
+    <rect x="311" y="176.0" width="30" height="4.5" rx="1.5" fill="rgba(234,88,12,0.75)"/>
+    <rect x="311" y="181.8" width="30" height="4.5" rx="1.5" fill="rgba(255,255,255,0.06)"/>
+    <rect x="311" y="187.6" width="30" height="4.5" rx="1.5" fill="rgba(255,255,255,0.06)"/>
+    <rect x="311" y="193.4" width="30" height="4.5" rx="1.5" fill="rgba(255,255,255,0.06)"/>
+    <rect x="311" y="199.2" width="30" height="4.5" rx="1.5" fill="rgba(255,255,255,0.06)"/>
+    <rect x="311" y="205.0" width="30" height="4.5" rx="1.5" fill="rgba(234,88,12,0.75)"/>
+    <rect x="311" y="210.8" width="30" height="4.5" rx="1.5" fill="rgba(255,255,255,0.06)"/>
+    <rect x="311" y="216.6" width="30" height="4.5" rx="1.5" fill="rgba(234,88,12,0.75)"/>
+    <rect x="311" y="222.4" width="30" height="4.5" rx="1.5" fill="rgba(255,255,255,0.06)"/>
+    <rect x="311" y="228.2" width="30" height="4.5" rx="1.5" fill="rgba(255,255,255,0.06)"/>
+    <rect x="311" y="234.0" width="30" height="4.5" rx="1.5" fill="rgba(255,255,255,0.06)"/>
+    <rect x="311" y="239.8" width="30" height="4.5" rx="1.5" fill="rgba(255,255,255,0.06)"/>
+    <!-- Matrix Column 8 -->
+    <rect x="349" y="176.0" width="30" height="4.5" rx="1.5" fill="rgba(255,255,255,0.06)"/>
+    <rect x="349" y="181.8" width="30" height="4.5" rx="1.5" fill="rgba(234,88,12,0.75)"/>
+    <rect x="349" y="187.6" width="30" height="4.5" rx="1.5" fill="rgba(255,255,255,0.06)"/>
+    <rect x="349" y="193.4" width="30" height="4.5" rx="1.5" fill="rgba(234,88,12,0.75)"/>
+    <rect x="349" y="199.2" width="30" height="4.5" rx="1.5" fill="rgba(255,255,255,0.06)"/>
+    <rect x="349" y="205.0" width="30" height="4.5" rx="1.5" fill="rgba(255,255,255,0.06)"/>
+    <rect x="349" y="210.8" width="30" height="4.5" rx="1.5" fill="rgba(255,255,255,0.06)"/>
+    <rect x="349" y="216.6" width="30" height="4.5" rx="1.5" fill="rgba(255,255,255,0.06)"/>
+    <rect x="349" y="222.4" width="30" height="4.5" rx="1.5" fill="rgba(234,88,12,0.75)"/>
+    <rect x="349" y="228.2" width="30" height="4.5" rx="1.5" fill="rgba(255,255,255,0.06)"/>
+    <rect x="349" y="234.0" width="30" height="4.5" rx="1.5" fill="rgba(234,88,12,0.75)"/>
+    <rect x="349" y="239.8" width="30" height="4.5" rx="1.5" fill="rgba(255,255,255,0.06)"/>
+    <!-- Extrusion Ray 0: shoots 4.50s, lands 4.66s -->
+    <line x1="60" y1="246" x2="38" y2="330" stroke="#EA580C" stroke-width="1.4" stroke-opacity="0">
+      <animate attributeName="stroke-opacity" values="0;0;0.9;0.9;0;0" keyTimes="0;0.2250;0.2280;0.2330;0.2355;1" dur="20.0s" repeatCount="indefinite"/>
     </line>
-    <!-- Extrusion Ray 1 -->
-    <line x1="82" y1="248" x2="64" y2="330" stroke="#EA580C" stroke-width="1.2" stroke-opacity="0">
-      <animate attributeName="stroke-opacity" values="0;0;0.8;0;0" keyTimes="0;0.2310;0.2360;0.2435;1" dur="20.0s" repeatCount="indefinite"/>
+    <!-- Extrusion Ray 1: shoots 4.70s, lands 4.86s -->
+    <line x1="98" y1="246" x2="64" y2="330" stroke="#EA580C" stroke-width="1.4" stroke-opacity="0">
+      <animate attributeName="stroke-opacity" values="0;0;0.9;0.9;0;0" keyTimes="0;0.2350;0.2380;0.2430;0.2455;1" dur="20.0s" repeatCount="indefinite"/>
     </line>
-    <!-- Extrusion Ray 2 -->
-    <line x1="120" y1="248" x2="90" y2="330" stroke="#EA580C" stroke-width="1.2" stroke-opacity="0">
-      <animate attributeName="stroke-opacity" values="0;0;0.8;0;0" keyTimes="0;0.2420;0.2470;0.2545;1" dur="20.0s" repeatCount="indefinite"/>
+    <!-- Extrusion Ray 2: shoots 4.90s, lands 5.06s -->
+    <line x1="136" y1="246" x2="90" y2="330" stroke="#EA580C" stroke-width="1.4" stroke-opacity="0">
+      <animate attributeName="stroke-opacity" values="0;0;0.9;0.9;0;0" keyTimes="0;0.2450;0.2480;0.2530;0.2555;1" dur="20.0s" repeatCount="indefinite"/>
     </line>
-    <!-- Extrusion Ray 3 -->
-    <line x1="158" y1="248" x2="116" y2="330" stroke="#EA580C" stroke-width="1.2" stroke-opacity="0">
-      <animate attributeName="stroke-opacity" values="0;0;0.8;0;0" keyTimes="0;0.2530;0.2580;0.2655;1" dur="20.0s" repeatCount="indefinite"/>
+    <!-- Extrusion Ray 3: shoots 5.10s, lands 5.26s -->
+    <line x1="174" y1="246" x2="116" y2="330" stroke="#EA580C" stroke-width="1.4" stroke-opacity="0">
+      <animate attributeName="stroke-opacity" values="0;0;0.9;0.9;0;0" keyTimes="0;0.2550;0.2580;0.2630;0.2655;1" dur="20.0s" repeatCount="indefinite"/>
     </line>
-    <!-- Extrusion Ray 4 -->
-    <line x1="196" y1="248" x2="142" y2="330" stroke="#EA580C" stroke-width="1.2" stroke-opacity="0">
-      <animate attributeName="stroke-opacity" values="0;0;0.8;0;0" keyTimes="0;0.2640;0.2690;0.2765;1" dur="20.0s" repeatCount="indefinite"/>
+    <!-- Extrusion Ray 4: shoots 5.30s, lands 5.46s -->
+    <line x1="212" y1="246" x2="142" y2="330" stroke="#EA580C" stroke-width="1.4" stroke-opacity="0">
+      <animate attributeName="stroke-opacity" values="0;0;0.9;0.9;0;0" keyTimes="0;0.2650;0.2680;0.2730;0.2755;1" dur="20.0s" repeatCount="indefinite"/>
     </line>
-    <!-- Extrusion Ray 5 -->
-    <line x1="234" y1="248" x2="168" y2="330" stroke="#EA580C" stroke-width="1.2" stroke-opacity="0">
-      <animate attributeName="stroke-opacity" values="0;0;0.8;0;0" keyTimes="0;0.2750;0.2800;0.2875;1" dur="20.0s" repeatCount="indefinite"/>
+    <!-- Extrusion Ray 5: shoots 5.50s, lands 5.66s -->
+    <line x1="250" y1="246" x2="168" y2="330" stroke="#EA580C" stroke-width="1.4" stroke-opacity="0">
+      <animate attributeName="stroke-opacity" values="0;0;0.9;0.9;0;0" keyTimes="0;0.2750;0.2780;0.2830;0.2855;1" dur="20.0s" repeatCount="indefinite"/>
     </line>
-    <!-- Extrusion Ray 6 -->
-    <line x1="272" y1="248" x2="194" y2="330" stroke="#EA580C" stroke-width="1.2" stroke-opacity="0">
-      <animate attributeName="stroke-opacity" values="0;0;0.8;0;0" keyTimes="0;0.2860;0.2910;0.2985;1" dur="20.0s" repeatCount="indefinite"/>
+    <!-- Extrusion Ray 6: shoots 5.70s, lands 5.86s -->
+    <line x1="288" y1="246" x2="194" y2="330" stroke="#EA580C" stroke-width="1.4" stroke-opacity="0">
+      <animate attributeName="stroke-opacity" values="0;0;0.9;0.9;0;0" keyTimes="0;0.2850;0.2880;0.2930;0.2955;1" dur="20.0s" repeatCount="indefinite"/>
     </line>
-    <!-- Extrusion Ray 7 -->
-    <line x1="310" y1="248" x2="220" y2="330" stroke="#EA580C" stroke-width="1.2" stroke-opacity="0">
-      <animate attributeName="stroke-opacity" values="0;0;0.8;0;0" keyTimes="0;0.2970;0.3020;0.3095;1" dur="20.0s" repeatCount="indefinite"/>
+    <!-- Extrusion Ray 7: shoots 5.90s, lands 6.06s -->
+    <line x1="326" y1="246" x2="220" y2="330" stroke="#EA580C" stroke-width="1.4" stroke-opacity="0">
+      <animate attributeName="stroke-opacity" values="0;0;0.9;0.9;0;0" keyTimes="0;0.2950;0.2980;0.3030;0.3055;1" dur="20.0s" repeatCount="indefinite"/>
     </line>
-    <!-- Extrusion Ray 8 -->
-    <line x1="348" y1="248" x2="246" y2="330" stroke="#EA580C" stroke-width="1.2" stroke-opacity="0">
-      <animate attributeName="stroke-opacity" values="0;0;0.8;0;0" keyTimes="0;0.3080;0.3130;0.3205;1" dur="20.0s" repeatCount="indefinite"/>
+    <!-- Extrusion Ray 8: shoots 6.10s, lands 6.26s -->
+    <line x1="364" y1="246" x2="246" y2="330" stroke="#EA580C" stroke-width="1.4" stroke-opacity="0">
+      <animate attributeName="stroke-opacity" values="0;0;0.9;0.9;0;0" keyTimes="0;0.3050;0.3080;0.3130;0.3155;1" dur="20.0s" repeatCount="indefinite"/>
     </line>
   </g>
 
   <!-- ================= 5. BASELINE AXES & DYNAMIC SEQUENCE LABELS ================= -->
   <g id="baseline-axis-group">
-    <!-- Baseline Floor Line (draws at 4.2s = 0.2100) -->
+    <!-- Baseline Floor Line (draws from 4.2s to 6.3s = 0.2100 to 0.3150) -->
     <line id="baseline-floor" x1="26" y1="398" x2="360" y2="398" stroke="#1E2638" stroke-width="1" stroke-dasharray="334" stroke-dashoffset="334">
-      <animate attributeName="stroke-dashoffset" values="334;334;0;0;334" keyTimes="0;0.2100;0.2800;0.9600;1" calcMode="linear" dur="20.0s" repeatCount="indefinite"/>
+      <animate attributeName="stroke-dashoffset" values="334;334;0;0;334" keyTimes="0;0.2100;0.3150;0.9600;1" calcMode="linear" dur="20.0s" repeatCount="indefinite"/>
     </line>
 
     <!-- Dynamic Sequence Label: x=28 (8 discrete ticks from 9 Tokens to 14 Columns <EOS>) -->
     <text class="m4" x="28" y="416" font-size="9" fill="#6E7681" opacity="0">
-      <animate attributeName="opacity" values="0;0;1;0;0" keyTimes="0;0.2100;0.2150;0.6040;1" calcMode="discrete" dur="20.0s" repeatCount="indefinite"/>
+      <animate attributeName="opacity" values="0;0;1;0;0" keyTimes="0;0.2330;0.2335;0.6040;1" calcMode="discrete" dur="20.0s" repeatCount="indefinite"/>
       Context Sequence &#183; 9 Tokens
     </text>
     <text class="m4" x="28" y="416" font-size="9" fill="#6E7681" opacity="0">
@@ -327,12 +337,12 @@
   </g>
 
 
-  <!-- ================= 6. VECTOR COLUMNS (12 MICRO-BARS PER TOKEN) ================= -->
+  <!-- ================= 6. VECTOR COLUMNS (STRICT FORWARD CAUSALITY) ================= -->
   <g id="vector-columns-baseline">
 
-    <!-- Column 0 (What) -->
+    <!-- Baseline Column 0 (What): Materializes at t=4.66s when ray lands! -->
     <g opacity="0">
-      <animate attributeName="opacity" values="0;0;1;1;0;0" keyTimes="0;0.2200;0.2260;0.9600;0.9800;1" calcMode="linear" dur="20.0s" repeatCount="indefinite"/>
+      <animate attributeName="opacity" values="0;0;1;1;0;0" keyTimes="0;0.2330;0.2350;0.9600;0.9800;1" calcMode="linear" dur="20.0s" repeatCount="indefinite"/>
 
       <rect x="33" y="330.0" width="10" height="3.5" rx="1" fill="#EA580C" opacity="0.95"/>
       <rect x="33" y="335.2" width="10" height="3.5" rx="1" fill="#21262D" opacity="0.45"/>
@@ -347,9 +357,9 @@
       <rect x="33" y="382.0" width="10" height="3.5" rx="1" fill="#21262D" opacity="0.45"/>
       <rect x="33" y="387.2" width="10" height="3.5" rx="1" fill="#21262D" opacity="0.45"/>
     </g>
-    <!-- Column 1 (can) -->
+    <!-- Baseline Column 1 (can): Materializes at t=4.86s when ray lands! -->
     <g opacity="0">
-      <animate attributeName="opacity" values="0;0;1;1;0;0" keyTimes="0;0.2310;0.2370;0.9600;0.9800;1" calcMode="linear" dur="20.0s" repeatCount="indefinite"/>
+      <animate attributeName="opacity" values="0;0;1;1;0;0" keyTimes="0;0.2430;0.2450;0.9600;0.9800;1" calcMode="linear" dur="20.0s" repeatCount="indefinite"/>
 
       <rect x="59" y="330.0" width="10" height="3.5" rx="1" fill="#21262D" opacity="0.45"/>
       <rect x="59" y="335.2" width="10" height="3.5" rx="1" fill="#EA580C" opacity="0.95"/>
@@ -364,9 +374,9 @@
       <rect x="59" y="382.0" width="10" height="3.5" rx="1" fill="#EA580C" opacity="0.95"/>
       <rect x="59" y="387.2" width="10" height="3.5" rx="1" fill="#21262D" opacity="0.45"/>
     </g>
-    <!-- Column 2 (AI) -->
+    <!-- Baseline Column 2 (AI): Materializes at t=5.06s when ray lands! -->
     <g opacity="0">
-      <animate attributeName="opacity" values="0;0;1;1;0;0" keyTimes="0;0.2420;0.2480;0.9600;0.9800;1" calcMode="linear" dur="20.0s" repeatCount="indefinite"/>
+      <animate attributeName="opacity" values="0;0;1;1;0;0" keyTimes="0;0.2530;0.2550;0.9600;0.9800;1" calcMode="linear" dur="20.0s" repeatCount="indefinite"/>
 
       <rect x="85" y="330.0" width="10" height="3.5" rx="1" fill="#21262D" opacity="0.45"/>
       <rect x="85" y="335.2" width="10" height="3.5" rx="1" fill="#21262D" opacity="0.45"/>
@@ -381,9 +391,9 @@
       <rect x="85" y="382.0" width="10" height="3.5" rx="1" fill="#21262D" opacity="0.45"/>
       <rect x="85" y="387.2" width="10" height="3.5" rx="1" fill="#EA580C" opacity="0.95"/>
     </g>
-    <!-- Column 3 (do) -->
+    <!-- Baseline Column 3 (do): Materializes at t=5.26s when ray lands! -->
     <g opacity="0">
-      <animate attributeName="opacity" values="0;0;1;1;0;0" keyTimes="0;0.2530;0.2590;0.9600;0.9800;1" calcMode="linear" dur="20.0s" repeatCount="indefinite"/>
+      <animate attributeName="opacity" values="0;0;1;1;0;0" keyTimes="0;0.2630;0.2650;0.9600;0.9800;1" calcMode="linear" dur="20.0s" repeatCount="indefinite"/>
 
       <rect x="111" y="330.0" width="10" height="3.5" rx="1" fill="#EA580C" opacity="0.95"/>
       <rect x="111" y="335.2" width="10" height="3.5" rx="1" fill="#21262D" opacity="0.45"/>
@@ -398,9 +408,9 @@
       <rect x="111" y="382.0" width="10" height="3.5" rx="1" fill="#21262D" opacity="0.45"/>
       <rect x="111" y="387.2" width="10" height="3.5" rx="1" fill="#21262D" opacity="0.45"/>
     </g>
-    <!-- Column 4 (for) -->
+    <!-- Baseline Column 4 (for): Materializes at t=5.46s when ray lands! -->
     <g opacity="0">
-      <animate attributeName="opacity" values="0;0;1;1;0;0" keyTimes="0;0.2640;0.2700;0.9600;0.9800;1" calcMode="linear" dur="20.0s" repeatCount="indefinite"/>
+      <animate attributeName="opacity" values="0;0;1;1;0;0" keyTimes="0;0.2730;0.2750;0.9600;0.9800;1" calcMode="linear" dur="20.0s" repeatCount="indefinite"/>
 
       <rect x="137" y="330.0" width="10" height="3.5" rx="1" fill="#21262D" opacity="0.45"/>
       <rect x="137" y="335.2" width="10" height="3.5" rx="1" fill="#21262D" opacity="0.45"/>
@@ -415,9 +425,9 @@
       <rect x="137" y="382.0" width="10" height="3.5" rx="1" fill="#EA580C" opacity="0.95"/>
       <rect x="137" y="387.2" width="10" height="3.5" rx="1" fill="#21262D" opacity="0.45"/>
     </g>
-    <!-- Column 5 (my) -->
+    <!-- Baseline Column 5 (my): Materializes at t=5.66s when ray lands! -->
     <g opacity="0">
-      <animate attributeName="opacity" values="0;0;1;1;0;0" keyTimes="0;0.2750;0.2810;0.9600;0.9800;1" calcMode="linear" dur="20.0s" repeatCount="indefinite"/>
+      <animate attributeName="opacity" values="0;0;1;1;0;0" keyTimes="0;0.2830;0.2850;0.9600;0.9800;1" calcMode="linear" dur="20.0s" repeatCount="indefinite"/>
 
       <rect x="163" y="330.0" width="10" height="3.5" rx="1" fill="#21262D" opacity="0.45"/>
       <rect x="163" y="335.2" width="10" height="3.5" rx="1" fill="#EA580C" opacity="0.95"/>
@@ -432,9 +442,9 @@
       <rect x="163" y="382.0" width="10" height="3.5" rx="1" fill="#21262D" opacity="0.45"/>
       <rect x="163" y="387.2" width="10" height="3.5" rx="1" fill="#21262D" opacity="0.45"/>
     </g>
-    <!-- Column 6 (busi) -->
+    <!-- Baseline Column 6 (busi): Materializes at t=5.86s when ray lands! -->
     <g opacity="0">
-      <animate attributeName="opacity" values="0;0;1;1;0;0" keyTimes="0;0.2860;0.2920;0.9600;0.9800;1" calcMode="linear" dur="20.0s" repeatCount="indefinite"/>
+      <animate attributeName="opacity" values="0;0;1;1;0;0" keyTimes="0;0.2930;0.2950;0.9600;0.9800;1" calcMode="linear" dur="20.0s" repeatCount="indefinite"/>
 
       <rect x="189" y="330.0" width="10" height="3.5" rx="1" fill="#21262D" opacity="0.45"/>
       <rect x="189" y="335.2" width="10" height="3.5" rx="1" fill="#21262D" opacity="0.45"/>
@@ -449,9 +459,9 @@
       <rect x="189" y="382.0" width="10" height="3.5" rx="1" fill="#21262D" opacity="0.45"/>
       <rect x="189" y="387.2" width="10" height="3.5" rx="1" fill="#EA580C" opacity="0.95"/>
     </g>
-    <!-- Column 7 (ness) -->
+    <!-- Baseline Column 7 (ness): Materializes at t=6.06s when ray lands! -->
     <g opacity="0">
-      <animate attributeName="opacity" values="0;0;1;1;0;0" keyTimes="0;0.2970;0.3030;0.9600;0.9800;1" calcMode="linear" dur="20.0s" repeatCount="indefinite"/>
+      <animate attributeName="opacity" values="0;0;1;1;0;0" keyTimes="0;0.3030;0.3050;0.9600;0.9800;1" calcMode="linear" dur="20.0s" repeatCount="indefinite"/>
 
       <rect x="215" y="330.0" width="10" height="3.5" rx="1" fill="#EA580C" opacity="0.95"/>
       <rect x="215" y="335.2" width="10" height="3.5" rx="1" fill="#21262D" opacity="0.45"/>
@@ -466,9 +476,9 @@
       <rect x="215" y="382.0" width="10" height="3.5" rx="1" fill="#21262D" opacity="0.45"/>
       <rect x="215" y="387.2" width="10" height="3.5" rx="1" fill="#21262D" opacity="0.45"/>
     </g>
-    <!-- Column 8 (?) -->
+    <!-- Baseline Column 8 (?): Materializes at t=6.26s when ray lands! -->
     <g opacity="0">
-      <animate attributeName="opacity" values="0;0;1;1;0;0" keyTimes="0;0.3080;0.3140;0.9600;0.9800;1" calcMode="linear" dur="20.0s" repeatCount="indefinite"/>
+      <animate attributeName="opacity" values="0;0;1;1;0;0" keyTimes="0;0.3130;0.3150;0.9600;0.9800;1" calcMode="linear" dur="20.0s" repeatCount="indefinite"/>
 
       <rect x="241" y="330.0" width="10" height="3.5" rx="1" fill="#21262D" opacity="0.45"/>
       <rect x="241" y="335.2" width="10" height="3.5" rx="1" fill="#EA580C" opacity="0.95"/>
@@ -656,7 +666,7 @@
   <g id="stage-6-autoregression" opacity="0">
     <animate attributeName="opacity" values="0;0;1;1;0;0" keyTimes="0;0.5550;0.5600;0.9600;0.9800;1" calcMode="linear" dur="20.0s" repeatCount="indefinite"/>
 
-    <!-- Step 1: Forward Spline Beam (Enhanced Luminance) -->
+    <!-- Step 1: Forward Spline Beam -->
     <g id="ffn-output-beam-1">
       <path d="M 384 204 C 400 204, 410 84.0, 420 84.0" pathLength="100" fill="none" stroke="#D97706" stroke-width="1.6" stroke-opacity="0">
         <animate attributeName="stroke-opacity" values="0;0;0.9;0.2;0;0" keyTimes="0;0.5600;0.5650;0.5725;0.5775;1" dur="20.0s" repeatCount="indefinite"/>
@@ -666,7 +676,7 @@
         <animate attributeName="stroke-dashoffset" values="124;0" dur="0.25s" repeatCount="indefinite"/>
       </path>
     </g>
-    <!-- Step 1: Candidate Stack (.tf__cands) with Smooth Crossfade Exit -->
+    <!-- Step 1: Candidate Stack (.tf__cands) -->
     <g id="candidate-stack-1" opacity="0">
       <animate attributeName="opacity" values="0;0;1;1;0;0" keyTimes="0;0.5690;0.5740;0.5850;0.5875;1" calcMode="linear" dur="20.0s" repeatCount="indefinite"/>
 
@@ -701,7 +711,7 @@
         <animate attributeName="stroke-dashoffset" values="120;0" dur="0.30s" repeatCount="indefinite"/>
       </path>
     </g>
-    <!-- Step 2: Forward Spline Beam (Enhanced Luminance) -->
+    <!-- Step 2: Forward Spline Beam -->
     <g id="ffn-output-beam-2">
       <path d="M 384 204 C 400 204, 410 148.0, 420 148.0" pathLength="100" fill="none" stroke="#D97706" stroke-width="1.6" stroke-opacity="0">
         <animate attributeName="stroke-opacity" values="0;0;0.9;0.2;0;0" keyTimes="0;0.6200;0.6250;0.6325;0.6375;1" dur="20.0s" repeatCount="indefinite"/>
@@ -711,7 +721,7 @@
         <animate attributeName="stroke-dashoffset" values="124;0" dur="0.25s" repeatCount="indefinite"/>
       </path>
     </g>
-    <!-- Step 2: Candidate Stack (.tf__cands) with Smooth Crossfade Exit -->
+    <!-- Step 2: Candidate Stack (.tf__cands) -->
     <g id="candidate-stack-2" opacity="0">
       <animate attributeName="opacity" values="0;0;1;1;0;0" keyTimes="0;0.6290;0.6340;0.6450;0.6475;1" calcMode="linear" dur="20.0s" repeatCount="indefinite"/>
 
@@ -746,7 +756,7 @@
         <animate attributeName="stroke-dashoffset" values="120;0" dur="0.30s" repeatCount="indefinite"/>
       </path>
     </g>
-    <!-- Step 3: Forward Spline Beam (Enhanced Luminance) -->
+    <!-- Step 3: Forward Spline Beam -->
     <g id="ffn-output-beam-3">
       <path d="M 384 204 C 400 204, 410 212.0, 420 212.0" pathLength="100" fill="none" stroke="#D97706" stroke-width="1.6" stroke-opacity="0">
         <animate attributeName="stroke-opacity" values="0;0;0.9;0.2;0;0" keyTimes="0;0.6800;0.6850;0.6925;0.6975;1" dur="20.0s" repeatCount="indefinite"/>
@@ -756,7 +766,7 @@
         <animate attributeName="stroke-dashoffset" values="124;0" dur="0.25s" repeatCount="indefinite"/>
       </path>
     </g>
-    <!-- Step 3: Candidate Stack (.tf__cands) with Smooth Crossfade Exit -->
+    <!-- Step 3: Candidate Stack (.tf__cands) -->
     <g id="candidate-stack-3" opacity="0">
       <animate attributeName="opacity" values="0;0;1;1;0;0" keyTimes="0;0.6890;0.6940;0.7050;0.7075;1" calcMode="linear" dur="20.0s" repeatCount="indefinite"/>
 
@@ -791,7 +801,7 @@
         <animate attributeName="stroke-dashoffset" values="120;0" dur="0.30s" repeatCount="indefinite"/>
       </path>
     </g>
-    <!-- Step 4: Forward Spline Beam (Enhanced Luminance) -->
+    <!-- Step 4: Forward Spline Beam -->
     <g id="ffn-output-beam-4">
       <path d="M 384 204 C 400 204, 410 276.0, 420 276.0" pathLength="100" fill="none" stroke="#D97706" stroke-width="1.6" stroke-opacity="0">
         <animate attributeName="stroke-opacity" values="0;0;0.9;0.2;0;0" keyTimes="0;0.7400;0.7450;0.7525;0.7575;1" dur="20.0s" repeatCount="indefinite"/>
@@ -801,7 +811,7 @@
         <animate attributeName="stroke-dashoffset" values="124;0" dur="0.25s" repeatCount="indefinite"/>
       </path>
     </g>
-    <!-- Step 4: Candidate Stack (.tf__cands) with Smooth Crossfade Exit -->
+    <!-- Step 4: Candidate Stack (.tf__cands) -->
     <g id="candidate-stack-4" opacity="0">
       <animate attributeName="opacity" values="0;0;1;1;0;0" keyTimes="0;0.7490;0.7540;0.7650;0.7675;1" calcMode="linear" dur="20.0s" repeatCount="indefinite"/>
 
@@ -836,7 +846,7 @@
         <animate attributeName="stroke-dashoffset" values="120;0" dur="0.30s" repeatCount="indefinite"/>
       </path>
     </g>
-    <!-- Step 5: Forward Spline Beam (Enhanced Luminance) -->
+    <!-- Step 5: Forward Spline Beam -->
     <g id="ffn-output-beam-5">
       <path d="M 384 204 C 400 204, 410 340.0, 420 340.0" pathLength="100" fill="none" stroke="#D97706" stroke-width="1.6" stroke-opacity="0">
         <animate attributeName="stroke-opacity" values="0;0;0.9;0.2;0;0" keyTimes="0;0.8000;0.8050;0.8125;0.8175;1" dur="20.0s" repeatCount="indefinite"/>
@@ -846,7 +856,7 @@
         <animate attributeName="stroke-dashoffset" values="124;0" dur="0.25s" repeatCount="indefinite"/>
       </path>
     </g>
-    <!-- Step 5: Candidate Stack (.tf__cands) with Smooth Crossfade Exit -->
+    <!-- Step 5: Candidate Stack (.tf__cands) -->
     <g id="candidate-stack-5" opacity="0">
       <animate attributeName="opacity" values="0;0;1;1;0;0" keyTimes="0;0.8090;0.8140;0.8250;0.8275;1" calcMode="linear" dur="20.0s" repeatCount="indefinite"/>
 

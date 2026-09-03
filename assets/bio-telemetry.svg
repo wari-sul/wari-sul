@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 540 28" width="540" height="28">
+  <rect width="540" height="28" rx="5" fill="#0D1117" stroke="#30363D" stroke-width="1"/>
+  <!-- Status dot -->
+  <circle cx="14" cy="14" r="3" fill="#3FB950">
+    <animate attributeName="opacity" values="1;0.4;1" dur="2s" repeatCount="indefinite"/>
+  </circle>
+  <!-- Telemetry labels -->
+  <text x="26" y="18" font-family="ui-monospace,SFMono-Regular,'SF Mono',Menlo,Consolas,Liberation Mono,monospace" font-size="11" fill="#8B949E">
+    <tspan fill="#FB923C">warisul</tspan>@<tspan fill="#79C0FF">homelab</tspan>
+    <tspan dx="10" fill="#30363D">|</tspan>
+    <tspan dx="10" fill="#8B949E">sys:</tspan> <tspan fill="#E6EDF3">online</tspan>
+    <tspan dx="10" fill="#30363D">|</tspan>
+    <tspan dx="10" fill="#8B949E">arch:</tspan> <tspan fill="#E6EDF3">ai-systems</tspan>
+    <tspan dx="10" fill="#30363D">|</tspan>
+    <tspan dx="10" fill="#8B949E">load:</tspan> <tspan fill="#58A6FF">0.14</tspan>
+    <tspan dx="10" fill="#30363D">|</tspan>
+    <tspan dx="10" fill="#3FB950">edge-active</tspan>
+  </text>
+</svg>

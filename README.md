@@ -2,28 +2,28 @@
 
 # SM Warisul A. Rafin
 
-<details>
+<details open>
 <summary><img src="assets/badge-01.svg?v=3" alt="01/ABOUT - Sysadmin to AI Architect" height="28" align="center"></summary>
 <br>
 
 Sysadmin first, then DevOps, then full-stack, then AI Architect. I still do all, because one is never enough. The homelab is the proof: a small rack of machines humming in the corner, running self-hosted services, media servers, experiments, and whatever I decided at 2 a.m. was essential. Most of my tools live there, and if the internet goes out, the house still runs.
 </details>
 
-<details>
+<details open>
 <summary><img src="assets/badge-02.svg?v=3" alt="02/HOBBIES - The Homelab & Audiophile Corner" height="28" align="center"></summary>
 <br>
 
 And yes, I'm an audiophile. That means the homelab has a sibling: a listening corner with amps, DACs, and headphones that cost more than they reasonably should. The servers handle the data, the tubes and planar drivers handle the mood. Two hobbies, one questionable electricity bill.
 </details>
 
-<details>
+<details open>
 <summary><img src="assets/badge-03.svg?v=3" alt="03/WORK - Director of SaaS Dept. at Orpheus" height="28" align="center"></summary>
 <br>
 
 I'm the Director of the SaaS Dept at [Orpheus](https://orpheusit.com/), where our team builds SaaS products for clients. Most of my job is keeping two things honest: the product has to fit the way a client actually works, and the AI has to earn its keep. A chatbot that answers a question isn't agentic. I make sure what we ship actually does the thing, not just talks about doing it.
 </details>
 
-<details>
+<details open>
 <summary><img src="assets/badge-04.svg?v=3" alt="04/VENTURE - Founder of athrLabs" height="28" align="center"></summary>
 <br>
 

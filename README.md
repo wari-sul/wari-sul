@@ -5,10 +5,10 @@
 <img src="assets/badge-01.svg?v=1" alt="01 - The Journey: Sysadmin to AI Architect" height="34">
 
 <details>
-<summary><code>01/ORIGIN</code> &nbsp; <b>Sysadmin to Full-Stack</b></summary>
+<summary><code>01/ORIGIN</code></summary>
 <br>
 
-The origin story: sysadmin first, then DevOps, then full-stack. I still do all three, because one is never enough. The homelab is the proof: a small rack of machines humming in the corner, running self-hosted services, media servers, experiments, and whatever I decided at 2 a.m. was essential. Most of my tools live there, and if the internet goes out, the house still runs.
+Sysadmin first, then DevOps, then full-stack, then AI Architect. I still do all, because one is never enough. The homelab is the proof: a small rack of machines humming in the corner, running self-hosted services, media servers, experiments, and whatever I decided at 2 a.m. was essential. Most of my tools live there, and if the internet goes out, the house still runs.
 </details>
 
 <img src="assets/badge-02.svg?v=1" alt="02 - The Homelab & Audiophile Corner" height="34">

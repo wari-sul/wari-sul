@@ -1,0 +1,37 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 420 28" width="420" height="28">
+  <defs>
+    <style>
+      .mono { font-family: ui-monospace, SFMono-Regular, 'SF Mono', Menlo, Consolas, 'Liberation Mono', monospace; }
+      .tick { font-size: 11.5px; fill: #E6EDF3; }
+      .sep { fill: #484F58; }
+    </style>
+    <clipPath id="tickClip">
+      <rect x="128" y="2" width="284" height="24"/>
+    </clipPath>
+  </defs>
+
+  <!-- Container Pill -->
+  <rect width="420" height="28" rx="6" fill="#161B22" stroke="#30363D" stroke-width="1"/>
+
+  <!-- Live Pulse Indicator -->
+  <circle cx="12" cy="14" r="3" fill="#3FB950">
+    <animate attributeName="opacity" values="1;0.4;1" dur="2s" repeatCount="indefinite"/>
+  </circle>
+
+  <!-- Tag Pill: 03/WORK -->
+  <rect x="22" y="4" width="86" height="20" rx="4" fill="#0D1117" stroke="#30363D" stroke-width="1"/>
+  <text x="65" y="17.5" text-anchor="middle" class="mono" font-size="10.5" font-weight="700" fill="#FB923C">03/WORK</text>
+
+  <!-- Prompt Caret -->
+  <text x="116" y="18" class="mono" font-size="12" font-weight="600" fill="#8B949E">›</text>
+
+  <!-- Sliding Ticker Track -->
+  <g clip-path="url(#tickClip)">
+    <g>
+      <animateTransform attributeName="transform" type="translate" from="0 0" to="-265 0" dur="11.0s" repeatCount="indefinite"/>
+      <text class="mono tick" x="128" y="18" textLength="265" lengthAdjust="spacing">Director of SaaS Dept. at Orpheus <tspan class="sep">&#183;</tspan> </text>
+      <text class="mono tick" x="393" y="18" textLength="265" lengthAdjust="spacing">Director of SaaS Dept. at Orpheus <tspan class="sep">&#183;</tspan> </text>
+      <text class="mono tick" x="658" y="18" textLength="265" lengthAdjust="spacing">Director of SaaS Dept. at Orpheus <tspan class="sep">&#183;</tspan> </text>
+    </g>
+  </g>
+</svg>

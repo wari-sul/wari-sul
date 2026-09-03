@@ -1,0 +1,24 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 440 32" width="440" height="32">
+  <!-- Dark pill background -->
+  <rect width="440" height="32" rx="6" fill="#161B22" stroke="#30363D" stroke-width="1"/>
+
+  <!-- Prompt glyph -->
+  <text x="12" y="21" font-family="ui-monospace,SFMono-Regular,'SF Mono',Menlo,Consolas,Liberation Mono,monospace" font-size="13" fill="#FB923C">›</text>
+
+  <!-- Role 1: Director of SaaS at Orpheus (visible 0s-3s) -->
+  <text x="28" y="21" font-family="ui-monospace,SFMono-Regular,'SF Mono',Menlo,Consolas,Liberation Mono,monospace" font-size="13" fill="#E6EDF3" opacity="0">Director of SaaS at Orpheus<animate attributeName="opacity" values="1;1;1;0;0;0;0;0;0;0;0;0" dur="12s" repeatCount="indefinite" calcMode="discrete"/></text>
+
+  <!-- Role 2: Founder of athrLabs (visible 3s-6s) -->
+  <text x="28" y="21" font-family="ui-monospace,SFMono-Regular,'SF Mono',Menlo,Consolas,Liberation Mono,monospace" font-size="13" fill="#E6EDF3" opacity="0">Founder of athrLabs<animate attributeName="opacity" values="0;0;0;1;1;1;0;0;0;0;0;0" dur="12s" repeatCount="indefinite" calcMode="discrete"/></text>
+
+  <!-- Role 3: sysadmin · devops · fullstack (visible 6s-9s) -->
+  <text x="28" y="21" font-family="ui-monospace,SFMono-Regular,'SF Mono',Menlo,Consolas,Liberation Mono,monospace" font-size="13" fill="#E6EDF3" opacity="0">sysadmin · devops · fullstack<animate attributeName="opacity" values="0;0;0;0;0;0;1;1;1;0;0;0" dur="12s" repeatCount="indefinite" calcMode="discrete"/></text>
+
+  <!-- Role 4: audiophile · homelab · hi-fi (visible 9s-12s) -->
+  <text x="28" y="21" font-family="ui-monospace,SFMono-Regular,'SF Mono',Menlo,Consolas,Liberation Mono,monospace" font-size="13" fill="#E6EDF3" opacity="0">audiophile · homelab · hi-fi<animate attributeName="opacity" values="0;0;0;0;0;0;0;0;0;1;1;1" dur="12s" repeatCount="indefinite" calcMode="discrete"/></text>
+
+  <!-- Blinking cursor -->
+  <rect x="420" y="8" width="2" height="16" rx="1" fill="#FB923C">
+    <animate attributeName="opacity" values="1;0" dur="1s" repeatCount="indefinite" calcMode="discrete"/>
+  </rect>
+</svg>

@@ -14,7 +14,7 @@ Sysadmin first, then DevOps, then full-stack, then AI Architect. I still do all,
 <img src="assets/badge-02.svg?v=1" alt="02 - The Homelab & Audiophile Corner" height="34">
 
 <details>
-<summary><code>02/ANALOG</code></summary>
+<summary><code>02/HOBBIES</code></summary>
 <br>
 
 And yes, I'm an audiophile. That means the homelab has a sibling: a listening corner with amps, DACs, and headphones that cost more than they reasonably should. The servers handle the data, the tubes and planar drivers handle the mood. Two hobbies, one questionable electricity bill.

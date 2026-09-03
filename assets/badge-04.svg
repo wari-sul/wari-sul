@@ -1,0 +1,27 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 212 34" width="212" height="34">
+  <defs>
+    <style>
+      .mono { font-family: ui-monospace, SFMono-Regular, 'SF Mono', Menlo, Consolas, 'Liberation Mono', monospace; }
+      .text-light { fill: #E6EDF3; font-size: 12.5px; }
+    </style>
+  </defs>
+
+  <!-- Container Pill -->
+  <rect width="212" height="34" rx="7" fill="#161B22" stroke="#30363D" stroke-width="1"/>
+
+  <!-- Live Pulse Indicator -->
+  <circle cx="15" cy="17" r="3.5" fill="#3FB950">
+    <animate attributeName="opacity" values="1;0.4;1" dur="2s" repeatCount="indefinite"/>
+  </circle>
+
+  <!-- Prompt Caret -->
+  <text x="26" y="21.5" class="mono" font-size="13" font-weight="600" fill="#FB923C">›</text>
+
+  <!-- Text -->
+  <text x="42" y="21.5" class="mono text-light">Founder of athrLabs</text>
+
+  <!-- Blinking Cursor -->
+  <rect x="192" y="9" width="2" height="15" rx="1" fill="#FB923C">
+    <animate attributeName="opacity" values="1;0;1" dur="0.8s" repeatCount="indefinite"/>
+  </rect>
+</svg>

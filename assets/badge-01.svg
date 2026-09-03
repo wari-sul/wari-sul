@@ -28,10 +28,10 @@
   <!-- Sliding Ticker Track -->
   <g clip-path="url(#tickClip)">
     <g>
-      <animateTransform attributeName="transform" type="translate" from="0 0" to="-300 0" dur="12.5s" repeatCount="indefinite"/>
-      <text class="mono tick" x="128" y="18" textLength="300" lengthAdjust="spacing">Sysadmin to AI Architect <tspan class="sep">&#183;</tspan> The Journey <tspan class="sep">&#183;</tspan> </text>
-      <text class="mono tick" x="428" y="18" textLength="300" lengthAdjust="spacing">Sysadmin to AI Architect <tspan class="sep">&#183;</tspan> The Journey <tspan class="sep">&#183;</tspan> </text>
-      <text class="mono tick" x="728" y="18" textLength="300" lengthAdjust="spacing">Sysadmin to AI Architect <tspan class="sep">&#183;</tspan> The Journey <tspan class="sep">&#183;</tspan> </text>
+      <animateTransform attributeName="transform" type="translate" from="0 0" to="-200 0" dur="8.3s" repeatCount="indefinite"/>
+      <text class="mono tick" x="128" y="18" textLength="200" lengthAdjust="spacing">Sysadmin to AI Architect <tspan class="sep">&#183;</tspan> </text>
+      <text class="mono tick" x="328" y="18" textLength="200" lengthAdjust="spacing">Sysadmin to AI Architect <tspan class="sep">&#183;</tspan> </text>
+      <text class="mono tick" x="528" y="18" textLength="200" lengthAdjust="spacing">Sysadmin to AI Architect <tspan class="sep">&#183;</tspan> </text>
     </g>
   </g>
 </svg>

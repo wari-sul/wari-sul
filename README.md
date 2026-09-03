@@ -3,7 +3,7 @@
 # SM Warisul A. Rafin
 
 <details open>
-<summary><img src="assets/badge-01.svg?v=3" alt="01/ABOUT - Sysadmin to AI Architect" height="28" align="center"></summary>
+<summary><img src="assets/badge-01.svg?v=4" alt="01/ABOUT - Sysadmin to AI Architect" height="28" align="center"></summary>
 <br>
 
 Sysadmin first, then DevOps, then full-stack, then AI Architect. I still do all, because one is never enough. The homelab is the proof: a small rack of machines humming in the corner, running self-hosted services, media servers, experiments, and whatever I decided at 2 a.m. was essential. Most of my tools live there, and if the internet goes out, the house still runs.

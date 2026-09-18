@@ -31,7 +31,7 @@
   <circle cx="26" cy="22" r="5" fill="#FF5F57"/>
   <circle cx="44" cy="22" r="5" fill="#FEBC2E"/>
   <circle cx="62" cy="22" r="5" fill="#28C840"/>
-  <text class="m4 tt" x="420" y="26" text-anchor="middle">athrLabs &#183; systems that learn as you work</text>
+  <text class="m4 tt" x="420" y="26" text-anchor="middle">Athurium &#183; systems that learn as you work</text>
 
   <!-- ================= 2. STAGE 1: PROMPT CONTAINER ================= -->
   <!-- Stepped character-by-character typewriter + synchronized caret snap -->

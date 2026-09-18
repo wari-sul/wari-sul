@@ -24,7 +24,7 @@ I'm the Director of the SaaS Dept at [Orpheus](https://orpheusit.com/), where ou
 </details>
 
 <details open>
-<summary><img src="assets/badge-04.svg?v=3" alt="04/VENTURE - Founder of athrLabs" height="28" align="center"></summary>
+<summary><img src="assets/badge-04.svg?v=3" alt="04/VENTURE - Founder of Athurium" height="28" align="center"></summary>
 <br>
 
 [Athurium](https://athurium.com) is a different animal: my own lab and agency. Custom development, AI products, APIs, on-prem LLMs, cloud provider APIs, fine-tuned models, automation, robotics, open-source development and contribution. A lot of ideas go in, and occasionally something useful comes out. Caffeine goes in too, in quantities I prefer not to measure.
@@ -32,7 +32,7 @@ I'm the Director of the SaaS Dept at [Orpheus](https://orpheusit.com/), where ou
 
 <img src="assets/ai-solutions.svg?v=3.1" alt="AI-integrated systems: transformer forward pass from business prompt to 5 autonomous output solutions" width="100%">
 
-<p align="center"><code>athrLabs turns high-level questions into deployable infrastructure. The visualization above shows that forward pass in action: tokenizing business intent, routing it through attention layers, and generating five autonomous operational outcomes that keep businesses moving.</code></p>
+<p align="center"><code>Athurium turns high-level questions into deployable infrastructure. The visualization above shows that forward pass in action: tokenizing business intent, routing it through attention layers, and generating five autonomous operational outcomes that keep businesses moving.</code></p>
 
 ---
 

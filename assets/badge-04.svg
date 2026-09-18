@@ -29,9 +29,9 @@
   <g clip-path="url(#tickClip)">
     <g>
       <animateTransform attributeName="transform" type="translate" from="0 0" to="-160 0" dur="6.6s" repeatCount="indefinite"/>
-      <text class="mono tick" x="128" y="18" textLength="160" lengthAdjust="spacing">Founder of athrLabs <tspan class="sep">&#183;</tspan> </text>
-      <text class="mono tick" x="288" y="18" textLength="160" lengthAdjust="spacing">Founder of athrLabs <tspan class="sep">&#183;</tspan> </text>
-      <text class="mono tick" x="448" y="18" textLength="160" lengthAdjust="spacing">Founder of athrLabs <tspan class="sep">&#183;</tspan> </text>
+      <text class="mono tick" x="128" y="18" textLength="160" lengthAdjust="spacing">Founder of Athurium <tspan class="sep">&#183;</tspan> </text>
+      <text class="mono tick" x="288" y="18" textLength="160" lengthAdjust="spacing">Founder of Athurium <tspan class="sep">&#183;</tspan> </text>
+      <text class="mono tick" x="448" y="18" textLength="160" lengthAdjust="spacing">Founder of Athurium <tspan class="sep">&#183;</tspan> </text>
     </g>
   </g>
 </svg>
